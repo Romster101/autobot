@@ -1,0 +1,28 @@
+{
+	"BUILD_DIR" : "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/auto_bot_gui_autogen",
+	"CMAKE_BINARY_DIR" : "/home/roman/ros_packets/auto_bot/src/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/roman/ros_packets/auto_bot/src/gui_auto_bot",
+	"CMAKE_SOURCE_DIR" : "/home/roman/ros_packets/auto_bot/src",
+	"INCLUDE_DIR" : "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/auto_bot_gui_autogen/include",
+	"INPUTS" : 
+	[
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/strelka.png",
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/Forward.png",
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/back.png",
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/wIcon.png",
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/left_rotate.png",
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/rolik.png",
+		"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/right_rotate.png"
+	],
+	"LOCK_FILE" : "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/AutoRcc_images_PNK5WDWK6L_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "images" ],
+	"OUTPUT_CHECKSUM" : "PNK5WDWK6L",
+	"OUTPUT_NAME" : "qrc_images.cpp",
+	"RCC_EXECUTABLE" : "/usr/lib/qt5/bin/rcc",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/AutoRcc_images_PNK5WDWK6L_Used.txt",
+	"SOURCE" : "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/res/images.qrc",
+	"VERBOSITY" : 0
+}

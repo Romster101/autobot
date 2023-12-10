@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>995</width>
+    <height>862</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Приложение управления мобильным роботом</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res/images.qrc">
+    <normaloff>:/img/wIcon.png</normaloff>:/img/wIcon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/*-----QWidget-----*/
+QWidget
+{
+	background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:1 #212121, stop:.4 #343434);
+	color: white;
+	border-color: #000000;
+
+}
+QMenuBar{
+	color: white;
+}
+
+QDoubleSpinBox{
+	color:white;
+}
+
+QGroupBox {
+	color:white;
+}
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #fff;
+	font-size: 14pt;
+	border-color: #000000;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(254, 171, 66, 255),stop:1 rgba(255, 153, 0, 255));
+	color: #000;
+	font-size: 14pt;
+	border-radius: 4px;
+	padding: 10px;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #6b960f;
+
+}
+
+
+/*-----QTabWidget-----*/
+QTabBar::tab
+{
+	font-size: 12pt;
+	font-weight: bold;
+	width: 250px;
+	height: 30px;
+    border: 1px solid #444;
+    border-bottom-style: none;
+	border-top-style: none;
+    background-color: #323232;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    margin-right: -1px;
+
+}
+
+QTabWidget::pane 
+{
+    border: 1px solid qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(254, 171, 66, 255),stop:1 rgba(255, 153, 0, 255));
+ 
+
+}
+
+QTabBar::tab:last
+{
+    margin-right: 0; 
+
+}
+
+QTabBar::tab:first:!selected
+{
+	margin-left: 0px; 
+
+}
+
+QTabBar::tab:!selected
+{
+    color: #fff;
+    border-bottom-style: solid;
+    margin-top: 3px;
+    background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:1 #212121, stop:.4 #343434);
+
+}
+
+QTabBar::tab:selected
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(254, 171, 66, 255),stop:1 rgba(255, 153, 0, 255));
+	color: #000;
+    margin-bottom: 0px;
+
+}
+
+QTabBar::tab:!selected:hover
+{
+    background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:1 #212121, stop:0.4 #343434, stop:0.2 #343434, stop:0.1 #ffaa00);
+
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tbw_maps">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>971</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>40</horstretch>
+      <verstretch>40</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>803</width>
+      <height>502</height>
+     </size>
+    </property>
+    <property name="sizeIncrement">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="baseSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>16</width>
+      <height>16</height>
+     </size>
+    </property>
+    <widget class="QWidget" name="tab_drawnMap">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>0</height>
+      </size>
+     </property>
+     <attribute name="title">
+      <string>Отображение желаемого пути</string>
+     </attribute>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGraphicsView" name="gv_builtMap">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_realMap">
+     <attribute name="title">
+      <string>Отображение реальной карты</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gb_orientationData">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>20</y>
+      <width>235</width>
+      <height>139</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Данные о положении</string>
+    </property>
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="0" column="0">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="3" column="1">
+        <widget class="QDoubleSpinBox" name="dsb_X">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="minimum">
+          <double>-100000000000000000000.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>999999999999.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QDoubleSpinBox" name="dsb_Y">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="minimum">
+          <double>-999999999999999945575230987042816.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>99999999999999996863366107917975552.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>X</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label">
+         <property name="text">
+          <string>Y</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="text">
+          <string>θ</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="1">
+        <widget class="QDoubleSpinBox" name="dsb_theta">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <property name="minimum">
+          <double>-99999999999999991433150857216.000000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>10000000000000000905969664.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pb_addPoint">
+    <property name="geometry">
+     <rect>
+      <x>850</x>
+      <y>80</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавить точку</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>995</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QMenuBar{
+font-color:white;
+
+}</string>
+   </property>
+   <widget class="QMenu" name="m_file">
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="a_save"/>
+    <addaction name="a_save_as"/>
+   </widget>
+   <widget class="QMenu" name="m_manual_guide">
+    <property name="title">
+     <string>Ручное управление</string>
+    </property>
+    <addaction name="a_remote_controller"/>
+   </widget>
+   <addaction name="m_file"/>
+   <addaction name="m_manual_guide"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="a_save">
+   <property name="text">
+    <string>Сохранить</string>
+   </property>
+  </action>
+  <action name="a_save_as">
+   <property name="text">
+    <string>Сохранить как ...</string>
+   </property>
+  </action>
+  <action name="a_remote_controller">
+   <property name="text">
+    <string>Пульт дистанционного управления</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res/images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

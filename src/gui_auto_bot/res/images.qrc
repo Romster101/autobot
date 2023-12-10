@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="img">
+    <file>wIcon.png</file>
+    <file>rolik.png</file>
+    <file>back.png</file>
+    <file>Forward.png</file>
+    <file>left_rotate.png</file>
+    <file>right_rotate.png</file>
+    <file>strelka.png</file>
+  </qresource>
+</RCC>
