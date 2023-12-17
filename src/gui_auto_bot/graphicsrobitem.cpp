@@ -8,6 +8,7 @@ GraphicsRobItem::GraphicsRobItem(int x, int y, int theta)
     setPos(x, y);
     setOffset(-pix1.width() / 2, -pix1.height() / 2);
     setRotationAngle(theta);
+    setFlags(QGraphicsItem::ItemIsSelectable|ItemIsFocusable);
 };
 
 void GraphicsRobItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
@@ -20,25 +21,20 @@ void GraphicsRobItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
     setPos(mapToScene(event->pos()));
     x = mapToScene(event->pos()).x();
     y = mapToScene(event->pos()).y();
+    QGraphicsItem::mouseMoveEvent(event);
 }
  
 void GraphicsRobItem::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
     setCursor(QCursor(Qt::ClosedHandCursor));
-    
-    Q_UNUSED(event);
+    QGraphicsItem::mousePressEvent(event);
 }
  
 void GraphicsRobItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
 {
     setCursor(QCursor(Qt::ArrowCursor));
-    Q_UNUSED(event);
+    QGraphicsItem::mouseReleaseEvent(event);
 }
-
-// void GraphicsRobItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
-// {
-//     painter->drawRect(boundingRect());
-//  }
 
 void GraphicsRobItem::setRotationAngle(int angle)
 {

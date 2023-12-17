@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Site BuildName="(empty)"
-	BuildStamp="20231210-0745-Experimental"
+	BuildStamp="20231217-1148-Experimental"
 	Name="roman-Nitro"
 	Generator="ctest-3.16.3"
 	CompilerName="/usr/bin/g++"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="2047"
 	TotalPhysicalMemory="15351"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="1598.28"
+	ProcessorClockFrequency="1400"
 	>
 	<Testing>
-		<StartDateTime>Dec 10 11:40 MSK</StartDateTime>
-		<StartTestTime>1702197633</StartTestTime>
+		<StartDateTime>Dec 17 14:48 MSK</StartDateTime>
+		<StartTestTime>1702813696</StartTestTime>
 		<TestList/>
-		<EndDateTime>Dec 10 11:40 MSK</EndDateTime>
-		<EndTestTime>1702197633</EndTestTime>
+		<EndDateTime>Dec 17 14:48 MSK</EndDateTime>
+		<EndTestTime>1702813696</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -90,6 +90,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.c
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
@@ -160,6 +161,8 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -206,14 +209,19 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
@@ -226,7 +234,9 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
@@ -260,6 +270,8 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qfiledevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qflags.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qgenericatomic.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qglobal.h
@@ -306,19 +318,24 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtcore-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtextstream.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qtypeinfo.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurl.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qurlquery.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
@@ -333,7 +350,9 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qtransform.h
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
@@ -558,6 +577,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
@@ -698,6 +718,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QIcon
+ /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h

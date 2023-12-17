@@ -4,6 +4,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QGraphicsItem>
+#include <QKeyEvent>
 
 class ExtendedScene: public QGraphicsScene
 {
@@ -11,6 +12,9 @@ class ExtendedScene: public QGraphicsScene
 public:
     explicit ExtendedScene(QObject *parent = nullptr);
 
+private:
+    void deleteSelectedItems();
+    
 signals:
     void targetCoordinate(QPointF point);
     void dblClicked(QPointF point);
@@ -18,6 +22,7 @@ signals:
 protected:
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event);
+    void keyPressEvent(QKeyEvent* keyEvent);
 };
 
 #endif // EXTENDEDSCENE_H
