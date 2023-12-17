@@ -372,6 +372,12 @@ Qt5Gui_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Gui
 //The directory containing a CMake configuration file for Qt5PrintSupport.
 Qt5PrintSupport_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5PrintSupport
 
+//The directory containing a CMake configuration file for Qt5Qt5SerialPort.
+Qt5Qt5SerialPort_DIR:PATH=Qt5Qt5SerialPort_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Qt5SerialPort.
+Qt5SerialPort_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5SerialPort
+
 //The directory containing a CMake configuration file for Qt5Widgets.
 Qt5Widgets_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets
 

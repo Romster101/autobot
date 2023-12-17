@@ -243,6 +243,7 @@ devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/se
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.12.8
+devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5SerialPort.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8

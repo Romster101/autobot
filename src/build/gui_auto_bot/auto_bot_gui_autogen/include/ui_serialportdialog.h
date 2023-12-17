@@ -40,6 +40,7 @@ public:
         customPlot->setGeometry(QRect(10, 180, 781, 411));
         cb_ports = new QComboBox(SerialPortDialog);
         cb_ports->setObjectName(QString::fromUtf8("cb_ports"));
+        cb_ports->setEnabled(true);
         cb_ports->setGeometry(QRect(650, 70, 91, 31));
         pb_openPort = new QPushButton(SerialPortDialog);
         pb_openPort->setObjectName(QString::fromUtf8("pb_openPort"));

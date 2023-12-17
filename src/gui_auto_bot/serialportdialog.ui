@@ -24,6 +24,9 @@
    </property>
   </widget>
   <widget class="QComboBox" name="cb_ports">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>650</x>

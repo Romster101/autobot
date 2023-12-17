@@ -9,8 +9,7 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
-find_package(Qt5PrintSupport)
-
+find_package(Qt5 CONFIG REQUIRED Core Widgets Gui PrintSupport SerialPort)
 include_directories(${catkin_INCLUDE_DIRS})
 
 
@@ -66,5 +65,6 @@ add_executable(
     ${QRCFILE}
     )
 
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} Qt5::Widgets Qt5::PrintSupport)
+target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} Qt5::Widgets Qt5::PrintSupport Qt5::SerialPort)
+
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

@@ -386,6 +386,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.c
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupport-config.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportglobal.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportversion.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCommonStyle
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
@@ -1020,6 +1025,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-g
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
@@ -1169,6 +1179,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-l
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
@@ -2222,6 +2237,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x8
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupport-config.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportglobal.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportversion.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCommonStyle

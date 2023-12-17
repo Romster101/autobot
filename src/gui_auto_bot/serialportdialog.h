@@ -2,6 +2,8 @@
 #define SERIALPORTDIALOG_H
 
 #include <QDialog>
+#include <QtSerialPort/QSerialPort>
+#include <QtSerialPort/QSerialPortInfo>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SerialPortDialog; }
@@ -17,5 +19,9 @@ public:
 
 private:
     Ui::SerialPortDialog *ui;
+
+private slots:
+    void on_pb_closePort_clicked();
+    void on_pb_openPort_clicked();
 };
 #endif // SERIALPORTDIALOG_H

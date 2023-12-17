@@ -387,6 +387,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.c
  /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupport-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportglobal.h
  /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportversion.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCommonStyle
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
@@ -1021,6 +1026,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
@@ -1170,6 +1180,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QAction
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
@@ -2223,6 +2238,11 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupport-config.h
  /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportglobal.h
  /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport/qtprintsupportversion.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPort
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/QSerialPortInfo
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialport.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportglobal.h
+ /usr/include/x86_64-linux-gnu/qt5/QtSerialPort/qserialportinfo.h
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QApplication
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCommonStyle

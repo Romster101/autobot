@@ -36,7 +36,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 61,
+				"line" : 60,
 				"parent" : 0
 			},
 			{
@@ -54,7 +54,7 @@
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 69,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
@@ -126,6 +126,10 @@
 				},
 				{
 					"backtrace" : 4,
+					"define" : "QT_SERIALPORT_LIB"
+				},
+				{
+					"backtrace" : 4,
 					"define" : "QT_WIDGETS_LIB"
 				},
 				{
@@ -174,6 +178,11 @@
 					"backtrace" : 4,
 					"isSystem" : true,
 					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport"
+				},
+				{
+					"backtrace" : 4,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt5/QtSerialPort"
 				}
 			],
 			"language" : "CXX",
@@ -230,6 +239,11 @@
 			{
 				"backtrace" : 4,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.12.8",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 4,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5SerialPort.so.5.12.8",
 				"role" : "libraries"
 			},
 			{
