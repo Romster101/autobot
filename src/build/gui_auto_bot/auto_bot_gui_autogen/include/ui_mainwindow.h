@@ -35,6 +35,7 @@ public:
     QAction *a_save;
     QAction *a_save_as;
     QAction *a_remote_controller;
+    QAction *a_buildGraphic;
     QWidget *centralwidget;
     QTabWidget *tbw_maps;
     QWidget *tab_drawnMap;
@@ -54,6 +55,7 @@ public:
     QMenuBar *menubar;
     QMenu *m_file;
     QMenu *m_manual_guide;
+    QMenu *m_PID;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -179,6 +181,8 @@ public:
         a_save_as->setObjectName(QString::fromUtf8("a_save_as"));
         a_remote_controller = new QAction(MainWindow);
         a_remote_controller->setObjectName(QString::fromUtf8("a_remote_controller"));
+        a_buildGraphic = new QAction(MainWindow);
+        a_buildGraphic->setObjectName(QString::fromUtf8("a_buildGraphic"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         tbw_maps = new QTabWidget(centralwidget);
@@ -274,7 +278,7 @@ public:
 
         pb_addPoint = new QPushButton(centralwidget);
         pb_addPoint->setObjectName(QString::fromUtf8("pb_addPoint"));
-        pb_addPoint->setGeometry(QRect(850, 80, 131, 41));
+        pb_addPoint->setGeometry(QRect(850, 110, 131, 41));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -287,6 +291,8 @@ public:
         m_file->setObjectName(QString::fromUtf8("m_file"));
         m_manual_guide = new QMenu(menubar);
         m_manual_guide->setObjectName(QString::fromUtf8("m_manual_guide"));
+        m_PID = new QMenu(menubar);
+        m_PID->setObjectName(QString::fromUtf8("m_PID"));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -294,10 +300,12 @@ public:
 
         menubar->addAction(m_file->menuAction());
         menubar->addAction(m_manual_guide->menuAction());
+        menubar->addAction(m_PID->menuAction());
         m_file->addSeparator();
         m_file->addAction(a_save);
         m_file->addAction(a_save_as);
         m_manual_guide->addAction(a_remote_controller);
+        m_PID->addAction(a_buildGraphic);
 
         retranslateUi(MainWindow);
 
@@ -313,6 +321,7 @@ public:
         a_save->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214", nullptr));
         a_save_as->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \320\272\320\260\320\272 ...", nullptr));
         a_remote_controller->setText(QApplication::translate("MainWindow", "\320\237\321\203\320\273\321\214\321\202 \320\264\320\270\321\201\321\202\320\260\320\275\321\206\320\270\320\276\320\275\320\275\320\276\320\263\320\276 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\321\217", nullptr));
+        a_buildGraphic->setText(QApplication::translate("MainWindow", "\320\223\321\200\320\260\321\204\320\270\320\272 \320\270\320\267\320\274\320\265\320\275\320\265\320\275\320\270\321\217 \321\201\320\272\320\276\321\200\320\276\321\201\321\202\320\270 \320\262\320\276 \320\262\321\200\320\265\320\274\320\265\320\275\320\270", nullptr));
         tbw_maps->setTabText(tbw_maps->indexOf(tab_drawnMap), QApplication::translate("MainWindow", "\320\236\321\202\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265 \320\266\320\265\320\273\320\260\320\265\320\274\320\276\320\263\320\276 \320\277\321\203\321\202\320\270", nullptr));
         tbw_maps->setTabText(tbw_maps->indexOf(tab_realMap), QApplication::translate("MainWindow", "\320\236\321\202\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265 \321\200\320\265\320\260\320\273\321\214\320\275\320\276\320\271 \320\272\320\260\321\200\321\202\321\213", nullptr));
         gb_orientationData->setTitle(QApplication::translate("MainWindow", "\320\224\320\260\320\275\320\275\321\213\320\265 \320\276 \320\277\320\276\320\273\320\276\320\266\320\265\320\275\320\270\320\270", nullptr));
@@ -322,6 +331,7 @@ public:
         pb_addPoint->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \321\202\320\276\321\207\320\272\321\203", nullptr));
         m_file->setTitle(QApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
         m_manual_guide->setTitle(QApplication::translate("MainWindow", "\320\240\321\203\321\207\320\275\320\276\320\265 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\320\265", nullptr));
+        m_PID->setTitle(QApplication::translate("MainWindow", "\320\237\320\230\320\224-\321\200\320\265\320\263\321\203\320\273\321\217\321\202\320\276\321\200", nullptr));
     } // retranslateUi
 
 };

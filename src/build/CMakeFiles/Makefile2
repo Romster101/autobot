@@ -294,7 +294,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googlemock/CMakeFiles/gmoc
 gtest/googlemock/CMakeFiles/gmock_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=15,16 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=17,18 "Built target gmock_main"
 .PHONY : gtest/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -321,7 +321,7 @@ gtest/googlemock/CMakeFiles/gmock_main.dir/clean:
 gtest/googlemock/CMakeFiles/gmock.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=13,14 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=15,16 "Built target gmock"
 .PHONY : gtest/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -348,7 +348,7 @@ gtest/googlemock/CMakeFiles/gmock.dir/clean:
 gtest/googletest/CMakeFiles/gtest_main.dir/all: gtest/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=19,20 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=21,22 "Built target gtest_main"
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -375,7 +375,7 @@ gtest/googletest/CMakeFiles/gtest_main.dir/clean:
 gtest/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=17,18 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=19,20 "Built target gtest"
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -402,12 +402,12 @@ gtest/googletest/CMakeFiles/gtest.dir/clean:
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/all: gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/all
 	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/depend
 	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target auto_bot_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target auto_bot_gui"
 .PHONY : gui_auto_bot/CMakeFiles/auto_bot_gui.dir/all
 
 # Build rule for subdir invocation for target.
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/ros_packets/auto_bot/src/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/ros_packets/auto_bot/src/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/ros_packets/auto_bot/src/build/CMakeFiles 0
 .PHONY : gui_auto_bot/CMakeFiles/auto_bot_gui.dir/rule
@@ -429,7 +429,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/clean:
 gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/all:
 	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/depend
 	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=12 "Built target auto_bot_gui_autogen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=14 "Built target auto_bot_gui_autogen"
 .PHONY : gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/all
 
 # Build rule for subdir invocation for target.

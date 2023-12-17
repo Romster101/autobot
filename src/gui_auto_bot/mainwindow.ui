@@ -305,7 +305,7 @@ QTabBar::tab:!selected:hover
     <property name="geometry">
      <rect>
       <x>850</x>
-      <y>80</y>
+      <y>110</y>
       <width>131</width>
       <height>41</height>
      </rect>
@@ -344,8 +344,15 @@ font-color:white;
     </property>
     <addaction name="a_remote_controller"/>
    </widget>
+   <widget class="QMenu" name="m_PID">
+    <property name="title">
+     <string>ПИД-регулятор</string>
+    </property>
+    <addaction name="a_buildGraphic"/>
+   </widget>
    <addaction name="m_file"/>
    <addaction name="m_manual_guide"/>
+   <addaction name="m_PID"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="a_save">
@@ -361,6 +368,11 @@ font-color:white;
   <action name="a_remote_controller">
    <property name="text">
     <string>Пульт дистанционного управления</string>
+   </property>
+  </action>
+  <action name="a_buildGraphic">
+   <property name="text">
+    <string>График изменения скорости во времени</string>
    </property>
   </action>
  </widget>

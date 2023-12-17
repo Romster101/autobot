@@ -5,7 +5,6 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
-
     scene = new ExtendedScene();
     scene->setItemIndexMethod(QGraphicsScene::NoIndex); // настраиваем индексацию элементов
     ui->gv_builtMap->setScene(scene);
@@ -42,7 +41,6 @@ void MainWindow::dblClicked(QPointF point)
     {
         break;
     }
-
     default:
         break;
     }
@@ -54,8 +52,20 @@ void MainWindow::slotTarget(QPointF point)
     ui->dsb_Y->setValue(point.y());
 }
 
+void MainWindow::on_pb_addPoint_clicked()
+{
+    GraphicsRobItem* item = new GraphicsRobItem(ui->dsb_X->value(),ui->dsb_Y->value(),ui->dsb_theta->value());
+    scene->addItem(item);
+}
+
 void MainWindow::on_a_remote_controller_triggered()
 {
     ManualRemoteController remoteController;
     remoteController.exec();
+}
+
+void MainWindow::on_a_buildGraphic_triggered()
+{
+    SerialPortDialog spw;
+    spw.exec();
 }

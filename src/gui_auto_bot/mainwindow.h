@@ -9,6 +9,8 @@
 #include "graphicsrobitem.h"
 #include "iteminputinfo.h"
 #include "creatorinfo.h"
+#include "serialportdialog.h"
+
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -29,6 +31,8 @@ public slots:
 
 private slots:
     void on_a_remote_controller_triggered();
+    void on_a_buildGraphic_triggered();
+    void on_pb_addPoint_clicked();
 
 private:
     Ui::MainWindow *ui;

@@ -3,3 +3,5 @@
 #include "EWIEGA46WW/moc_iteminputinfo.cpp"
 #include "EWIEGA46WW/moc_mainwindow.cpp"
 #include "EWIEGA46WW/moc_manualremotecontroller.cpp"
+#include "EWIEGA46WW/moc_qcustomplot.cpp"
+#include "EWIEGA46WW/moc_serialportdialog.cpp"

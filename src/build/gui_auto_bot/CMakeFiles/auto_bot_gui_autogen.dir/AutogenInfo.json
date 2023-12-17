@@ -36,6 +36,16 @@
 			"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/manualremotecontroller.h",
 			"MU",
 			"EWIEGA46WW/moc_manualremotecontroller.cpp"
+		],
+		[
+			"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/qcustomplot.h",
+			"MU",
+			"EWIEGA46WW/moc_qcustomplot.cpp"
+		],
+		[
+			"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.h",
+			"MU",
+			"EWIEGA46WW/moc_serialportdialog.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
@@ -45,6 +55,7 @@
 	[
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
+		"QT_PRINTSUPPORT_LIB",
 		"QT_WIDGETS_LIB",
 		"ROS_BUILD_SHARED_LIBS=1"
 	],
@@ -64,6 +75,7 @@
 		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
 		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
 		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport",
 		"/usr/include/c++/9",
 		"/usr/include/x86_64-linux-gnu/c++/9",
 		"/usr/include/c++/9/backward",
@@ -118,6 +130,14 @@
 		],
 		[
 			"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/manualremotecontroller.cpp",
+			"MU"
+		],
+		[
+			"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/qcustomplot.cpp",
+			"MU"
+		],
+		[
+			"/home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.cpp",
 			"MU"
 		]
 	],

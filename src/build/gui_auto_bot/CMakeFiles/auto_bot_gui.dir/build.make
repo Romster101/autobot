@@ -174,9 +174,35 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.s: cmake_for
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.s"
 	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/ros_packets/auto_bot/src/gui_auto_bot/manualremotecontroller.cpp -o CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.s
 
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/flags.make
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o: ../gui_auto_bot/qcustomplot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o"
+	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o -c /home/roman/ros_packets/auto_bot/src/gui_auto_bot/qcustomplot.cpp
+
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.i"
+	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/ros_packets/auto_bot/src/gui_auto_bot/qcustomplot.cpp > CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.i
+
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.s"
+	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/ros_packets/auto_bot/src/gui_auto_bot/qcustomplot.cpp -o CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.s
+
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/flags.make
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: ../gui_auto_bot/serialportdialog.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o"
+	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o -c /home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.cpp
+
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.i"
+	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.cpp > CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.i
+
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.s"
+	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.cpp -o CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.s
+
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/flags.make
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o: gui_auto_bot/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o"
 	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o -c /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp
 
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i: cmake_force
@@ -197,6 +223,8 @@ auto_bot_gui_OBJECTS = \
 "CMakeFiles/auto_bot_gui.dir/main.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o" \
+"CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o" \
+"CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o"
 
 # External object files for target auto_bot_gui
@@ -210,13 +238,16 @@ devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/it
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o
+devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o
+devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make
+devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5PrintSupport.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.12.8
 devel/lib/auto_bot_gui/auto_bot_gui: gui_auto_bot/CMakeFiles/auto_bot_gui.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable ../devel/lib/auto_bot_gui/auto_bot_gui"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roman/ros_packets/auto_bot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable ../devel/lib/auto_bot_gui/auto_bot_gui"
 	cd /home/roman/ros_packets/auto_bot/src/build/gui_auto_bot && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/auto_bot_gui.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

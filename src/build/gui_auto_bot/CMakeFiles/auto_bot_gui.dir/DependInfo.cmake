@@ -13,6 +13,8 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/main.cpp" "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o"
   "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/mainwindow.cpp" "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o"
   "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/manualremotecontroller.cpp" "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o"
+  "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/qcustomplot.cpp" "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o"
+  "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.cpp" "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -20,6 +22,7 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_TARGET_DEFINITIONS_CXX
   "QT_CORE_LIB"
   "QT_GUI_LIB"
+  "QT_PRINTSUPPORT_LIB"
   "QT_WIDGETS_LIB"
   "ROS_BUILD_SHARED_LIBS=1"
   )
@@ -34,6 +37,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/x86_64-linux-gnu/qt5/QtGui"
   "/usr/include/x86_64-linux-gnu/qt5/QtCore"
   "/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/include/x86_64-linux-gnu/qt5/QtPrintSupport"
   )
 
 # Targets to which this target links.

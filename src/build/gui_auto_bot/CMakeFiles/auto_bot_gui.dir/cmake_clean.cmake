@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/auto_bot_gui.dir/main.cpp.o"
   "CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o"
   "CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o"
+  "CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o"
+  "CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o"
   "auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp"
 )
 

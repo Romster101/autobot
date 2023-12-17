@@ -440,6 +440,60 @@ manualremotecontroller.cpp.s:
 	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.s
 .PHONY : manualremotecontroller.cpp.s
 
+qcustomplot.o: qcustomplot.cpp.o
+
+.PHONY : qcustomplot.o
+
+# target to build an object file
+qcustomplot.cpp.o:
+	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o
+.PHONY : qcustomplot.cpp.o
+
+qcustomplot.i: qcustomplot.cpp.i
+
+.PHONY : qcustomplot.i
+
+# target to preprocess a source file
+qcustomplot.cpp.i:
+	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.i
+.PHONY : qcustomplot.cpp.i
+
+qcustomplot.s: qcustomplot.cpp.s
+
+.PHONY : qcustomplot.s
+
+# target to generate assembly for a file
+qcustomplot.cpp.s:
+	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.s
+.PHONY : qcustomplot.cpp.s
+
+serialportdialog.o: serialportdialog.cpp.o
+
+.PHONY : serialportdialog.o
+
+# target to build an object file
+serialportdialog.cpp.o:
+	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
+.PHONY : serialportdialog.cpp.o
+
+serialportdialog.i: serialportdialog.cpp.i
+
+.PHONY : serialportdialog.i
+
+# target to preprocess a source file
+serialportdialog.cpp.i:
+	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.i
+.PHONY : serialportdialog.cpp.i
+
+serialportdialog.s: serialportdialog.cpp.s
+
+.PHONY : serialportdialog.s
+
+# target to generate assembly for a file
+serialportdialog.cpp.s:
+	cd /home/roman/ros_packets/auto_bot/src/build && $(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.s
+.PHONY : serialportdialog.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -482,6 +536,12 @@ help:
 	@echo "... manualremotecontroller.o"
 	@echo "... manualremotecontroller.i"
 	@echo "... manualremotecontroller.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
+	@echo "... serialportdialog.o"
+	@echo "... serialportdialog.i"
+	@echo "... serialportdialog.s"
 .PHONY : help
 
 
