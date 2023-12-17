@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "qgraphicspixmapitem": "cpp",
-        "qgraphicsscenemouseevent": "cpp"
+        "qgraphicsscenemouseevent": "cpp",
+        "qobject": "cpp"
     }
 }

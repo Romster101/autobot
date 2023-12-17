@@ -28,11 +28,13 @@ MainWindow::~MainWindow()
 void MainWindow::dblClicked(QPointF point)
 {
     ItemInputInfo info;
+    info.setX(point.x());
+    info.setY(point.y());
     switch (info.exec())
     {
     case QDialog::Accepted:
     {
-        GraphicsRobItem* item = new GraphicsRobItem(point.x(),point.y(),info.getAngle());
+        GraphicsRobItem* item = new GraphicsRobItem(info.getX(),info.getY(),info.getAngle());
         scene->addItem(item);
         break;
     }

@@ -14,7 +14,14 @@ class ItemInputInfo : public QDialog
 public:
     explicit ItemInputInfo(QWidget *parent = nullptr);
     ~ItemInputInfo();
+
     int getAngle();
+    int getX();
+    int getY();
+
+    void setX(int x);
+    void setY(int y);
+    void setAngle(int angle);
 
 private:
     Ui::ItemInputInfo *ui;

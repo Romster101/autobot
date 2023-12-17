@@ -6,7 +6,11 @@
 #include <QGraphicsSceneMouseEvent>
 #include <QDebug>
 #include <QPainter>
-#include "extendedscene.h"
+#include <QMenu>
+#include <QGraphicsScene>
+#include <QGraphicsSceneContextMenuEvent>
+#include <QObject>
+#include <iteminputinfo.h>
 
 class GraphicsRobItem : public QGraphicsPixmapItem
 {
@@ -31,6 +35,10 @@ private:
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
+
+protected:
+    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event);
+
 };
 
 #endif 
