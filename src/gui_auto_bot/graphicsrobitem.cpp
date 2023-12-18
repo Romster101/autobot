@@ -7,8 +7,6 @@ GraphicsRobItem::GraphicsRobItem(int x, int y, int theta)
     pix1.setDevicePixelRatio(1);
     setPixmap(pix1);
     setPos(x, y);
-    setX(x);
-    setY(y);
     setTheta(theta);
     setOffset(-pix1.width() / 2, -pix1.height() / 2);
     setRotationAngle(theta);
@@ -23,8 +21,6 @@ void GraphicsRobItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
      * в координатную систему графической сцены
      * */
     setPos(mapToScene(event->pos()));
-    x = mapToScene(event->pos()).x();
-    y = mapToScene(event->pos()).y();
     QGraphicsItem::mouseMoveEvent(event);
 }
 
@@ -57,8 +53,8 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
         ItemInputInfo info;
         info.setWindowTitle("Редактирование свойств элемента");
         info.setAngle(theta);
-        info.setX(x);
-        info.setY(y);
+        info.setX(this->pos().x());
+        info.setY(this->pos().y());
 
         switch (info.exec())
         {
@@ -66,8 +62,6 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
         {
             setPos(info.getX(), info.getY());
             setRotationAngle(info.getAngle());
-            setX(info.getX());
-            setY(info.getY());
             setTheta(info.getAngle());
             break;
         }
@@ -81,10 +75,12 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
     }
     else if (a->text() == "Удалить элемент")
     {
-        foreach (QGraphicsItem *item, scene()->selectedItems())
+        for (QGraphicsItem *item: scene()->selectedItems())
         {
-            scene()->removeItem(item);
-            delete item;
+            if(item!=nullptr){
+                scene()->removeItem(item);
+                delete item;
+            }
         }
     }
 }

@@ -99,6 +99,8 @@ QtSerialPort/QSerialPort
 -
 QtSerialPort/QSerialPortInfo
 -
+QDateTime
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QCache
 qcache.h

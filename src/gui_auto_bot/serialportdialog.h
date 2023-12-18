@@ -4,6 +4,7 @@
 #include <QDialog>
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
+#include <QDateTime>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SerialPortDialog; }
@@ -19,9 +20,12 @@ public:
 
 private:
     Ui::SerialPortDialog *ui;
+    QSerialPort* serial;
+    QList<QSerialPortInfo> portsInfoList;
 
 private slots:
     void on_pb_closePort_clicked();
     void on_pb_openPort_clicked();
+    void serialReceive();
 };
 #endif // SERIALPORTDIALOG_H

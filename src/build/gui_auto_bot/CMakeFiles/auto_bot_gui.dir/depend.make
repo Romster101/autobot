@@ -913,6 +913,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: ../gui_auto_bot/main.cpp
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: ../gui_auto_bot/mainwindow.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: ../gui_auto_bot/manualremotecontroller.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: ../gui_auto_bot/serialportdialog.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
@@ -934,6 +935,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-g
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
@@ -1063,6 +1065,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: ../gui_auto_bot/mainw
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: ../gui_auto_bot/mainwindow.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: ../gui_auto_bot/manualremotecontroller.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: ../gui_auto_bot/serialportdialog.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -1085,6 +1088,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-l
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h

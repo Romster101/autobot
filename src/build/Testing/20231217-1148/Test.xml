@@ -7,8 +7,8 @@
 	CompilerVersion="9.4.0"
 	OSName="Linux"
 	Hostname="roman-Nitro"
-	OSRelease="5.15.0-89-generic"
-	OSVersion="#99~20.04.1-Ubuntu SMP Thu Nov 2 15:16:47 UTC 2023"
+	OSRelease="5.15.0-91-generic"
+	OSVersion="#101~20.04.1-Ubuntu SMP Thu Nov 16 14:22:28 UTC 2023"
 	OSPlatform="x86_64"
 	Is64Bits="1"
 	VendorString="AuthenticAMD"
@@ -21,14 +21,14 @@
 	TotalVirtualMemory="2047"
 	TotalPhysicalMemory="15351"
 	LogicalProcessorsPerPhysical="2"
-	ProcessorClockFrequency="2084.81"
+	ProcessorClockFrequency="1655.97"
 	>
 	<Testing>
-		<StartDateTime>Dec 17 21:23 MSK</StartDateTime>
-		<StartTestTime>1702837408</StartTestTime>
+		<StartDateTime>Dec 18 00:22 MSK</StartDateTime>
+		<StartTestTime>1702848131</StartTestTime>
 		<TestList/>
-		<EndDateTime>Dec 17 21:23 MSK</EndDateTime>
-		<EndTestTime>1702837408</EndTestTime>
+		<EndDateTime>Dec 18 00:22 MSK</EndDateTime>
+		<EndTestTime>1702848131</EndTestTime>
 		<ElapsedMinutes>0</ElapsedMinutes>
 	</Testing>
 </Site>

@@ -914,6 +914,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
  /home/roman/ros_packets/auto_bot/src/gui_auto_bot/mainwindow.h
  /home/roman/ros_packets/auto_bot/src/gui_auto_bot/manualremotecontroller.h
  /home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
@@ -935,6 +936,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
@@ -1064,6 +1066,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
  /home/roman/ros_packets/auto_bot/src/gui_auto_bot/mainwindow.h
  /home/roman/ros_packets/auto_bot/src/gui_auto_bot/manualremotecontroller.h
  /home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -1086,6 +1089,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreapplication.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qcoreevent.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatastream.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qdatetime.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qdebug.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qeventloop.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qfile.h
