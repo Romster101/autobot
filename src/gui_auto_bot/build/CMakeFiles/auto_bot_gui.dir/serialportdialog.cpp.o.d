@@ -1,10 +1,9 @@
 CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.cpp \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QDialog \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qdialog.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
-  /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qDebug \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qdebug.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qalgorithms.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qglobal.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/type_traits \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__assert \
@@ -767,26 +766,19 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__string/extern_template_lists.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qnumeric.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qversiontagging.h \
-  /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qtgui-config.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qwidget.h \
-  /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qwindowdefs.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobjectdefs.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qnamespace.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobject.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qhash.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qchar.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qbytearray.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qiterator.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qlist.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qrefcount.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qarraydata.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qhashfunctions.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstring.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qbytearray.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qnamespace.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstringliteral.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstringalgorithms.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstringview.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qlist.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qalgorithms.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qiterator.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qhashfunctions.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qpair.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/numeric \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__numeric/accumulate.h \
@@ -809,13 +801,34 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstringlist.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qregexp.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstringmatcher.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qmap.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qtextstream.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qiodevice.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobject.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobjectdefs.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobjectdefs_impl.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qscopedpointer.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qmetatype.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qvarlengtharray.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qcontainerfwd.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.0.sdk/usr/include/c++/v1/__tree \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qobject_impl.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qlocale.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qvariant.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qshareddata.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qset.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qcontiguouscache.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qsharedpointer.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qdialog.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qtwidgetsglobal.h \
+  /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qtguiglobal.h \
+  /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qtgui-config.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qtwidgets-config.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qwidget.h \
+  /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qwindowdefs.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qmargins.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qpaintdevice.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qrect.h \
@@ -830,16 +843,11 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qpolygon.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qregion.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qdatastream.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qiodevice.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qline.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qtransform.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qimage.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qpixelformat.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qpixmap.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qsharedpointer.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qshareddata.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qhash.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qsharedpointer_impl.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qfont.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qfontmetrics.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qfontinfo.h \
@@ -855,8 +863,6 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qdatetime.h \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/include/ui_serialportdialog.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QVariant \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qvariant.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qmap.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QApplication \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qapplication.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qcoreapplication.h \
@@ -864,7 +870,6 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qeventloop.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qguiapplication.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qinputmethod.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qlocale.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QComboBox \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qcombobox.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qabstractitemdelegate.h \
@@ -881,6 +886,11 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qrubberband.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qframe.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qabstractitemmodel.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QGridLayout \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qgridlayout.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qlayout.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qlayoutitem.h \
+  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qboxlayout.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QLabel \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qlabel.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QPushButton \
@@ -909,7 +919,6 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qpainterpath.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/QPaintEvent \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qevent.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qset.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qfile.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qfiledevice.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qvector2d.h \
@@ -922,9 +931,6 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QMultiMap \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QFlags \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QDebug \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qdebug.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qtextstream.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qcontiguouscache.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QStack \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qstack.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QCache \
@@ -1192,10 +1198,6 @@ CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qaccessiblewidget.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qaction.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qactiongroup.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qlayout.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qlayoutitem.h \
-  /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qbuttongroup.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qcalendarwidget.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qcheckbox.h \

@@ -6,85 +6,52 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>627</width>
+    <height>336</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>SerialPortDialog</string>
   </property>
-  <widget class="QCustomPlot" name="customPlot" native="true">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>180</y>
-     <width>781</width>
-     <height>411</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QComboBox" name="cb_ports">
-   <property name="enabled">
-    <bool>true</bool>
-   </property>
-   <property name="geometry">
-    <rect>
-     <x>650</x>
-     <y>70</y>
-     <width>91</width>
-     <height>31</height>
-    </rect>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pb_openPort">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>30</y>
-     <width>121</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Открыть порт</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="pb_closePort">
-   <property name="geometry">
-    <rect>
-     <x>490</x>
-     <y>90</y>
-     <width>121</width>
-     <height>41</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Закрыть порт</string>
-   </property>
-  </widget>
-  <widget class="QLabel" name="label">
-   <property name="geometry">
-    <rect>
-     <x>640</x>
-     <y>30</y>
-     <width>121</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Доступные порты</string>
-   </property>
-  </widget>
-  <widget class="QTextEdit" name="te_info">
-   <property name="geometry">
-    <rect>
-     <x>10</x>
-     <y>20</y>
-     <width>461</width>
-     <height>141</height>
-    </rect>
-   </property>
-  </widget>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="2">
+    <widget class="QTextEdit" name="te_info"/>
+   </item>
+   <item row="0" column="1">
+    <widget class="QPushButton" name="pb_openPort">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="text">
+      <string>Открыть порт</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Доступные порты</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QPushButton" name="pb_closePort">
+     <property name="text">
+      <string>Закрыть порт</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QComboBox" name="cb_ports">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QCustomPlot" name="customPlot" native="true"/>
+   </item>
+  </layout>
  </widget>
  <customwidgets>
   <customwidget>

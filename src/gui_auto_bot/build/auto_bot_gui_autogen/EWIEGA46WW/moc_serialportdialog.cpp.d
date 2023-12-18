@@ -688,6 +688,7 @@
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/time.h \
   /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include/stdarg.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/QDateTime \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/QDebug \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qalgorithms.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qarraydata.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qatomic.h \
@@ -699,8 +700,10 @@
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qconfig.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qcontainerfwd.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qcontainertools_impl.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qcontiguouscache.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qdatastream.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qdatetime.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qdebug.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qflags.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qglobal.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qglobalstatic.h \
@@ -710,7 +713,9 @@
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qiterator.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qline.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qlist.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qlocale.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qlogging.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qmap.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qmargins.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qmetatype.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qmutex.h \
@@ -727,6 +732,7 @@
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qrefcount.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qregexp.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qscopedpointer.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qset.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qshareddata.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qsharedpointer.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qsharedpointer_impl.h \
@@ -740,7 +746,9 @@
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qsysinfo.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qsystemdetection.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qtcore-config.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qtextstream.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qtypeinfo.h \
+  /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qvariant.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qvarlengtharray.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qvector.h \
   /opt/homebrew/Cellar/qt@5/5.15.10_1/lib/QtCore.framework/Versions/5/Headers/qversiontagging.h \

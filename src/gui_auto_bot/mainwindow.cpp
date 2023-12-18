@@ -21,7 +21,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete scene;
-    delete creatorInfo;
+  //  delete creatorInfo;
 }
 
 void MainWindow::dblClicked(QPointF point)

@@ -1,6 +1,8 @@
 #ifndef SERIALPORTDIALOG_H
 #define SERIALPORTDIALOG_H
 
+#include <qDebug>
+
 #include <QDialog>
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
@@ -13,19 +15,20 @@ QT_END_NAMESPACE
 class SerialPortDialog : public QDialog
 {
     Q_OBJECT
-
-public:
-    SerialPortDialog(QWidget *parent = nullptr);
-    ~SerialPortDialog();
-
 private:
     Ui::SerialPortDialog *ui;
     QSerialPort* serial;
     QList<QSerialPortInfo> portsInfoList;
 
+public:
+    SerialPortDialog(QWidget *parent = nullptr);
+    ~SerialPortDialog();
+
+
 private slots:
     void on_pb_closePort_clicked();
     void on_pb_openPort_clicked();
     void serialReceive();
+    void serialError(QSerialPort::SerialPortError err);
 };
 #endif // SERIALPORTDIALOG_H

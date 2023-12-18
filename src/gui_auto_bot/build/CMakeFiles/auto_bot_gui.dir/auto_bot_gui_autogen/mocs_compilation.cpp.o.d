@@ -897,6 +897,7 @@ CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/creatorinfo.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QVector \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qDebug \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPort \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialport.h \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportglobal.h \
