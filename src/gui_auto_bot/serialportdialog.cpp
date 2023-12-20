@@ -16,7 +16,9 @@ SerialPortDialog::SerialPortDialog(QWidget *parent)
     QSharedPointer<QCPAxisTickerDateTime> dateTicker(new QCPAxisTickerDateTime);
     dateTicker->setDateTimeFormat("hh::mm::ss");
     ui->customPlot->xAxis->setTicker(dateTicker);
-   
+    model = new QStringListModel();
+    model->setStringList(outputList);
+    ui->lv_output->setModel(model);
     connect(serial, &QSerialPort::readyRead, this, &SerialPortDialog::serialReceive);
     connect(serial, &QSerialPort::errorOccurred, this, &SerialPortDialog::serialError);
 }
@@ -25,33 +27,42 @@ SerialPortDialog::~SerialPortDialog()
 {
     delete ui;
     delete serial;
+    delete model;
+}
+
+void SerialPortDialog::addOutPutMsg(QString msg)
+{
+    outputList.append(msg);
+    ui->lv_output->update();
+    model->setStringList(outputList);
 }
 
 void SerialPortDialog::on_pb_openPort_clicked()
 {
     if (portsInfoList.isEmpty())
     {
-        ui->te_info->setText("ports not found");
+        addOutPutMsg("Порты не найдены");
         return;
     }
     serial->setPort(portsInfoList.at(ui->cb_ports->currentIndex()));
     serial->open(QIODevice::ReadOnly);
     if (serial->isOpen())
-        ui->te_info->setText("Порт открыт");
+        addOutPutMsg("Порт открыт");
     else
-        ui->te_info->setText("Не удалось установить соединение");
+        addOutPutMsg("Не удалось установить соединение");
 }
 
 void SerialPortDialog::serialReceive()
 {
     QByteArray barray;
     barray = serial->readAll();
-    double ti1 = QDateTime::currentDateTime().toMSecsSinceEpoch()/1000;
-    if (barray.toDouble()!=0){
-    ui->customPlot->graph(0)->addData(ti1, barray.toDouble());
-    qDebug() << barray.toDouble();
-    ui->customPlot->replot();
-    ui->customPlot->rescaleAxes();
+    double ti1 = QDateTime::currentDateTime().toMSecsSinceEpoch() / 1000;
+    if (barray.toDouble() != 0)
+    {
+        ui->customPlot->graph(0)->addData(ti1, barray.toDouble());
+        qDebug() << barray.toDouble();
+        ui->customPlot->replot();
+        ui->customPlot->rescaleAxes();
     }
 }
 
@@ -69,32 +80,31 @@ void SerialPortDialog::serialError(QSerialPort::SerialPortError err)
     case QSerialPort::UnknownError:
     case QSerialPort::TimeoutError:
     {
-        ui->te_info->setText("warp error");
+        addOutPutMsg("warp error");
         break;
     }
     case QSerialPort::NoError:
     {
-        ui->te_info->setText("");
         break;
     }
     case QSerialPort::OpenError:
     {
-        ui->te_info->setText("port open error");
+        addOutPutMsg("Ошибка открытия порта");
         break;
     }
     case QSerialPort::DeviceNotFoundError:
     {
-        ui->te_info->setText("port not found");
+        addOutPutMsg("Порт не найден");
         break;
     }
     case QSerialPort::NotOpenError:
     {
-        ui->te_info->setText("port already close");
+        addOutPutMsg("Порт уже закрыт");
         break;
     }
     case QSerialPort::ResourceError:
     {
-        ui->te_info->setText("port connection lose");
+        addOutPutMsg("Потеряно соединение с портом");
         break;
     }
     }
@@ -103,5 +113,6 @@ void SerialPortDialog::serialError(QSerialPort::SerialPortError err)
 void SerialPortDialog::on_pb_closePort_clicked()
 {
     serial->close();
-    ui->te_info->setText("Порт закрыт");
+    if (!serial->isOpen())
+        addOutPutMsg("Порт закрыт");
 }

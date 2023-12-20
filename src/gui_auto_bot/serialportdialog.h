@@ -7,6 +7,7 @@
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>
 #include <QDateTime>
+#include <QStringListModel>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class SerialPortDialog; }
@@ -18,11 +19,14 @@ class SerialPortDialog : public QDialog
 private:
     Ui::SerialPortDialog *ui;
     QSerialPort* serial;
+    QStringList outputList;
+    QStringListModel* model;
     QList<QSerialPortInfo> portsInfoList;
 
 public:
     SerialPortDialog(QWidget *parent = nullptr);
     ~SerialPortDialog();
+    void addOutPutMsg(QString msg);
 
 
 private slots:

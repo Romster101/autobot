@@ -6,16 +6,23 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>627</width>
-    <height>336</height>
+    <width>734</width>
+    <height>527</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>SerialPortDialog</string>
+   <string>Окно настройки PID-регулятора</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <item row="0" column="0" rowspan="2">
-    <widget class="QTextEdit" name="te_info"/>
+    <widget class="QListView" name="lv_output">
+     <property name="autoScroll">
+      <bool>false</bool>
+     </property>
+     <property name="movement">
+      <enum>QListView::Free</enum>
+     </property>
+    </widget>
    </item>
    <item row="0" column="1">
     <widget class="QPushButton" name="pb_openPort">

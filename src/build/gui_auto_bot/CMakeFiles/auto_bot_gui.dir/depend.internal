@@ -42,6 +42,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.c
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStack
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimeZone
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -917,7 +918,9 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -979,6 +982,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
@@ -1069,8 +1073,10 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -1133,6 +1139,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
  /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
@@ -1899,6 +1906,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStack
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+ /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimeZone
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
  /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -2254,9 +2262,9 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListView
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollerProperties
- /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QtWidgets
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QtWidgetsDepends

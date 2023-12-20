@@ -15,8 +15,8 @@
 #include <QtWidgets/QDialog>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QListView>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QTextEdit>
 #include <qcustomplot.h>
 
 QT_BEGIN_NAMESPACE
@@ -25,7 +25,7 @@ class Ui_SerialPortDialog
 {
 public:
     QGridLayout *gridLayout;
-    QTextEdit *te_info;
+    QListView *lv_output;
     QPushButton *pb_openPort;
     QLabel *label;
     QPushButton *pb_closePort;
@@ -36,13 +36,15 @@ public:
     {
         if (SerialPortDialog->objectName().isEmpty())
             SerialPortDialog->setObjectName(QString::fromUtf8("SerialPortDialog"));
-        SerialPortDialog->resize(627, 336);
+        SerialPortDialog->resize(734, 527);
         gridLayout = new QGridLayout(SerialPortDialog);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
-        te_info = new QTextEdit(SerialPortDialog);
-        te_info->setObjectName(QString::fromUtf8("te_info"));
+        lv_output = new QListView(SerialPortDialog);
+        lv_output->setObjectName(QString::fromUtf8("lv_output"));
+        lv_output->setAutoScroll(false);
+        lv_output->setMovement(QListView::Free);
 
-        gridLayout->addWidget(te_info, 0, 0, 2, 1);
+        gridLayout->addWidget(lv_output, 0, 0, 2, 1);
 
         pb_openPort = new QPushButton(SerialPortDialog);
         pb_openPort->setObjectName(QString::fromUtf8("pb_openPort"));
@@ -79,7 +81,7 @@ public:
 
     void retranslateUi(QDialog *SerialPortDialog)
     {
-        SerialPortDialog->setWindowTitle(QApplication::translate("SerialPortDialog", "SerialPortDialog", nullptr));
+        SerialPortDialog->setWindowTitle(QApplication::translate("SerialPortDialog", "\320\236\320\272\320\275\320\276 \320\275\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 PID-\321\200\320\265\320\263\321\203\320\273\321\217\321\202\320\276\321\200\320\260", nullptr));
         pb_openPort->setText(QApplication::translate("SerialPortDialog", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \320\277\320\276\321\200\321\202", nullptr));
         label->setText(QApplication::translate("SerialPortDialog", "\320\224\320\276\321\201\321\202\321\203\320\277\320\275\321\213\320\265 \320\277\320\276\321\200\321\202\321\213", nullptr));
         pb_closePort->setText(QApplication::translate("SerialPortDialog", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214 \320\277\320\276\321\200\321\202", nullptr));

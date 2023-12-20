@@ -103,6 +103,8 @@ QtSerialPort/QSerialPortInfo
 -
 QDateTime
 -
+QStringListModel
+-
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QCache
 qcache.h
@@ -195,6 +197,10 @@ qstring.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
 qstringlist.h
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+
+/usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
+qstringlistmodel.h
+/usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimeZone
 qtimezone.h
@@ -3782,6 +3788,10 @@ qlabel.h
 qlayout.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlayout.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListView
+qlistview.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlistview.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 qpushbutton.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qpushbutton.h
@@ -3789,10 +3799,6 @@ qpushbutton.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollerProperties
 qscrollerproperties.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qscrollerproperties.h
-
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit
-qtextedit.h
-/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtextedit.h
 
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 qwidget.h
@@ -5231,9 +5237,9 @@ QtWidgets/QGridLayout
 -
 QtWidgets/QLabel
 -
-QtWidgets/QPushButton
+QtWidgets/QListView
 -
-QtWidgets/QTextEdit
+QtWidgets/QPushButton
 -
 qcustomplot.h
 -

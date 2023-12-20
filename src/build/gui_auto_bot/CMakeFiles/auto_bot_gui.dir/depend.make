@@ -41,6 +41,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.c
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStack
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimeZone
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -916,7 +917,9 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: ../gui_auto_bot/serialportd
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -978,6 +981,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-g
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
@@ -1068,8 +1072,10 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: ../gui_auto_bot/seria
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDateTime
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVector
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qabstractitemmodel.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -1132,6 +1138,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-l
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringalgorithms.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringbuilder.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlist.h
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringlistmodel.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringliteral.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringmatcher.h
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qstringview.h
@@ -1898,6 +1905,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x8
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStack
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QString
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringList
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QStringListModel
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimeZone
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QTimer
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant
@@ -2253,9 +2261,9 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x8
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
+gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QListView
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QScrollerProperties
-gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTextEdit
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QWidget
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QtWidgets
 gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QtWidgetsDepends
