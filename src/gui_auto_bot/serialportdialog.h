@@ -1,7 +1,7 @@
 #ifndef SERIALPORTDIALOG_H
 #define SERIALPORTDIALOG_H
 
-#include <qDebug>
+#include <QDebug>
 
 #include <QDialog>
 #include <QtSerialPort/QSerialPort>

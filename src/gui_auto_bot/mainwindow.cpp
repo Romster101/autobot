@@ -66,6 +66,6 @@ void MainWindow::on_a_remote_controller_triggered()
 
 void MainWindow::on_a_buildGraphic_triggered()
 {
-    SerialPortDialog spw;
-    spw.exec();
+    SerialPortDialog spd;
+    spd.exec();
 }

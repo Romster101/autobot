@@ -38,32 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/catkin_generated/installspace/auto_bot_gui.pc")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auto_bot_gui/cmake" TYPE FILE FILES
-    "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/catkin_generated/installspace/auto_bot_guiConfig.cmake"
-    "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/catkin_generated/installspace/auto_bot_guiConfig-version.cmake"
-    )
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auto_bot_gui" TYPE FILE FILES "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/package.xml")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/auto_bot_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/auto_bot_gui")
     file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui"
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/auto_bot_gui"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui" TYPE EXECUTABLE FILES "/home/roman/ros_packets/auto_bot/src/build/devel/lib/auto_bot_gui/auto_bot_gui")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/roman/ros_packets/auto_bot/src/build/gui_auto_bot/auto_bot_gui")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/auto_bot_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/auto_bot_gui")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/auto_bot_gui")
     endif()
   endif()
 endif()

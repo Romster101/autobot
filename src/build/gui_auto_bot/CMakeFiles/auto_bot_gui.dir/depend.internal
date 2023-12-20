@@ -2251,6 +2251,7 @@ gui_auto_bot/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QComboBox
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QCommonStyle
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
+ /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
  /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton

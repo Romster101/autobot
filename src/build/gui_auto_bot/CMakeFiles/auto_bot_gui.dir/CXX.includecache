@@ -93,6 +93,8 @@ ui_serialportdialog.h
 /home/roman/ros_packets/auto_bot/src/gui_auto_bot/ui_serialportdialog.h
 
 /home/roman/ros_packets/auto_bot/src/gui_auto_bot/serialportdialog.h
+QDebug
+-
 QDialog
 -
 QtSerialPort/QSerialPort
@@ -3768,6 +3770,10 @@ qcommonstyle.h
 qdialog.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
 
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
+qgridlayout.h
+/usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgridlayout.h
+
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 qlabel.h
 /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qlabel.h
@@ -5220,6 +5226,8 @@ QtWidgets/QApplication
 QtWidgets/QComboBox
 -
 QtWidgets/QDialog
+-
+QtWidgets/QGridLayout
 -
 QtWidgets/QLabel
 -

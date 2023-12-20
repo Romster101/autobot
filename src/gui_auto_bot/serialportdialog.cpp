@@ -11,13 +11,12 @@ SerialPortDialog::SerialPortDialog(QWidget *parent)
         ui->cb_ports->addItem(info.portName());
     }
     serial = new QSerialPort();
-    ui->customPlot->addGraph();
-    QSharedPointer<QCPAxisTickerTime> timeTicker(new QCPAxisTickerTime);
-    QDateTime ti = QDateTime::currentDateTime();
-    QString tim = ti.toString("hh:mm:ss");
-    timeTicker->setTimeFormat(tim);
-    ui->customPlot->xAxis->setTicker(timeTicker);
-
+    ui->customPlot->addGraph(0);
+    ui->customPlot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
+    QSharedPointer<QCPAxisTickerDateTime> dateTicker(new QCPAxisTickerDateTime);
+    dateTicker->setDateTimeFormat("hh::mm::ss");
+    ui->customPlot->xAxis->setTicker(dateTicker);
+   
     connect(serial, &QSerialPort::readyRead, this, &SerialPortDialog::serialReceive);
     connect(serial, &QSerialPort::errorOccurred, this, &SerialPortDialog::serialError);
 }
@@ -36,7 +35,7 @@ void SerialPortDialog::on_pb_openPort_clicked()
         return;
     }
     serial->setPort(portsInfoList.at(ui->cb_ports->currentIndex()));
-    serial->open(QIODevice::ReadWrite);
+    serial->open(QIODevice::ReadOnly);
     if (serial->isOpen())
         ui->te_info->setText("Порт открыт");
     else
@@ -47,8 +46,13 @@ void SerialPortDialog::serialReceive()
 {
     QByteArray barray;
     barray = serial->readAll();
-    double ti = QDateTime::currentDateTime().toMSecsSinceEpoch() / 1000;
-    ui->customPlot->graph(0)->addData(ti, barray.toDouble());
+    double ti1 = QDateTime::currentDateTime().toMSecsSinceEpoch()/1000;
+    if (barray.toDouble()!=0){
+    ui->customPlot->graph(0)->addData(ti1, barray.toDouble());
+    qDebug() << barray.toDouble();
+    ui->customPlot->replot();
+    ui->customPlot->rescaleAxes();
+    }
 }
 
 void SerialPortDialog::serialError(QSerialPort::SerialPortError err)
