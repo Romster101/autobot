@@ -32,7 +32,8 @@ SerialPortDialog::~SerialPortDialog()
 
 void SerialPortDialog::addOutPutMsg(QString msg)
 {
-    outputList.append(msg);
+    QDateTime ti = QDateTime::currentDateTime();
+    outputList.push_front(ti.toString("hh:mm:ss") + " " + msg);
     ui->lv_output->update();
     model->setStringList(outputList);
 }
@@ -71,6 +72,10 @@ void SerialPortDialog::serialError(QSerialPort::SerialPortError err)
     switch (err)
     {
     case QSerialPort::PermissionError:
+    {
+        addOutPutMsg("permission error");
+        break;
+    }
     case QSerialPort::ParityError:
     case QSerialPort::BreakConditionError:
     case QSerialPort::FramingError:

@@ -19,9 +19,9 @@ include_directories(${catkin_INCLUDE_DIRS})
 ###########
 
 include_directories(
-# include
+include
   ${catkin_INCLUDE_DIRS}
-  # ${CMAKE_CURRENT__BYNARY_DIR}
+  ${CMAKE_CURRENT__BYNARY_DIR}
 )
 
 file(GLOB CPPFILE "*.cpp")

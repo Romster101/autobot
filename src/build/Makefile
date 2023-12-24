@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/roman/ros_packets/auto_bot/src
+CMAKE_SOURCE_DIR = /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/roman/ros_packets/auto_bot/src/build
+CMAKE_BINARY_DIR = /home/roman/qt_ROS_projects/autobot/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,22 +124,11 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/ros_packets/auto_bot/src/build/CMakeFiles /home/roman/ros_packets/auto_bot/src/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/ros_packets/auto_bot/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,123 +157,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named doxygen
-
-# Build rule for target.
-doxygen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doxygen
-.PHONY : doxygen
-
-# fast build rule for target.
-doxygen/fast:
-	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-.PHONY : doxygen/fast
-
-#=============================================================================
-# Target rules for targets named run_tests
-
-# Build rule for target.
-run_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests
-.PHONY : run_tests
-
-# fast build rule for target.
-run_tests/fast:
-	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-.PHONY : run_tests/fast
-
-#=============================================================================
-# Target rules for targets named clean_test_results
-
-# Build rule for target.
-clean_test_results: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
-.PHONY : clean_test_results
-
-# fast build rule for target.
-clean_test_results/fast:
-	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-.PHONY : clean_test_results/fast
-
-#=============================================================================
-# Target rules for targets named tests
-
-# Build rule for target.
-tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 tests
-.PHONY : tests
-
-# fast build rule for target.
-tests/fast:
-	$(MAKE) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-.PHONY : tests/fast
-
-#=============================================================================
-# Target rules for targets named download_extra_data
-
-# Build rule for target.
-download_extra_data: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 download_extra_data
-.PHONY : download_extra_data
-
-# fast build rule for target.
-download_extra_data/fast:
-	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
-.PHONY : download_extra_data/fast
-
-#=============================================================================
-# Target rules for targets named gmock_main
-
-# Build rule for target.
-gmock_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock_main
-.PHONY : gmock_main
-
-# fast build rule for target.
-gmock_main/fast:
-	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main.dir/build.make gtest/googlemock/CMakeFiles/gmock_main.dir/build
-.PHONY : gmock_main/fast
-
-#=============================================================================
-# Target rules for targets named gmock
-
-# Build rule for target.
-gmock: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gmock
-.PHONY : gmock
-
-# fast build rule for target.
-gmock/fast:
-	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock.dir/build.make gtest/googlemock/CMakeFiles/gmock.dir/build
-.PHONY : gmock/fast
-
-#=============================================================================
-# Target rules for targets named gtest_main
-
-# Build rule for target.
-gtest_main: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest_main
-.PHONY : gtest_main
-
-# fast build rule for target.
-gtest_main/fast:
-	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
-.PHONY : gtest_main/fast
-
-#=============================================================================
-# Target rules for targets named gtest
-
-# Build rule for target.
-gtest: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 gtest
-.PHONY : gtest
-
-# fast build rule for target.
-gtest/fast:
-	$(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
-.PHONY : gtest/fast
-
-#=============================================================================
 # Target rules for targets named auto_bot_gui
 
 # Build rule for target.
@@ -294,7 +166,7 @@ auto_bot_gui: cmake_check_build_system
 
 # fast build rule for target.
 auto_bot_gui/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/build
 .PHONY : auto_bot_gui/fast
 
 #=============================================================================
@@ -307,8 +179,305 @@ auto_bot_gui_autogen: cmake_check_build_system
 
 # fast build rule for target.
 auto_bot_gui_autogen/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build
+	$(MAKE) -f CMakeFiles/auto_bot_gui_autogen.dir/build.make CMakeFiles/auto_bot_gui_autogen.dir/build
 .PHONY : auto_bot_gui_autogen/fast
+
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.o: auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
+
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.o
+
+# target to build an object file
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
+
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.i: auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i
+
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.i
+
+# target to preprocess a source file
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i
+
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.s: auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s
+
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.s
+
+# target to generate assembly for a file
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s
+
+auto_bot_gui_autogen/mocs_compilation.o: auto_bot_gui_autogen/mocs_compilation.cpp.o
+
+.PHONY : auto_bot_gui_autogen/mocs_compilation.o
+
+# target to build an object file
+auto_bot_gui_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o
+.PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.o
+
+auto_bot_gui_autogen/mocs_compilation.i: auto_bot_gui_autogen/mocs_compilation.cpp.i
+
+.PHONY : auto_bot_gui_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+auto_bot_gui_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.i
+.PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.i
+
+auto_bot_gui_autogen/mocs_compilation.s: auto_bot_gui_autogen/mocs_compilation.cpp.s
+
+.PHONY : auto_bot_gui_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+auto_bot_gui_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.s
+.PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.s
+
+creatorinfo.o: creatorinfo.cpp.o
+
+.PHONY : creatorinfo.o
+
+# target to build an object file
+creatorinfo.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o
+.PHONY : creatorinfo.cpp.o
+
+creatorinfo.i: creatorinfo.cpp.i
+
+.PHONY : creatorinfo.i
+
+# target to preprocess a source file
+creatorinfo.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.i
+.PHONY : creatorinfo.cpp.i
+
+creatorinfo.s: creatorinfo.cpp.s
+
+.PHONY : creatorinfo.s
+
+# target to generate assembly for a file
+creatorinfo.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.s
+.PHONY : creatorinfo.cpp.s
+
+extendedscene.o: extendedscene.cpp.o
+
+.PHONY : extendedscene.o
+
+# target to build an object file
+extendedscene.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o
+.PHONY : extendedscene.cpp.o
+
+extendedscene.i: extendedscene.cpp.i
+
+.PHONY : extendedscene.i
+
+# target to preprocess a source file
+extendedscene.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.i
+.PHONY : extendedscene.cpp.i
+
+extendedscene.s: extendedscene.cpp.s
+
+.PHONY : extendedscene.s
+
+# target to generate assembly for a file
+extendedscene.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.s
+.PHONY : extendedscene.cpp.s
+
+graphicsrobitem.o: graphicsrobitem.cpp.o
+
+.PHONY : graphicsrobitem.o
+
+# target to build an object file
+graphicsrobitem.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o
+.PHONY : graphicsrobitem.cpp.o
+
+graphicsrobitem.i: graphicsrobitem.cpp.i
+
+.PHONY : graphicsrobitem.i
+
+# target to preprocess a source file
+graphicsrobitem.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.i
+.PHONY : graphicsrobitem.cpp.i
+
+graphicsrobitem.s: graphicsrobitem.cpp.s
+
+.PHONY : graphicsrobitem.s
+
+# target to generate assembly for a file
+graphicsrobitem.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.s
+.PHONY : graphicsrobitem.cpp.s
+
+iteminputinfo.o: iteminputinfo.cpp.o
+
+.PHONY : iteminputinfo.o
+
+# target to build an object file
+iteminputinfo.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o
+.PHONY : iteminputinfo.cpp.o
+
+iteminputinfo.i: iteminputinfo.cpp.i
+
+.PHONY : iteminputinfo.i
+
+# target to preprocess a source file
+iteminputinfo.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.i
+.PHONY : iteminputinfo.cpp.i
+
+iteminputinfo.s: iteminputinfo.cpp.s
+
+.PHONY : iteminputinfo.s
+
+# target to generate assembly for a file
+iteminputinfo.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.s
+.PHONY : iteminputinfo.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
+manualremotecontroller.o: manualremotecontroller.cpp.o
+
+.PHONY : manualremotecontroller.o
+
+# target to build an object file
+manualremotecontroller.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o
+.PHONY : manualremotecontroller.cpp.o
+
+manualremotecontroller.i: manualremotecontroller.cpp.i
+
+.PHONY : manualremotecontroller.i
+
+# target to preprocess a source file
+manualremotecontroller.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.i
+.PHONY : manualremotecontroller.cpp.i
+
+manualremotecontroller.s: manualremotecontroller.cpp.s
+
+.PHONY : manualremotecontroller.s
+
+# target to generate assembly for a file
+manualremotecontroller.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.s
+.PHONY : manualremotecontroller.cpp.s
+
+qcustomplot.o: qcustomplot.cpp.o
+
+.PHONY : qcustomplot.o
+
+# target to build an object file
+qcustomplot.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o
+.PHONY : qcustomplot.cpp.o
+
+qcustomplot.i: qcustomplot.cpp.i
+
+.PHONY : qcustomplot.i
+
+# target to preprocess a source file
+qcustomplot.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.i
+.PHONY : qcustomplot.cpp.i
+
+qcustomplot.s: qcustomplot.cpp.s
+
+.PHONY : qcustomplot.s
+
+# target to generate assembly for a file
+qcustomplot.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.s
+.PHONY : qcustomplot.cpp.s
+
+serialportdialog.o: serialportdialog.cpp.o
+
+.PHONY : serialportdialog.o
+
+# target to build an object file
+serialportdialog.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
+.PHONY : serialportdialog.cpp.o
+
+serialportdialog.i: serialportdialog.cpp.i
+
+.PHONY : serialportdialog.i
+
+# target to preprocess a source file
+serialportdialog.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.i
+.PHONY : serialportdialog.cpp.i
+
+serialportdialog.s: serialportdialog.cpp.s
+
+.PHONY : serialportdialog.s
+
+# target to generate assembly for a file
+serialportdialog.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.s
+.PHONY : serialportdialog.cpp.s
 
 # Help Target
 help:
@@ -322,18 +491,41 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... doxygen"
-	@echo "... run_tests"
-	@echo "... clean_test_results"
-	@echo "... tests"
-	@echo "... download_extra_data"
-	@echo "... gmock_main"
-	@echo "... gmock"
-	@echo "... gtest_main"
-	@echo "... gtest"
 	@echo "... auto_bot_gui"
 	@echo "... auto_bot_gui_autogen"
+	@echo "... auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.o"
+	@echo "... auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.i"
+	@echo "... auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.s"
+	@echo "... auto_bot_gui_autogen/mocs_compilation.o"
+	@echo "... auto_bot_gui_autogen/mocs_compilation.i"
+	@echo "... auto_bot_gui_autogen/mocs_compilation.s"
+	@echo "... creatorinfo.o"
+	@echo "... creatorinfo.i"
+	@echo "... creatorinfo.s"
+	@echo "... extendedscene.o"
+	@echo "... extendedscene.i"
+	@echo "... extendedscene.s"
+	@echo "... graphicsrobitem.o"
+	@echo "... graphicsrobitem.i"
+	@echo "... graphicsrobitem.s"
+	@echo "... iteminputinfo.o"
+	@echo "... iteminputinfo.i"
+	@echo "... iteminputinfo.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... manualremotecontroller.o"
+	@echo "... manualremotecontroller.i"
+	@echo "... manualremotecontroller.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
+	@echo "... serialportdialog.o"
+	@echo "... serialportdialog.i"
+	@echo "... serialportdialog.s"
 .PHONY : help
 
 
