@@ -53,6 +53,16 @@ void SerialPortDialog::on_pb_openPort_clicked()
         addOutPutMsg("Не удалось установить соединение");
 }
 
+void SerialPortDialog::on_pb_updatePorts_clicked()
+{
+    ui->cb_ports->clear();
+    portsInfoList = QSerialPortInfo::availablePorts();
+    for (QSerialPortInfo &info : portsInfoList)
+    {
+        ui->cb_ports->addItem(info.portName());
+    }
+}
+
 void SerialPortDialog::serialReceive()
 {
     QByteArray barray;
@@ -73,7 +83,7 @@ void SerialPortDialog::serialError(QSerialPort::SerialPortError err)
     {
     case QSerialPort::PermissionError:
     {
-        addOutPutMsg("permission error");
+        addOutPutMsg("Ошибка разрешения.Напишите в терминал команду sudo chmod 666 /dev/ttyACM0");
         break;
     }
     case QSerialPort::ParityError:

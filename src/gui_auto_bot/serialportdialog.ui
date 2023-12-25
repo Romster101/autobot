@@ -14,13 +14,23 @@
    <string>Окно настройки PID-регулятора</string>
   </property>
   <layout class="QGridLayout" name="gridLayout">
-   <item row="0" column="0" rowspan="2">
+   <item row="0" column="0" rowspan="3">
     <widget class="QListView" name="lv_output">
      <property name="autoScroll">
       <bool>false</bool>
      </property>
      <property name="movement">
       <enum>QListView::Free</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="3">
+    <widget class="QCustomPlot" name="customPlot" native="true"/>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Доступные порты</string>
      </property>
     </widget>
    </item>
@@ -34,17 +44,17 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="2">
-    <widget class="QLabel" name="label">
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pb_closePort">
      <property name="text">
-      <string>Доступные порты</string>
+      <string>Закрыть порт</string>
      </property>
     </widget>
    </item>
    <item row="1" column="1">
-    <widget class="QPushButton" name="pb_closePort">
+    <widget class="QPushButton" name="pb_updatePorts">
      <property name="text">
-      <string>Закрыть порт</string>
+      <string>Обновить порты </string>
      </property>
     </widget>
    </item>
@@ -54,9 +64,6 @@
       <bool>true</bool>
      </property>
     </widget>
-   </item>
-   <item row="2" column="0" colspan="3">
-    <widget class="QCustomPlot" name="customPlot" native="true"/>
    </item>
   </layout>
  </widget>

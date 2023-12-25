@@ -32,6 +32,7 @@ public:
 private slots:
     void on_pb_closePort_clicked();
     void on_pb_openPort_clicked();
+    void on_pb_updatePorts_clicked();
     void serialReceive();
     void serialError(QSerialPort::SerialPortError err);
 };
