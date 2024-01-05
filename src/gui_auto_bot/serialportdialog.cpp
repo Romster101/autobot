@@ -14,7 +14,7 @@ SerialPortDialog::SerialPortDialog(QWidget *parent)
     ui->customPlot->addGraph(0);
     ui->customPlot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
     QSharedPointer<QCPAxisTickerDateTime> dateTicker(new QCPAxisTickerDateTime);
-    dateTicker->setDateTimeFormat("hh::mm::ss");
+    dateTicker->setDateTimeFormat("hh::mm::ss.zzz");
     ui->customPlot->xAxis->setTicker(dateTicker);
     model = new QStringListModel();
     model->setStringList(outputList);
@@ -33,7 +33,7 @@ SerialPortDialog::~SerialPortDialog()
 void SerialPortDialog::addOutPutMsg(QString msg)
 {
     QDateTime ti = QDateTime::currentDateTime();
-    outputList.push_front(ti.toString("hh:mm:ss") + " " + msg);
+    outputList.push_front(ti.toString("hh:mm:ss.zzz") + " " + msg);
     ui->lv_output->update();
     model->setStringList(outputList);
 }
@@ -70,8 +70,9 @@ void SerialPortDialog::serialReceive()
     double ti1 = QDateTime::currentDateTime().toMSecsSinceEpoch() / 1000;
     if (barray.toDouble() != 0)
     {
-        ui->customPlot->graph(0)->addData(ti1, barray.toDouble());
         qDebug() << barray.toDouble();
+        ui->customPlot->graph(0)->addData(ti1, barray.toDouble());
+        ui->customPlot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::red, Qt::white, 7));        
         ui->customPlot->replot();
         ui->customPlot->rescaleAxes();
     }

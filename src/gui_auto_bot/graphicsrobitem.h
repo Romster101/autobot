@@ -11,11 +11,13 @@
 #include <QGraphicsSceneContextMenuEvent>
 #include <QObject>
 #include <iteminputinfo.h>
+#include <QGraphicsTextItem>
 
 class GraphicsRobItem : public QGraphicsPixmapItem
 {
 public:
     GraphicsRobItem(int x,int y,int theta = 0);
+    ~GraphicsRobItem(){delete itemNumberText;};
 
     int getTheta() {return theta;}
 
@@ -23,9 +25,16 @@ public:
 
     void setRotationAngle(int angle);
 
+    void addNumber(int num);
+
+    void setNumber(int num);
+
+    void updateNumberPos();
+
 private:
     int theta = 0;
     QPixmap pixmap;
+    QGraphicsTextItem* itemNumberText;
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);

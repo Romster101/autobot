@@ -17,6 +17,12 @@ MainWindow::MainWindow(QWidget *parent)
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
 }
 
+void MainWindow::addItemOnScene(GraphicsRobItem *item)
+{
+    scene->addItem(item);
+    item->addNumber(scene->items().size()/2+1);
+}
+
 MainWindow::~MainWindow()
 {
     delete ui;
@@ -34,7 +40,7 @@ void MainWindow::dblClicked(QPointF point)
     case QDialog::Accepted:
     {
         GraphicsRobItem* item = new GraphicsRobItem(info.getX(),info.getY(),info.getAngle());
-        scene->addItem(item);
+        addItemOnScene(item);
         break;
     }
     case QDialog::Rejected:
@@ -55,7 +61,7 @@ void MainWindow::slotTarget(QPointF point)
 void MainWindow::on_pb_addPoint_clicked()
 {
     GraphicsRobItem* item = new GraphicsRobItem(ui->dsb_X->value(),ui->dsb_Y->value(),ui->dsb_theta->value());
-    scene->addItem(item);
+    addItemOnScene(item);
 }
 
 void MainWindow::on_a_remote_controller_triggered()

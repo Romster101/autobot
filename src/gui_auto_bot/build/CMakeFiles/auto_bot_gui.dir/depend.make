@@ -399,6 +399,7 @@ CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/in
 CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
 CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneContextMenuEvent
 CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent
+CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem
 CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLayout
 CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
 CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
@@ -538,8 +539,12 @@ CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: /usr/in
 
 CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o: ../creatorinfo.cpp
 
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: ../graphicsrobitem.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: ../iteminputinfo.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: ../extendedscene.cpp
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: ../extendedscene.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QDebug
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/QObject
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qalgorithms.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qarraydata.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qatomic.h
@@ -612,16 +617,24 @@ CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/q
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvarlengtharray.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qvector.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtCore/qversiontagging.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QCursor
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QKeyEvent
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/QPainter
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qbrush.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qcursor.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qevent.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfont.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontinfo.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qfontmetrics.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qmatrix.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpaintdevice.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainter.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpainterpath.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpalette.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpen.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixelformat.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qpixmap.h
@@ -629,6 +642,7 @@ CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/q
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qregion.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgb.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qrgba64.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qtextoption.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qtgui-config.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qtguiglobal.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qtouchdevice.h
@@ -636,14 +650,25 @@ CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/q
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qvector2d.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtGui/qwindowdefs_win.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QDialog
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsItem
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsPixmapItem
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneContextMenuEvent
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qdialog.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsitem.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicsscene.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qgraphicssceneevent.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmenu.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qsizepolicy.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgets-config.h
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h
+CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qwidget.h
 
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: ../iteminputinfo.h
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: ../graphicsrobitem.cpp
@@ -759,6 +784,7 @@ CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneContextMenuEvent
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent
+CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qactiongroup.h
@@ -1043,6 +1069,7 @@ CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidg
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneContextMenuEvent
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent
+CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qaction.h
@@ -1204,14 +1231,17 @@ CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsScene
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneContextMenuEvent
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsSceneMouseEvent
+CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsTextItem
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGraphicsView
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGridLayout
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QGroupBox
+CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QHBoxLayout
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QLabel
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenu
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMenuBar
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QPushButton
+CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QSpacerItem
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QStatusBar
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QTabWidget
 CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o: /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QVBoxLayout

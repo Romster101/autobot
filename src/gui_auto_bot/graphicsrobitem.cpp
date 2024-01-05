@@ -3,6 +3,7 @@
 
 GraphicsRobItem::GraphicsRobItem(int x, int y, int theta)
 {
+    itemNumberText = new QGraphicsTextItem();
     QPixmap pix1(":/img/strelka.png");
     pix1.setDevicePixelRatio(1);
     setPixmap(pix1);
@@ -21,6 +22,7 @@ void GraphicsRobItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
      * в координатную систему графической сцены
      * */
     setPos(mapToScene(event->pos()));
+    updateNumberPos();
     QGraphicsItem::mouseMoveEvent(event);
 }
 
@@ -42,6 +44,24 @@ void GraphicsRobItem::setRotationAngle(int angle)
     setTheta(angle);
 }
 
+void GraphicsRobItem::addNumber(int num)
+{
+    itemNumberText->setPlainText(QString(QString::number(num)));
+    updateNumberPos();
+    itemNumberText->setDefaultTextColor(Qt::green);
+    scene()->addItem(itemNumberText);
+}
+
+void GraphicsRobItem::setNumber(int num)
+{
+    itemNumberText->setPlainText(QString(QString::number(num)));
+}
+
+void GraphicsRobItem::updateNumberPos()
+{
+    itemNumberText->setPos(this->x()-6,this->y()+25);
+}
+
 void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 {
     QMenu menu;
@@ -61,6 +81,7 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
         case QDialog::Accepted:
         {
             setPos(info.getX(), info.getY());
+            updateNumberPos();
             setRotationAngle(info.getAngle());
             setTheta(info.getAngle());
             break;

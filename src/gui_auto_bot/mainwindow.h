@@ -22,8 +22,8 @@ class MainWindow : public QMainWindow
 
 public:
     MainWindow(QWidget *parent = nullptr);
+    void addItemOnScene(GraphicsRobItem* item);
     ~MainWindow();
-
 
 public slots:
     void dblClicked(QPointF point);

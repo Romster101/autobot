@@ -4,6 +4,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsSceneMouseEvent>
 #include <QGraphicsItem>
+#include <graphicsrobitem.h>
 #include <QKeyEvent>
 
 class ExtendedScene: public QGraphicsScene
@@ -11,6 +12,7 @@ class ExtendedScene: public QGraphicsScene
     Q_OBJECT
 public:
     explicit ExtendedScene(QObject *parent = nullptr);
+    void updateNumbersOfElements();
 
 private:
     void deleteSelectedItems();

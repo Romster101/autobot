@@ -3,6 +3,9 @@
 ExtendedScene::ExtendedScene(QObject *parent)
     : QGraphicsScene{parent}
 {
+    GraphicsRobItem* item = new GraphicsRobItem(0,0,0);
+    addItem(item);
+    item->addNumber(items().size());
 }
 
 void ExtendedScene::deleteSelectedItems()

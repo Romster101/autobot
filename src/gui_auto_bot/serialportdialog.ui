@@ -13,7 +13,141 @@
   <property name="windowTitle">
    <string>Окно настройки PID-регулятора</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">/*-----QWidget-----*/
+QWidget
+{
+	background-color: rgba(36, 36, 36);
+	color: white;
+	border-color: #000000;
+
+}
+QMenuBar{
+	color: white;
+}
+
+QDoubleSpinBox{
+	color:white;
+}
+
+QGroupBox {
+	color:white;
+}
+/*-----QLabel-----*/
+QLabel
+{
+	background-color: transparent;
+	color: #fff;
+	font-size: 14pt;
+	border-color: #000000;
+
+}
+
+
+/*-----QToolButton-----*/
+QToolButton
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(254, 171, 66, 255),stop:1 rgba(255, 153, 0, 255));
+	color: #000;
+	font-size: 14pt;
+	border-radius: 4px;
+	padding: 10px;
+
+}
+
+
+QToolButton::pressed
+{
+	background-color: #6b960f;
+
+}
+
+
+/*-----QTabWidget-----*/
+QTabBar::tab
+{
+	font-size: 12pt;
+	font-weight: bold;
+	width: 250px;
+	height: 30px;
+    border: 1px solid #444;
+    border-bottom-style: none;
+	border-top-style: none;
+    background-color: #323232;
+    padding-top: 3px;
+    padding-bottom: 2px;
+    margin-right: -1px;
+
+}
+
+QTabWidget::pane 
+{
+    border: 1px solid qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(254, 171, 66, 255),stop:1 rgba(255, 153, 0, 255));
+ 
+
+}
+
+QTabBar::tab:last
+{
+    margin-right: 0; 
+
+}
+
+QTabBar::tab:first:!selected
+{
+	margin-left: 0px; 
+
+}
+
+QTabBar::tab:!selected
+{
+    color: #fff;
+    border-bottom-style: solid;
+    margin-top: 3px;
+    background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:1 #212121, stop:.4 #343434);
+
+}
+
+QTabBar::tab:selected
+{
+	background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0 rgba(254, 171, 66, 255),stop:1 rgba(255, 153, 0, 255));
+	color: #000;
+    margin-bottom: 0px;
+
+}
+
+QTabBar::tab:!selected:hover
+{
+    background-color: QLinearGradient(x1:0, y1:0, x2:0, y2:1, stop:1 #212121, stop:0.4 #343434, stop:0.2 #343434, stop:0.1 #ffaa00);
+
+}
+
+QListView
+{
+ background-color:rgb(85, 87, 83);
+}
+
+QFrame
+{
+ background-color:rgb(85, 87, 83);
+}
+</string>
+  </property>
   <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="2">
+    <widget class="QComboBox" name="cb_ports">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QPushButton" name="pb_closePort">
+     <property name="text">
+      <string>Закрыть порт</string>
+     </property>
+    </widget>
+   </item>
    <item row="0" column="0" rowspan="3">
     <widget class="QListView" name="lv_output">
      <property name="autoScroll">
@@ -23,9 +157,6 @@
       <enum>QListView::Free</enum>
      </property>
     </widget>
-   </item>
-   <item row="3" column="0" colspan="3">
-    <widget class="QCustomPlot" name="customPlot" native="true"/>
    </item>
    <item row="0" column="2">
     <widget class="QLabel" name="label">
@@ -44,13 +175,6 @@
      </property>
     </widget>
    </item>
-   <item row="2" column="1">
-    <widget class="QPushButton" name="pb_closePort">
-     <property name="text">
-      <string>Закрыть порт</string>
-     </property>
-    </widget>
-   </item>
    <item row="1" column="1">
     <widget class="QPushButton" name="pb_updatePorts">
      <property name="text">
@@ -58,12 +182,8 @@
      </property>
     </widget>
    </item>
-   <item row="1" column="2">
-    <widget class="QComboBox" name="cb_ports">
-     <property name="enabled">
-      <bool>true</bool>
-     </property>
-    </widget>
+   <item row="3" column="0" colspan="3">
+    <widget class="QCustomPlot" name="customPlot" native="true"/>
    </item>
   </layout>
  </widget>
