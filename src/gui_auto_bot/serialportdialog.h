@@ -2,7 +2,6 @@
 #define SERIALPORTDIALOG_H
 
 #include <QDebug>
-
 #include <QDialog>
 #include <QtSerialPort/QSerialPort>
 #include <QtSerialPort/QSerialPortInfo>

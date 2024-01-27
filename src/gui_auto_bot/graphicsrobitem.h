@@ -38,13 +38,6 @@ public:
     void setElementNumber(int const &_number) {setData(NumberField,_number);}; 
 
 private:
-    //_____________________Основные параметры положения_________________
-
-    /// Угол поворота робота в данном положении
-    int theta = 0;
-    /// Выгружаем ли мы груз 
-    bool cargo_out = false; 
-
     void mousePressEvent(QGraphicsSceneMouseEvent *event);
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
 

@@ -32,7 +32,7 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
     {
         ItemInputInfo info;
         info.setWindowTitle("Редактирование свойств элемента");
-        info.setAngle(theta);
+        info.setAngle(getTheta());
         info.setX(this->pos().x());
         info.setY(-this->pos().y());
         info.setCargo_Out(getCargoOut());
@@ -89,7 +89,7 @@ void GraphicsRobItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
     painter->drawPixmap(0,0,80,80,pixmap1); // рисуем стрелку 
 
 //__________________Создание рамки____________________
-   QPen pen(Qt::cyan, 1);
+   QPen pen(Qt::gray, 1);
    painter->setPen(pen);   
    painter->drawRect(boundingRect());
 
