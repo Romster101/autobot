@@ -13,34 +13,44 @@ ItemInputInfo::~ItemInputInfo()
     delete ui;
 }
 
-int ItemInputInfo::getAngle()
+int ItemInputInfo::getAngle() const
 {
     return ui->sb_angle->value();
 }
 
-int ItemInputInfo::getX()
+int ItemInputInfo::getX() const
 {
-    return ui->sb_X->value();
+    return ui->sb_X->value(); 
 }
 
-int ItemInputInfo::getY()
+int ItemInputInfo::getY() const
 {
     return ui->sb_Y->value();
 }
 
-void ItemInputInfo::setX(int x)
+bool ItemInputInfo::getCargo_out() const
 {
-    ui->sb_X->setValue(x);
+    return ui->chb_cargo_out->isChecked();
 }
 
-void ItemInputInfo::setY(int y)
+void ItemInputInfo::setX(int const &_x)
 {
-    ui->sb_Y->setValue(y);
+    ui->sb_X->setValue(_x);
 }
 
-void ItemInputInfo::setAngle(int angle)
+void ItemInputInfo::setY(int const &_y)
 {
-    ui->sb_angle->setValue(angle);
+    ui->sb_Y->setValue(_y);
+}
+
+void ItemInputInfo::setAngle(int const &_angle)
+{
+    ui->sb_angle->setValue(_angle);
+}
+
+void ItemInputInfo::setCargo_Out(bool const &_cargo_out)
+{
+    ui->chb_cargo_out->setChecked(_cargo_out);
 }
 
 void ItemInputInfo::on_pb_cancel_clicked()

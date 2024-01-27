@@ -15,13 +15,15 @@ public:
     explicit ItemInputInfo(QWidget *parent = nullptr);
     ~ItemInputInfo();
 
-    int getAngle();
-    int getX();
-    int getY();
+    int getAngle() const;
+    int getX() const;
+    int getY() const;
+    bool getCargo_out() const;
 
-    void setX(int x);
-    void setY(int y);
-    void setAngle(int angle);
+    void setX(int const &_x);
+    void setY(int const &_y);
+    void setAngle(int const &_angle);
+    void setCargo_Out(bool const &_cargo_out);
 
 private:
     Ui::ItemInputInfo *ui;

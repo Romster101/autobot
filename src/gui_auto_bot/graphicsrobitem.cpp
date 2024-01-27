@@ -1,10 +1,12 @@
 #include "graphicsrobitem.h"
 #include <qglobal.h>
+#include <QColorDialog>
 
-GraphicsRobItem::GraphicsRobItem(int x, int y, int theta)
+GraphicsRobItem::GraphicsRobItem(int x, int y, int theta, bool cargo_out)
 {
-    setPos(x,y);
+    setPos(x,-y); // за счет направления оси У 
     setTheta(theta);
+    setCargoOut(cargo_out);
     setFlags(QGraphicsItem::ItemIsSelectable|ItemIsMovable);
 };
 
@@ -32,15 +34,16 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
         info.setWindowTitle("Редактирование свойств элемента");
         info.setAngle(theta);
         info.setX(this->pos().x());
-        info.setY(this->pos().y());
+        info.setY(-this->pos().y());
+        info.setCargo_Out(getCargoOut());
 
         switch (info.exec())
         {
         case QDialog::Accepted:
         {
-            setPos(info.getX(), info.getY());
+            setPos(info.getX(), -info.getY());
             setTheta(info.getAngle());
-            setTheta(info.getAngle());
+            setCargoOut(info.getCargo_out());
             update();
             break;
         }
@@ -92,7 +95,7 @@ void GraphicsRobItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
 
 
 //__________________Создание значка выгрузки____________________
-    if (cargo_out){
+    if (getCargoOut()){
             QPixmap pixmap2(":/img/rolik.png");
             painter->drawPixmap(10,0,30,30,pixmap2); // рисуем значок выгрузки 
     }
@@ -107,4 +110,13 @@ void GraphicsRobItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
    painter->setFont(QFont("Times", 12, QFont::Bold));
    painter->drawText(35,95,QString::number(getElementNumber())); 
    painter->restore();
+
+//__________________Рамка другого цвета при выборе____________________
+   if (isSelected()){
+        painter->save();
+        QPen pen(QColor(254,168,54), 2);
+        painter->setPen(pen);   
+        painter->drawRect(boundingRect());
+        painter->restore();
+   }
 }

@@ -14,11 +14,10 @@
 #include <QPixmap>
 #include <QRectF>
 #include <qmath.h>
-#include <QtGui>
 class GraphicsRobItem : public QGraphicsItem
 {
 public:
-    GraphicsRobItem(int x,int y,int theta = 0);
+    GraphicsRobItem(int x,int y,int theta = 0,bool cargo_out = false);
     ~GraphicsRobItem(){};
 
     enum ItemDataToSave{

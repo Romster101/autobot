@@ -5,5 +5,6 @@
         "qobject": "cpp"
     },
     "cmake.sourceDirectory": "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot",
-    "cmake.configureOnOpen": true
+    "cmake.configureOnOpen": true,
+    "C_Cpp.errorSquiggles": "disabled"
 }

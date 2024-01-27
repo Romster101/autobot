@@ -32,10 +32,16 @@ private slots:
     void on_a_remote_controller_triggered();
     void on_a_buildGraphic_triggered();
     void on_pb_addPoint_clicked();
+    void on_pb_apply_clicked();
+    
+    void newItemSelected();
+    void displayParameters(QGraphicsItem* item);
+    void setSettingsForItem(QGraphicsItem* item);
 
 private:
     Ui::MainWindow *ui;
     ExtendedScene* scene;
-    CreatorInfo* creatorInfo;
+
+    void addItem(GraphicsRobItem *item);
 };
 #endif // MAINWINDOW_H

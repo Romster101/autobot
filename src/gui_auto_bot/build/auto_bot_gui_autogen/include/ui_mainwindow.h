@@ -13,12 +13,14 @@
 #include <QtGui/QIcon>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QGroupBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -54,6 +56,13 @@ public:
     QDoubleSpinBox *dsb_Y;
     QLabel *label;
     QLabel *label_2;
+    QGroupBox *groupBox;
+    QVBoxLayout *verticalLayout;
+    QGridLayout *gridLayout_2;
+    QCheckBox *chb_cargo_out;
+    QLineEdit *lineEdit;
+    QSpacerItem *verticalSpacer_2;
+    QPushButton *pb_apply;
     QPushButton *pb_addPoint;
     QSpacerItem *verticalSpacer;
     QMenuBar *menubar;
@@ -206,6 +215,9 @@ public:
         tbw_maps->setMinimumSize(QSize(803, 502));
         tbw_maps->setSizeIncrement(QSize(0, 0));
         tbw_maps->setBaseSize(QSize(0, 0));
+        QFont font;
+        font.setPointSize(13);
+        tbw_maps->setFont(font);
         tbw_maps->setIconSize(QSize(16, 16));
         tab_drawnMap = new QWidget();
         tab_drawnMap->setObjectName(QString::fromUtf8("tab_drawnMap"));
@@ -239,6 +251,11 @@ public:
         verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         gb_orientationData = new QGroupBox(centralwidget);
         gb_orientationData->setObjectName(QString::fromUtf8("gb_orientationData"));
+        QFont font1;
+        font1.setPointSize(12);
+        font1.setBold(true);
+        font1.setWeight(75);
+        gb_orientationData->setFont(font1);
         gridLayout = new QGridLayout(gb_orientationData);
         gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         label_3 = new QLabel(gb_orientationData);
@@ -249,9 +266,10 @@ public:
 
         dsb_X = new QDoubleSpinBox(gb_orientationData);
         dsb_X->setObjectName(QString::fromUtf8("dsb_X"));
-        QFont font;
-        font.setPointSize(12);
-        dsb_X->setFont(font);
+        QFont font2;
+        font2.setPointSize(12);
+        dsb_X->setFont(font2);
+        dsb_X->setDecimals(0);
         dsb_X->setMinimum(-100000000000000000000.000000000000000);
         dsb_X->setMaximum(999999999999.000000000000000);
 
@@ -259,7 +277,8 @@ public:
 
         dsb_theta = new QDoubleSpinBox(gb_orientationData);
         dsb_theta->setObjectName(QString::fromUtf8("dsb_theta"));
-        dsb_theta->setFont(font);
+        dsb_theta->setFont(font2);
+        dsb_theta->setDecimals(0);
         dsb_theta->setMinimum(-99999999999999991433150857216.000000000000000);
         dsb_theta->setMaximum(10000000000000000905969664.000000000000000);
 
@@ -267,7 +286,8 @@ public:
 
         dsb_Y = new QDoubleSpinBox(gb_orientationData);
         dsb_Y->setObjectName(QString::fromUtf8("dsb_Y"));
-        dsb_Y->setFont(font);
+        dsb_Y->setFont(font2);
+        dsb_Y->setDecimals(0);
         dsb_Y->setMinimum(-999999999999999945575230987042816.000000000000000);
         dsb_Y->setMaximum(99999999999999996863366107917975552.000000000000000);
 
@@ -288,8 +308,57 @@ public:
 
         verticalLayout_2->addWidget(gb_orientationData);
 
+        groupBox = new QGroupBox(centralwidget);
+        groupBox->setObjectName(QString::fromUtf8("groupBox"));
+        groupBox->setFont(font1);
+        verticalLayout = new QVBoxLayout(groupBox);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        gridLayout_2 = new QGridLayout();
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        chb_cargo_out = new QCheckBox(groupBox);
+        chb_cargo_out->setObjectName(QString::fromUtf8("chb_cargo_out"));
+        chb_cargo_out->setStyleSheet(QString::fromUtf8("QCheckBox::indicator{height: 25px; width: 25px;}"));
+        chb_cargo_out->setIconSize(QSize(30, 30));
+
+        gridLayout_2->addWidget(chb_cargo_out, 0, 1, 1, 1);
+
+        lineEdit = new QLineEdit(groupBox);
+        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
+        lineEdit->setFont(font2);
+        lineEdit->setFocusPolicy(Qt::NoFocus);
+        lineEdit->setAutoFillBackground(false);
+        lineEdit->setReadOnly(true);
+
+        gridLayout_2->addWidget(lineEdit, 0, 0, 1, 1);
+
+
+        verticalLayout->addLayout(gridLayout_2);
+
+
+        verticalLayout_2->addWidget(groupBox);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Minimum);
+
+        verticalLayout_2->addItem(verticalSpacer_2);
+
+        pb_apply = new QPushButton(centralwidget);
+        pb_apply->setObjectName(QString::fromUtf8("pb_apply"));
+        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(pb_apply->sizePolicy().hasHeightForWidth());
+        pb_apply->setSizePolicy(sizePolicy3);
+        pb_apply->setMinimumSize(QSize(0, 40));
+        pb_apply->setFont(font2);
+
+        verticalLayout_2->addWidget(pb_apply);
+
         pb_addPoint = new QPushButton(centralwidget);
         pb_addPoint->setObjectName(QString::fromUtf8("pb_addPoint"));
+        sizePolicy3.setHeightForWidth(pb_addPoint->sizePolicy().hasHeightForWidth());
+        pb_addPoint->setSizePolicy(sizePolicy3);
+        pb_addPoint->setMinimumSize(QSize(0, 40));
+        pb_addPoint->setFont(font2);
 
         verticalLayout_2->addWidget(pb_addPoint);
 
@@ -349,7 +418,11 @@ public:
         label_3->setText(QApplication::translate("MainWindow", "\316\270", nullptr));
         label->setText(QApplication::translate("MainWindow", "Y", nullptr));
         label_2->setText(QApplication::translate("MainWindow", "X", nullptr));
-        pb_addPoint->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\277\320\276\320\273\320\276\320\266\320\265\320\275\320\270\320\265", nullptr));
+        groupBox->setTitle(QApplication::translate("MainWindow", "\320\237\320\260\321\200\320\260\320\274\320\265\321\202\321\200\321\213 \321\200\320\260\320\261\320\276\321\202\321\213", nullptr));
+        chb_cargo_out->setText(QString());
+        lineEdit->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\263\321\200\321\203\320\267\320\272\320\260", nullptr));
+        pb_apply->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\270\320\274\320\265\320\275\320\270\321\202\321\214 \320\272 \320\262\321\213\320\261\321\200\320\260\320\275\320\275\320\276\320\274\321\203 \321\215\320\273\320\265\320\274\320\265\320\275\321\202\321\203", nullptr));
+        pb_addPoint->setText(QApplication::translate("MainWindow", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\275\320\276\320\262\320\276\320\265 \320\277\320\276\320\273\320\276\320\266\320\265\320\275\320\270\320\265", nullptr));
         m_file->setTitle(QApplication::translate("MainWindow", "\320\244\320\260\320\271\320\273", nullptr));
         m_manual_guide->setTitle(QApplication::translate("MainWindow", "\320\240\321\203\321\207\320\275\320\276\320\265 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\320\265", nullptr));
         m_PID->setTitle(QApplication::translate("MainWindow", "\320\237\320\230\320\224-\321\200\320\265\320\263\321\203\320\273\321\217\321\202\320\276\321\200", nullptr));
