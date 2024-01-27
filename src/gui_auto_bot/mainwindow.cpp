@@ -6,21 +6,15 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     scene = new ExtendedScene();
-    scene->setItemIndexMethod(QGraphicsScene::NoIndex); // настраиваем индексацию элементов
+    //scene->setItemIndexMethod(QGraphicsScene::NoIndex); // настраиваем индексацию элементов
     ui->gv_builtMap->setScene(scene);
-    scene->setSceneRect(0, 0, 200, 200);
+    scene->setSceneRect(0,0,100,100);
     ui->gv_builtMap->setMouseTracking(true);
     ui->gv_builtMap->setRenderHint(QPainter::Antialiasing);    // Настраиваем рендер
     ui->gv_builtMap->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
     ui->gv_builtMap->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
-}
-
-void MainWindow::addItemOnScene(GraphicsRobItem *item)
-{
-    scene->addItem(item);
-    item->addNumber(scene->items().size()/2+1);
 }
 
 MainWindow::~MainWindow()
@@ -32,6 +26,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::dblClicked(QPointF point)
 {
+    qDebug() << point.x() << " -------- " << point.y();
     ItemInputInfo info;
     info.setX(point.x());
     info.setY(point.y());
@@ -40,7 +35,8 @@ void MainWindow::dblClicked(QPointF point)
     case QDialog::Accepted:
     {
         GraphicsRobItem* item = new GraphicsRobItem(info.getX(),info.getY(),info.getAngle());
-        addItemOnScene(item);
+        scene->addItem(item);
+        item->setElementNumber(scene->items().size());
         break;
     }
     case QDialog::Rejected:
@@ -61,7 +57,8 @@ void MainWindow::slotTarget(QPointF point)
 void MainWindow::on_pb_addPoint_clicked()
 {
     GraphicsRobItem* item = new GraphicsRobItem(ui->dsb_X->value(),ui->dsb_Y->value(),ui->dsb_theta->value());
-    addItemOnScene(item);
+    scene->addItem(item);
+    item->setElementNumber(scene->items().size());
 }
 
 void MainWindow::on_a_remote_controller_triggered()

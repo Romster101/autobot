@@ -6,14 +6,19 @@
 #include <QGraphicsItem>
 #include <graphicsrobitem.h>
 #include <QKeyEvent>
+#include <QVector>
 
+ enum ItemDataToSave{
+        RotationField,
+        CargoOutField,
+        NumberField
+    };
 class ExtendedScene: public QGraphicsScene
 {
     Q_OBJECT
 public:
     explicit ExtendedScene(QObject *parent = nullptr);
-    void updateNumbersOfElements();
-
+ 
 private:
     void deleteSelectedItems();
     
