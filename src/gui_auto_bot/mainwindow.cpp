@@ -7,24 +7,25 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     scene = new ExtendedScene();
     JSON = new JSONmodule();
-    GraphicsRobItem* item = new GraphicsRobItem(0,0,0,false);
+    GraphicsRobItem *item = new GraphicsRobItem(0, 0, 0, false);
     addItem(item);
     ui->gv_builtMap->setScene(scene);
-    scene->setSceneRect(0,0,100,100);
+    scene->setSceneRect(0, 0, 100, 100);
     ui->gv_builtMap->setMouseTracking(true);
-    ui->gv_builtMap->setRenderHint(QPainter::Antialiasing);    // Настраиваем рендер
+    ui->gv_builtMap->setRenderHint(QPainter::Antialiasing);        // Настраиваем рендер
     ui->gv_builtMap->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
     ui->gv_builtMap->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
+
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
-    connect(scene, &ExtendedScene::selectionChanged,this,&MainWindow::newItemSelected);
+    connect(scene, &ExtendedScene::selectionChanged, this, &MainWindow::newItemSelected);
 }
 
 MainWindow::~MainWindow()
 {
-    delete ui;
-    delete scene;
     delete JSON;
+    delete scene;
+    delete ui;
 }
 
 void MainWindow::dblClicked(QPointF point)
@@ -36,7 +37,7 @@ void MainWindow::dblClicked(QPointF point)
     {
     case QDialog::Accepted:
     {
-        GraphicsRobItem* item = new GraphicsRobItem(info.getX(),info.getY(),info.getAngle(), info.getCargo_out());
+        GraphicsRobItem *item = new GraphicsRobItem(info.getX(), info.getY(), info.getAngle(), info.getCargo_out());
         addItem(item);
         break;
     }
@@ -57,7 +58,8 @@ void MainWindow::addItem(GraphicsRobItem *item)
 
 void MainWindow::slotTarget(QPointF point)
 {
-    if (scene->selectedItems().size() == 0) {
+    if (scene->selectedItems().size() == 0)
+    {
         ui->dsb_X->setValue(point.x());
         ui->dsb_Y->setValue(-point.y());
     }
@@ -65,7 +67,7 @@ void MainWindow::slotTarget(QPointF point)
 
 void MainWindow::on_pb_addPoint_clicked()
 {
-    GraphicsRobItem* item = new GraphicsRobItem(ui->dsb_X->value(),ui->dsb_Y->value(),ui->dsb_theta->value());
+    GraphicsRobItem *item = new GraphicsRobItem(ui->dsb_X->value(), ui->dsb_Y->value(), ui->dsb_theta->value());
     addItem(item);
     item->setCargoOut(ui->chb_cargo_out->isChecked());
 }
@@ -80,44 +82,48 @@ void MainWindow::on_pb_apply_clicked()
         break;
     case 1: // если выбран 1 элемент - применяем все настройки
     {
-       setSettingsForItem(selItems[0]);
+        setSettingsForItem(selItems[0]);
     }
     default: // если выбрано много элементов - меняем только угол поворота и выгрузку
     {
         auto t = ui->dsb_theta->value();
         auto c = ui->chb_cargo_out->isChecked();
-        for (QGraphicsItem* item:selItems)
+        for (QGraphicsItem *item : selItems)
         {
-            item->setData(RotationField,t);
-            item->setData(CargoOutField,c);
+            item->setData(RotationField, t);
+            item->setData(CargoOutField, c);
             item->update();
         }
     }
-        break;
+    break;
     }
 }
 
 void MainWindow::on_a_createNewFile_triggered()
 {
-qDebug() << "sfdfasdafds";
+    qDebug() << "on_a_createNewFile_triggered";
 }
 
 void MainWindow::on_a_openFile_triggered()
 {
-
 }
 
 void MainWindow::on_a_save_triggered()
 {
-    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),\
-                                                  "/home/roman/projects","*.bor");
+    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
+                                                  QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
+
+    qDebug() << "save " << file_path;
 }
 
 void MainWindow::on_a_save_as_triggered()
 {
-    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),\
-                                                  "/home/roman/projects","*.bor");
-    if (file_path != ""){
+    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
+                                                  QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
+    qDebug() << "save as " << file_path;
+
+    if (file_path != "")
+    {
         JSON->setSavePath(file_path);
         auto objToSave = JSON->getJsonObj(scene);
         JSON->saveToJsonObj(objToSave);
@@ -136,22 +142,22 @@ void MainWindow::newItemSelected()
         ui->dsb_X->setEnabled(true);
         ui->dsb_Y->setEnabled(true);
     }
-        break;
-    case 1: // если 1 выбран - доступны + отображаем все 
+    break;
+    case 1: // если 1 выбран - доступны + отображаем все
     {
         displayParameters(selItems[0]);
         ui->pb_apply->setEnabled(true);
         ui->dsb_X->setEnabled(true);
         ui->dsb_Y->setEnabled(true);
     }
-        break;
-    default: // если много выбрано - недоступны только х и у 
+    break;
+    default: // если много выбрано - недоступны только х и у
     {
         ui->pb_apply->setEnabled(true);
         ui->dsb_X->setEnabled(false);
         ui->dsb_Y->setEnabled(false);
     }
-        break;
+    break;
     }
 }
 
@@ -169,9 +175,9 @@ void MainWindow::setSettingsForItem(QGraphicsItem *item)
     auto y = ui->dsb_Y->value();
     auto t = ui->dsb_theta->value();
     auto c = ui->chb_cargo_out->isChecked();
-    item->setPos(x,-y);
-    item->setData(RotationField,t);
-    item->setData(CargoOutField,c);
+    item->setPos(x, -y);
+    item->setData(RotationField, t);
+    item->setData(CargoOutField, c);
     item->update();
 }
 

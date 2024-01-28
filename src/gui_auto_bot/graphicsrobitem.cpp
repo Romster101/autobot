@@ -28,6 +28,7 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
     menu.addAction("Редактор свойств элемента");
     menu.addAction("Удалить элемент");
     QAction *a = menu.exec(event->screenPos());
+    if (a == nullptr) return;
     if (a->text() == "Редактор свойств элемента")
     {
         ItemInputInfo info;

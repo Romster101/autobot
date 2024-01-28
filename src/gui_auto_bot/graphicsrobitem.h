@@ -38,11 +38,11 @@ public:
     void setElementNumber(int const &_number) {setData(NumberField,_number);}; 
 
 private:
-    void mousePressEvent(QGraphicsSceneMouseEvent *event);
-    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event);
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
 
 protected:
-    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event);
+    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;
     QRectF boundingRect() const override;
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget) override;

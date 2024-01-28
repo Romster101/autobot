@@ -13,7 +13,10 @@
 #include "jsonmodule.h"
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class MainWindow; }
+namespace Ui
+{
+    class MainWindow;
+}
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -42,17 +45,17 @@ private slots:
     void on_a_openFile_triggered();
     void on_a_save_triggered();
     void on_a_save_as_triggered();
-    
+
     //____________Личные слоты______________
     void newItemSelected();
 
 private:
     Ui::MainWindow *ui;
-    ExtendedScene* scene;
-    JSONmodule* JSON;
-    
+    ExtendedScene *scene;
+    JSONmodule *JSON;
+
     void addItem(GraphicsRobItem *item);
-    void displayParameters(QGraphicsItem* item);
-    void setSettingsForItem(QGraphicsItem* item);
+    void displayParameters(QGraphicsItem *item);
+    void setSettingsForItem(QGraphicsItem *item);
 };
 #endif // MAINWINDOW_H
