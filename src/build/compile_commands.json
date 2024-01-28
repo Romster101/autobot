@@ -6,11 +6,6 @@
 },
 {
   "directory": "/home/roman/qt_ROS_projects/autobot/src/build",
-  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -I/home/roman/qt_ROS_projects/autobot/src/build -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot -I/home/roman/qt_ROS_projects/autobot/src/build/auto_bot_gui_autogen/include -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort  -g   -fPIC -std=gnu++11 -o CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp",
-  "file": "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp"
-},
-{
-  "directory": "/home/roman/qt_ROS_projects/autobot/src/build",
   "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -I/home/roman/qt_ROS_projects/autobot/src/build -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot -I/home/roman/qt_ROS_projects/autobot/src/build/auto_bot_gui_autogen/include -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort  -g   -fPIC -std=gnu++11 -o CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.cpp",
   "file": "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.cpp"
 },
@@ -23,6 +18,11 @@
   "directory": "/home/roman/qt_ROS_projects/autobot/src/build",
   "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -I/home/roman/qt_ROS_projects/autobot/src/build -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot -I/home/roman/qt_ROS_projects/autobot/src/build/auto_bot_gui_autogen/include -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort  -g   -fPIC -std=gnu++11 -o CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.cpp",
   "file": "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.cpp"
+},
+{
+  "directory": "/home/roman/qt_ROS_projects/autobot/src/build",
+  "command": "/usr/bin/c++  -DQT_CORE_LIB -DQT_GUI_LIB -DQT_PRINTSUPPORT_LIB -DQT_SERIALPORT_LIB -DQT_WIDGETS_LIB -I/home/roman/qt_ROS_projects/autobot/src/build -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot -I/home/roman/qt_ROS_projects/autobot/src/build/auto_bot_gui_autogen/include -I/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/include -isystem /usr/include/x86_64-linux-gnu/qt5 -isystem /usr/include/x86_64-linux-gnu/qt5/QtWidgets -isystem /usr/include/x86_64-linux-gnu/qt5/QtGui -isystem /usr/include/x86_64-linux-gnu/qt5/QtCore -isystem /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++ -isystem /usr/include/x86_64-linux-gnu/qt5/QtPrintSupport -isystem /usr/include/x86_64-linux-gnu/qt5/QtSerialPort  -g   -fPIC -std=gnu++11 -o CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp",
+  "file": "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp"
 },
 {
   "directory": "/home/roman/qt_ROS_projects/autobot/src/build",

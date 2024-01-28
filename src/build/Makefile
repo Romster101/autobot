@@ -236,33 +236,6 @@ auto_bot_gui_autogen/mocs_compilation.cpp.s:
 	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.s
 .PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.s
 
-creatorinfo.o: creatorinfo.cpp.o
-
-.PHONY : creatorinfo.o
-
-# target to build an object file
-creatorinfo.cpp.o:
-	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o
-.PHONY : creatorinfo.cpp.o
-
-creatorinfo.i: creatorinfo.cpp.i
-
-.PHONY : creatorinfo.i
-
-# target to preprocess a source file
-creatorinfo.cpp.i:
-	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.i
-.PHONY : creatorinfo.cpp.i
-
-creatorinfo.s: creatorinfo.cpp.s
-
-.PHONY : creatorinfo.s
-
-# target to generate assembly for a file
-creatorinfo.cpp.s:
-	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.s
-.PHONY : creatorinfo.cpp.s
-
 extendedscene.o: extendedscene.cpp.o
 
 .PHONY : extendedscene.o
@@ -343,6 +316,33 @@ iteminputinfo.s: iteminputinfo.cpp.s
 iteminputinfo.cpp.s:
 	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.s
 .PHONY : iteminputinfo.cpp.s
+
+jsonmodule.o: jsonmodule.cpp.o
+
+.PHONY : jsonmodule.o
+
+# target to build an object file
+jsonmodule.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o
+.PHONY : jsonmodule.cpp.o
+
+jsonmodule.i: jsonmodule.cpp.i
+
+.PHONY : jsonmodule.i
+
+# target to preprocess a source file
+jsonmodule.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.i
+.PHONY : jsonmodule.cpp.i
+
+jsonmodule.s: jsonmodule.cpp.s
+
+.PHONY : jsonmodule.s
+
+# target to generate assembly for a file
+jsonmodule.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.s
+.PHONY : jsonmodule.cpp.s
 
 main.o: main.cpp.o
 
@@ -499,9 +499,6 @@ help:
 	@echo "... auto_bot_gui_autogen/mocs_compilation.o"
 	@echo "... auto_bot_gui_autogen/mocs_compilation.i"
 	@echo "... auto_bot_gui_autogen/mocs_compilation.s"
-	@echo "... creatorinfo.o"
-	@echo "... creatorinfo.i"
-	@echo "... creatorinfo.s"
 	@echo "... extendedscene.o"
 	@echo "... extendedscene.i"
 	@echo "... extendedscene.s"
@@ -511,6 +508,9 @@ help:
 	@echo "... iteminputinfo.o"
 	@echo "... iteminputinfo.i"
 	@echo "... iteminputinfo.s"
+	@echo "... jsonmodule.o"
+	@echo "... jsonmodule.i"
+	@echo "... jsonmodule.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

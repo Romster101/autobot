@@ -83,22 +83,9 @@ CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/build/auto_bot_gui_autogen/mocs_compilation.cpp -o CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.s
 
-CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o: CMakeFiles/auto_bot_gui.dir/flags.make
-CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp
-
-CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp > CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.i
-
-CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp -o CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.s
-
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: CMakeFiles/auto_bot_gui.dir/flags.make
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.cpp
 
 CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.i: cmake_force
@@ -111,7 +98,7 @@ CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.s: cmake_force
 
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: CMakeFiles/auto_bot_gui.dir/flags.make
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/graphicsrobitem.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/graphicsrobitem.cpp
 
 CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.i: cmake_force
@@ -124,7 +111,7 @@ CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.s: cmake_force
 
 CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o: CMakeFiles/auto_bot_gui.dir/flags.make
 CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.cpp
 
 CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.i: cmake_force
@@ -134,6 +121,19 @@ CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.i: cmake_force
 CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.cpp -o CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.s
+
+CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o: CMakeFiles/auto_bot_gui.dir/flags.make
+CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp
+
+CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp > CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.i
+
+CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp -o CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.s
 
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: CMakeFiles/auto_bot_gui.dir/flags.make
 CMakeFiles/auto_bot_gui.dir/main.cpp.o: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/main.cpp
@@ -216,10 +216,10 @@ CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s: cm
 # Object files for target auto_bot_gui
 auto_bot_gui_OBJECTS = \
 "CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o" \
-"CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o" \
+"CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/main.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o" \
 "CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o" \
@@ -231,10 +231,10 @@ auto_bot_gui_OBJECTS = \
 auto_bot_gui_EXTERNAL_OBJECTS =
 
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o
-auto_bot_gui: CMakeFiles/auto_bot_gui.dir/creatorinfo.cpp.o
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o
+auto_bot_gui: CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/main.cpp.o
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
 auto_bot_gui: CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o

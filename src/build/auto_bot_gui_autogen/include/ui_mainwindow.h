@@ -40,6 +40,8 @@ public:
     QAction *a_save_as;
     QAction *a_remote_controller;
     QAction *a_buildGraphic;
+    QAction *a_openFile;
+    QAction *a_createNewFile;
     QWidget *centralwidget;
     QHBoxLayout *horizontalLayout_2;
     QTabWidget *tbw_maps;
@@ -201,6 +203,10 @@ public:
         a_remote_controller->setObjectName(QString::fromUtf8("a_remote_controller"));
         a_buildGraphic = new QAction(MainWindow);
         a_buildGraphic->setObjectName(QString::fromUtf8("a_buildGraphic"));
+        a_openFile = new QAction(MainWindow);
+        a_openFile->setObjectName(QString::fromUtf8("a_openFile"));
+        a_createNewFile = new QAction(MainWindow);
+        a_createNewFile->setObjectName(QString::fromUtf8("a_createNewFile"));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         horizontalLayout_2 = new QHBoxLayout(centralwidget);
@@ -394,6 +400,9 @@ public:
         m_file->addSeparator();
         m_file->addAction(a_save);
         m_file->addAction(a_save_as);
+        m_file->addSeparator();
+        m_file->addAction(a_openFile);
+        m_file->addAction(a_createNewFile);
         m_manual_guide->addAction(a_remote_controller);
         m_PID->addAction(a_buildGraphic);
 
@@ -409,9 +418,11 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "\320\237\321\200\320\270\320\273\320\276\320\266\320\265\320\275\320\270\320\265 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\321\217 \320\274\320\276\320\261\320\270\320\273\321\214\320\275\321\213\320\274 \321\200\320\276\320\261\320\276\321\202\320\276\320\274", nullptr));
         a_save->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214", nullptr));
-        a_save_as->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \320\272\320\260\320\272 ...", nullptr));
+        a_save_as->setText(QApplication::translate("MainWindow", "\320\241\320\276\321\205\321\200\320\260\320\275\320\270\321\202\321\214 \321\202\321\200\320\260\320\265\320\272\321\202\320\276\321\200\320\270\321\216 \320\272\320\260\320\272 ...", nullptr));
         a_remote_controller->setText(QApplication::translate("MainWindow", "\320\237\321\203\320\273\321\214\321\202 \320\264\320\270\321\201\321\202\320\260\320\275\321\206\320\270\320\276\320\275\320\275\320\276\320\263\320\276 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\321\217", nullptr));
         a_buildGraphic->setText(QApplication::translate("MainWindow", "\320\223\321\200\320\260\321\204\320\270\320\272 \320\270\320\267\320\274\320\265\320\275\320\265\320\275\320\270\321\217 \321\201\320\272\320\276\321\200\320\276\321\201\321\202\320\270 \320\262\320\276 \320\262\321\200\320\265\320\274\320\265\320\275\320\270", nullptr));
+        a_openFile->setText(QApplication::translate("MainWindow", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \321\202\321\200\320\260\320\265\320\272\321\202\320\276\321\200\320\270\321\216", nullptr));
+        a_createNewFile->setText(QApplication::translate("MainWindow", "\320\241\320\276\320\267\320\264\320\260\321\202\321\214 \320\275\320\276\320\262\321\203\321\216 \321\202\321\200\320\260\320\265\320\272\321\202\320\276\321\200\320\270\321\216", nullptr));
         tbw_maps->setTabText(tbw_maps->indexOf(tab_drawnMap), QApplication::translate("MainWindow", "\320\236\321\202\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265 \320\266\320\265\320\273\320\260\320\265\320\274\320\276\320\263\320\276 \320\277\321\203\321\202\320\270", nullptr));
         tbw_maps->setTabText(tbw_maps->indexOf(tab_realMap), QApplication::translate("MainWindow", "\320\236\321\202\320\276\320\261\321\200\320\260\320\266\320\265\320\275\320\270\320\265 \321\200\320\265\320\260\320\273\321\214\320\275\320\276\320\271 \320\272\320\260\321\200\321\202\321\213", nullptr));
         gb_orientationData->setTitle(QApplication::translate("MainWindow", "\320\224\320\260\320\275\320\275\321\213\320\265 \320\276 \320\277\320\276\320\273\320\276\320\266\320\265\320\275\320\270\320\270", nullptr));

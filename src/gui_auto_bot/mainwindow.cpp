@@ -6,6 +6,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     scene = new ExtendedScene();
+    JSON = new JSONmodule();
     GraphicsRobItem* item = new GraphicsRobItem(0,0,0,false);
     addItem(item);
     ui->gv_builtMap->setScene(scene);
@@ -23,7 +24,7 @@ MainWindow::~MainWindow()
 {
     delete ui;
     delete scene;
-  //  delete creatorInfo;
+    delete JSON;
 }
 
 void MainWindow::dblClicked(QPointF point)
@@ -93,6 +94,33 @@ void MainWindow::on_pb_apply_clicked()
         }
     }
         break;
+    }
+}
+
+void MainWindow::on_a_createNewFile_triggered()
+{
+qDebug() << "sfdfasdafds";
+}
+
+void MainWindow::on_a_openFile_triggered()
+{
+
+}
+
+void MainWindow::on_a_save_triggered()
+{
+    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),\
+                                                  "/home/roman/projects","*.bor");
+}
+
+void MainWindow::on_a_save_as_triggered()
+{
+    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),\
+                                                  "/home/roman/projects","*.bor");
+    if (file_path != ""){
+        JSON->setSavePath(file_path);
+        auto objToSave = JSON->getJsonObj(scene);
+        JSON->saveToJsonObj(objToSave);
     }
 }
 

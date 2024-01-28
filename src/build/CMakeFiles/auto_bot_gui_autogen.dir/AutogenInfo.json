@@ -8,11 +8,6 @@
 	"HEADERS" : 
 	[
 		[
-			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.h",
-			"MU",
-			"EWIEGA46WW/moc_creatorinfo.cpp"
-		],
-		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.h",
 			"MU",
 			"EWIEGA46WW/moc_extendedscene.cpp"
@@ -26,6 +21,11 @@
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.h",
 			"MU",
 			"EWIEGA46WW/moc_iteminputinfo.cpp"
+		],
+		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.h",
+			"MU",
+			"EWIEGA46WW/moc_jsonmodule.cpp"
 		],
 		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/mainwindow.h",
@@ -110,10 +110,6 @@
 	"SOURCES" : 
 	[
 		[
-			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/creatorinfo.cpp",
-			"MU"
-		],
-		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.cpp",
 			"MU"
 		],
@@ -123,6 +119,10 @@
 		],
 		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/iteminputinfo.cpp",
+			"MU"
+		],
+		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/jsonmodule.cpp",
 			"MU"
 		],
 		[ "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/main.cpp", "MU" ],
