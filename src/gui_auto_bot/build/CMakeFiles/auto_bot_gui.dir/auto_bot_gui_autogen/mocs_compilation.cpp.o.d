@@ -900,11 +900,11 @@ CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qdir.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qfileinfo.h \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/manualremotecontroller.h \
-  /Users/vlad/programming/roman/autobot/src/gui_auto_bot/extendedscene.h \
-  /Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.h \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPort \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialport.h \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportglobal.h \
+  /Users/vlad/programming/roman/autobot/src/gui_auto_bot/extendedscene.h \
+  /Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.h \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPortInfo \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportinfo.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QDateTime \

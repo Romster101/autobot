@@ -846,10 +846,19 @@ CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qsizepolicy.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qcursor.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qkeysequence.h \
+  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPort \
+  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialport.h \
+  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportglobal.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QDebug \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qdebug.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qmap.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qtextstream.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qlocale.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qvariant.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qset.h \
+  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qcontiguouscache.h \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/include/ui_manualremotecontroller.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QVariant \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qvariant.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qmap.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/QIcon \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qicon.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QApplication \
@@ -859,7 +868,6 @@ CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qeventloop.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qguiapplication.h \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qinputmethod.h \
-  /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/qlocale.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QGridLayout \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qgridlayout.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qlayout.h \

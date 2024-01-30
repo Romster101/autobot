@@ -866,6 +866,9 @@ CMakeFiles/auto_bot_gui.dir/main.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qdialog.h \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/manualremotecontroller.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QDialog \
+  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPort \
+  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialport.h \
+  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportglobal.h \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/extendedscene.h \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/QGraphicsScene \
   /opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers/qgraphicsscene.h \
@@ -897,9 +900,6 @@ CMakeFiles/auto_bot_gui.dir/main.cpp.o: \
   /opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers/qtouchdevice.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QVector \
   /Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.h \
-  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPort \
-  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialport.h \
-  /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportglobal.h \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/QSerialPortInfo \
   /opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers/qserialportinfo.h \
   /opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers/QDateTime \

@@ -53,6 +53,7 @@ private:
     Ui::MainWindow *ui;
     ExtendedScene *scene;
     JSONmodule *JSON;
+    SerialPortDialog *spd;
 
     void addItem(GraphicsRobItem *item);
     void displayParameters(QGraphicsItem *item);

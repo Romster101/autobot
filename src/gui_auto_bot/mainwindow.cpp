@@ -7,6 +7,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->setupUi(this);
     scene = new ExtendedScene();
     JSON = new JSONmodule();
+    spd = new SerialPortDialog();
+
     GraphicsRobItem *item = new GraphicsRobItem(0, 0, 0, false);
     addItem(item);
     ui->gv_builtMap->setScene(scene);
@@ -26,6 +28,7 @@ MainWindow::~MainWindow()
     delete JSON;
     delete scene;
     delete ui;
+    delete spd;
 }
 
 void MainWindow::dblClicked(QPointF point)
@@ -184,11 +187,11 @@ void MainWindow::setSettingsForItem(QGraphicsItem *item)
 void MainWindow::on_a_remote_controller_triggered()
 {
     ManualRemoteController remoteController;
+    remoteController.setSerialObject(spd->getSerialObject());
     remoteController.exec();
 }
 
 void MainWindow::on_a_buildGraphic_triggered()
 {
-    SerialPortDialog spd;
-    spd.exec();
+    spd->show();
 }

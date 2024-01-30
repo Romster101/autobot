@@ -22,11 +22,15 @@ private:
     QStringListModel* model;
     QList<QSerialPortInfo> portsInfoList;
 
+    void updateComPorts();
+
 public:
+   
     SerialPortDialog(QWidget *parent = nullptr);
     ~SerialPortDialog();
     void addOutPutMsg(QString msg);
-
+    void show();
+    QSerialPort* getSerialObject();
 
 private slots:
     void on_pb_closePort_clicked();
