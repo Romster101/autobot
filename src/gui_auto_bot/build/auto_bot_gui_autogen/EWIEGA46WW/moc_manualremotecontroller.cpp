@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'manualremotecontroller.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.10)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
-#include "../../../manualremotecontroller.h"
+#include "manualremotecontroller.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'manualremotecontroller.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.10. It"
+#error "This file was generated using the moc from 5.12.8. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -93,7 +92,7 @@ void ManualRemoteController::qt_static_metacall(QObject *_o, QMetaObject::Call _
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<ManualRemoteController *>(_o);
-        (void)_t;
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_pb_back_clicked(); break;
         case 1: _t->on_pb_back_pressed(); break;
@@ -106,11 +105,11 @@ void ManualRemoteController::qt_static_metacall(QObject *_o, QMetaObject::Call _
         default: ;
         }
     }
-    (void)_a;
+    Q_UNUSED(_a);
 }
 
 QT_INIT_METAOBJECT const QMetaObject ManualRemoteController::staticMetaObject = { {
-    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    &QDialog::staticMetaObject,
     qt_meta_stringdata_ManualRemoteController.data,
     qt_meta_data_ManualRemoteController,
     qt_static_metacall,

@@ -1,28 +1,49 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/mocs_compilation.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/extendedscene.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/graphicsrobitem.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/iteminputinfo.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/jsonmodule.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/main.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/main.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/mainwindow.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/manualremotecontroller.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/qcustomplot.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o"
+  "/home/macubuntu/projects/autobot/src/gui_auto_bot/serialportdialog.cpp" "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "Clang")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_CXX
+  "QT_CORE_LIB"
+  "QT_GUI_LIB"
+  "QT_PRINTSUPPORT_LIB"
+  "QT_SERIALPORT_LIB"
+  "QT_WIDGETS_LIB"
   )
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp" "CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/mocs_compilation.cpp" "CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/extendedscene.cpp" "CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/graphicsrobitem.cpp" "CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/iteminputinfo.cpp" "CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/jsonmodule.cpp" "CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/main.cpp" "CMakeFiles/auto_bot_gui.dir/main.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/main.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/mainwindow.cpp" "CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/manualremotecontroller.cpp" "CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/qcustomplot.cpp" "CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o.d"
-  "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.cpp" "CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o" "gcc" "CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "."
+  "../"
+  "auto_bot_gui_autogen/include"
+  "../include"
+  "/usr/include/aarch64-linux-gnu/qt5"
+  "/usr/include/aarch64-linux-gnu/qt5/QtWidgets"
+  "/usr/include/aarch64-linux-gnu/qt5/QtGui"
+  "/usr/include/aarch64-linux-gnu/qt5/QtCore"
+  "/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++"
+  "/usr/include/aarch64-linux-gnu/qt5/QtPrintSupport"
+  "/usr/include/aarch64-linux-gnu/qt5/QtSerialPort"
   )
 
-# Targets to which this target links which contain Fortran sources.
-set(CMAKE_Fortran_TARGET_LINKED_INFO_FILES
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
   )
 
 # Fortran module output directory.

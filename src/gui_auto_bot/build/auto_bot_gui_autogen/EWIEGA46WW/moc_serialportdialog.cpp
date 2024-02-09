@@ -1,19 +1,18 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'serialportdialog.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.15.10)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.12.8)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include <memory>
-#include "../../../serialportdialog.h"
+#include "serialportdialog.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'serialportdialog.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.15.10. It"
+#error "This file was generated using the moc from 5.12.8. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -85,7 +84,7 @@ void SerialPortDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         auto *_t = static_cast<SerialPortDialog *>(_o);
-        (void)_t;
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->on_pb_closePort_clicked(); break;
         case 1: _t->on_pb_openPort_clicked(); break;
@@ -98,7 +97,7 @@ void SerialPortDialog::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
 }
 
 QT_INIT_METAOBJECT const QMetaObject SerialPortDialog::staticMetaObject = { {
-    QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
+    &QDialog::staticMetaObject,
     qt_meta_stringdata_SerialPortDialog.data,
     qt_meta_data_SerialPortDialog,
     qt_static_metacall,

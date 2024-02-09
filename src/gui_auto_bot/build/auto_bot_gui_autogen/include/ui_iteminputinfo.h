@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'iteminputinfo.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.10
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -132,14 +132,14 @@ public:
 
     void retranslateUi(QDialog *ItemInputInfo)
     {
-        ItemInputInfo->setWindowTitle(QCoreApplication::translate("ItemInputInfo", "\320\241\320\276\320\267\320\264\320\260\320\275\320\270\320\265 \320\275\320\276\320\262\320\276\320\271 \321\202\320\276\321\207\320\272\320\270 \320\275\320\260\320\267\320\275\320\260\321\207\320\265\320\275\320\270\321\217 \321\200\320\276\320\261\320\276\321\202\320\260", nullptr));
-        pb_confirm->setText(QCoreApplication::translate("ItemInputInfo", "\320\237\320\276\320\264\321\202\320\262\320\265\321\200\320\264\320\270\321\202\321\214", nullptr));
-        pb_cancel->setText(QCoreApplication::translate("ItemInputInfo", "\320\236\321\202\320\274\320\265\320\275\320\260", nullptr));
-        label->setText(QCoreApplication::translate("ItemInputInfo", "\320\243\320\263\320\276\320\273 \320\277\320\276\320\262\320\276\321\200\320\276\321\202\320\260", nullptr));
-        label_2->setText(QCoreApplication::translate("ItemInputInfo", "X", nullptr));
-        label_3->setText(QCoreApplication::translate("ItemInputInfo", "Y", nullptr));
+        ItemInputInfo->setWindowTitle(QApplication::translate("ItemInputInfo", "\320\241\320\276\320\267\320\264\320\260\320\275\320\270\320\265 \320\275\320\276\320\262\320\276\320\271 \321\202\320\276\321\207\320\272\320\270 \320\275\320\260\320\267\320\275\320\260\321\207\320\265\320\275\320\270\321\217 \321\200\320\276\320\261\320\276\321\202\320\260", nullptr));
+        pb_confirm->setText(QApplication::translate("ItemInputInfo", "\320\237\320\276\320\264\321\202\320\262\320\265\321\200\320\264\320\270\321\202\321\214", nullptr));
+        pb_cancel->setText(QApplication::translate("ItemInputInfo", "\320\236\321\202\320\274\320\265\320\275\320\260", nullptr));
+        label->setText(QApplication::translate("ItemInputInfo", "\320\243\320\263\320\276\320\273 \320\277\320\276\320\262\320\276\321\200\320\276\321\202\320\260", nullptr));
+        label_2->setText(QApplication::translate("ItemInputInfo", "X", nullptr));
+        label_3->setText(QApplication::translate("ItemInputInfo", "Y", nullptr));
         chb_cargo_out->setText(QString());
-        label_4->setText(QCoreApplication::translate("ItemInputInfo", "\320\222\321\213\320\263\321\200\321\203\320\267\320\272\320\260", nullptr));
+        label_4->setText(QApplication::translate("ItemInputInfo", "\320\222\321\213\320\263\321\200\321\203\320\267\320\272\320\260", nullptr));
     } // retranslateUi
 
 };

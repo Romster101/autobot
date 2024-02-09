@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'manualremotecontroller.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.10
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -245,7 +245,7 @@ public:
 
     void retranslateUi(QDialog *manualRemoteController)
     {
-        manualRemoteController->setWindowTitle(QCoreApplication::translate("manualRemoteController", "\320\237\321\203\320\273\321\214\321\202 \320\264\320\270\321\201\321\202\320\260\320\275\321\206\320\270\320\276\320\275\320\275\320\276\320\263\320\276 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\321\217 \320\274\320\276\320\261\320\270\320\273\321\214\320\275\321\213\320\274 \321\200\320\276\320\261\320\276\321\202\320\276\320\274", nullptr));
+        manualRemoteController->setWindowTitle(QApplication::translate("manualRemoteController", "\320\237\321\203\320\273\321\214\321\202 \320\264\320\270\321\201\321\202\320\260\320\275\321\206\320\270\320\276\320\275\320\275\320\276\320\263\320\276 \321\203\320\277\321\200\320\260\320\262\320\273\320\265\320\275\320\270\321\217 \320\274\320\276\320\261\320\270\320\273\321\214\320\275\321\213\320\274 \321\200\320\276\320\261\320\276\321\202\320\276\320\274", nullptr));
         pb_rotatePlus->setText(QString());
         pb_forward->setText(QString());
         pb_unload->setText(QString());

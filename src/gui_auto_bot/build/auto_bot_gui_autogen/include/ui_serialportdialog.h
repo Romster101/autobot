@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'serialportdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.15.10
+** Created by: Qt User Interface Compiler version 5.12.8
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -207,11 +207,11 @@ public:
 
     void retranslateUi(QDialog *SerialPortDialog)
     {
-        SerialPortDialog->setWindowTitle(QCoreApplication::translate("SerialPortDialog", "\320\236\320\272\320\275\320\276 \320\275\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 PID-\321\200\320\265\320\263\321\203\320\273\321\217\321\202\320\276\321\200\320\260", nullptr));
-        pb_closePort->setText(QCoreApplication::translate("SerialPortDialog", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214 \320\277\320\276\321\200\321\202", nullptr));
-        label->setText(QCoreApplication::translate("SerialPortDialog", "\320\224\320\276\321\201\321\202\321\203\320\277\320\275\321\213\320\265 \320\277\320\276\321\200\321\202\321\213", nullptr));
-        pb_openPort->setText(QCoreApplication::translate("SerialPortDialog", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \320\277\320\276\321\200\321\202", nullptr));
-        pb_updatePorts->setText(QCoreApplication::translate("SerialPortDialog", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214 \320\277\320\276\321\200\321\202\321\213 ", nullptr));
+        SerialPortDialog->setWindowTitle(QApplication::translate("SerialPortDialog", "\320\236\320\272\320\275\320\276 \320\275\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\270 PID-\321\200\320\265\320\263\321\203\320\273\321\217\321\202\320\276\321\200\320\260", nullptr));
+        pb_closePort->setText(QApplication::translate("SerialPortDialog", "\320\227\320\260\320\272\321\200\321\213\321\202\321\214 \320\277\320\276\321\200\321\202", nullptr));
+        label->setText(QApplication::translate("SerialPortDialog", "\320\224\320\276\321\201\321\202\321\203\320\277\320\275\321\213\320\265 \320\277\320\276\321\200\321\202\321\213", nullptr));
+        pb_openPort->setText(QApplication::translate("SerialPortDialog", "\320\236\321\202\320\272\321\200\321\213\321\202\321\214 \320\277\320\276\321\200\321\202", nullptr));
+        pb_updatePorts->setText(QApplication::translate("SerialPortDialog", "\320\236\320\261\320\275\320\276\320\262\320\270\321\202\321\214 \320\277\320\276\321\200\321\202\321\213 ", nullptr));
     } // retranslateUi
 
 };

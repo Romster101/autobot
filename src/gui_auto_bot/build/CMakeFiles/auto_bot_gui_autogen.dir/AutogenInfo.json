@@ -1,152 +1,56 @@
 {
-	"BUILD_DIR" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen",
-	"CMAKE_BINARY_DIR" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot",
-	"CMAKE_EXECUTABLE" : "/opt/homebrew/Cellar/cmake/3.26.4/bin/cmake",
-	"CMAKE_LIST_FILES" : 
-	[
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/CMakeLists.txt",
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/CMakeFiles/3.26.4/CMakeSystem.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake",
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/CMakeFiles/3.26.4/CMakeCCompiler.cmake",
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/CMakeFiles/3.26.4/CMakeCXXCompiler.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeGenericSystem.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeInitializeConfigs.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Darwin.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/UnixPaths.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCInformation.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeLanguageInformation.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/AppleClang-C.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/Clang.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/GNU.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Apple-AppleClang-C.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Apple-Clang-C.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Apple-Clang.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXInformation.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeLanguageInformation.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/AppleClang-CXX.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Compiler/Clang.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Apple-AppleClang-CXX.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Apple-Clang-CXX.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/Platform/Apple-Clang.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCommonLanguageInclude.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5/Qt5Config.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeParseArguments.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QCocoaIntegrationPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QMacHeifPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QMacJp2Plugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QPdfPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5Widgets_QMacStylePlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeParseArguments.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5/Qt5Config.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5/Qt5ModuleLocation.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5PrintSupport/Qt5PrintSupportConfig.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5PrintSupport/Qt5PrintSupport_QCocoaPrinterSupportPlugin.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5SerialPort/Qt5SerialPortConfigVersion.cmake",
-		"/opt/homebrew/opt/qt@5/lib/cmake/Qt5SerialPort/Qt5SerialPortConfig.cmake",
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/res/images.qrc"
-	],
-	"CMAKE_SOURCE_DIR" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot",
-	"DEP_FILE" : "",
-	"DEP_FILE_RULE_NAME" : "",
+	"BUILD_DIR" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen",
+	"CMAKE_BINARY_DIR" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/macubuntu/projects/autobot/src/gui_auto_bot",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_SOURCE_DIR" : "/home/macubuntu/projects/autobot/src/gui_auto_bot",
 	"HEADERS" : 
 	[
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/extendedscene.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/extendedscene.h",
 			"MU",
-			"EWIEGA46WW/moc_extendedscene.cpp",
-			null
+			"EWIEGA46WW/moc_extendedscene.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/graphicsrobitem.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/graphicsrobitem.h",
 			"MU",
-			"EWIEGA46WW/moc_graphicsrobitem.cpp",
-			null
+			"EWIEGA46WW/moc_graphicsrobitem.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/iteminputinfo.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/iteminputinfo.h",
 			"MU",
-			"EWIEGA46WW/moc_iteminputinfo.cpp",
-			null
+			"EWIEGA46WW/moc_iteminputinfo.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/jsonmodule.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/jsonmodule.h",
 			"MU",
-			"EWIEGA46WW/moc_jsonmodule.cpp",
-			null
+			"EWIEGA46WW/moc_jsonmodule.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/mainwindow.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/mainwindow.h",
 			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
+			"EWIEGA46WW/moc_mainwindow.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/manualremotecontroller.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/manualremotecontroller.h",
 			"MU",
-			"EWIEGA46WW/moc_manualremotecontroller.cpp",
-			null
+			"EWIEGA46WW/moc_manualremotecontroller.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/qcustomplot.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/qcustomplot.h",
 			"MU",
-			"EWIEGA46WW/moc_qcustomplot.cpp",
-			null
+			"EWIEGA46WW/moc_qcustomplot.cpp"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.h",
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/serialportdialog.h",
 			"MU",
-			"EWIEGA46WW/moc_serialportdialog.cpp",
-			null
+			"EWIEGA46WW/moc_serialportdialog.cpp"
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/include",
-	"MOC_COMPILATION_FILE" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
@@ -164,94 +68,79 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build",
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot",
-		"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/include",
-		"/opt/homebrew/opt/qt@5/lib/QtWidgets.framework",
-		"/opt/homebrew/opt/qt@5/lib/QtWidgets.framework/Headers",
-		"/opt/homebrew/opt/qt@5/lib/QtGui.framework",
-		"/opt/homebrew/opt/qt@5/lib/QtGui.framework/Headers",
-		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/System/Library/Frameworks/OpenGL.framework/Headers",
-		"/opt/homebrew/opt/qt@5/lib/QtCore.framework",
-		"/opt/homebrew/opt/qt@5/lib/QtCore.framework/Headers",
-		"/opt/homebrew/opt/qt@5/mkspecs/macx-clang",
-		"/opt/homebrew/opt/qt@5/lib/QtPrintSupport.framework",
-		"/opt/homebrew/opt/qt@5/lib/QtPrintSupport.framework/Headers",
-		"/opt/homebrew/opt/qt@5/lib/QtSerialPort.framework",
-		"/opt/homebrew/opt/qt@5/lib/QtSerialPort.framework/Headers",
-		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include/c++/v1",
-		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/15.0.0/include",
-		"/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.2.sdk/usr/include",
-		"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"
+		"/home/macubuntu/projects/autobot/src/gui_auto_bot/build",
+		"/home/macubuntu/projects/autobot/src/gui_auto_bot",
+		"/home/macubuntu/projects/autobot/src/gui_auto_bot/include",
+		"/usr/include/aarch64-linux-gnu/qt5",
+		"/usr/include/aarch64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/aarch64-linux-gnu/qt5/QtGui",
+		"/usr/include/aarch64-linux-gnu/qt5/QtCore",
+		"/usr/lib/aarch64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/aarch64-linux-gnu/qt5/QtPrintSupport",
+		"/usr/include/aarch64-linux-gnu/qt5/QtSerialPort",
+		"/usr/include/c++/9",
+		"/usr/include/aarch64-linux-gnu/c++/9",
+		"/usr/include/c++/9/backward",
+		"/usr/local/include",
+		"/usr/lib/llvm-10/lib/clang/10.0.0/include",
+		"/usr/include/aarch64-linux-gnu",
+		"/usr/include"
 	],
-	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE" ],
 	"MOC_OPTIONS" : [],
-	"MOC_PATH_PREFIX" : false,
+	"MOC_PATH_PREFIX" : true,
 	"MOC_PREDEFS_CMD" : 
 	[
 		"/usr/bin/clang++",
 		"-dM",
 		"-E",
 		"-c",
-		"/opt/homebrew/Cellar/cmake/3.26.4/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+		"/usr/share/cmake-3.16/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/auto_bot_gui_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
-	"PARALLEL" : 10,
-	"PARSE_CACHE_FILE" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui_autogen.dir/ParseCache.txt",
-	"QT_MOC_EXECUTABLE" : "/opt/homebrew/opt/qt@5/bin/moc",
-	"QT_UIC_EXECUTABLE" : "/opt/homebrew/opt/qt@5/bin/uic",
+	"PARALLEL" : 1,
+	"PARSE_CACHE_FILE" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "/usr/lib/qt5/bin/uic",
 	"QT_VERSION_MAJOR" : 5,
-	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/Users/vlad/programming/roman/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/extendedscene.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/extendedscene.cpp",
+			"MU"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/graphicsrobitem.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/graphicsrobitem.cpp",
+			"MU"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/iteminputinfo.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/iteminputinfo.cpp",
+			"MU"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/jsonmodule.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/jsonmodule.cpp",
+			"MU"
+		],
+		[ "/home/macubuntu/projects/autobot/src/gui_auto_bot/main.cpp", "MU" ],
+		[
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/mainwindow.cpp",
+			"MU"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/main.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/manualremotecontroller.cpp",
+			"MU"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/mainwindow.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/qcustomplot.cpp",
+			"MU"
 		],
 		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/manualremotecontroller.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/qcustomplot.cpp",
-			"MU",
-			null
-		],
-		[
-			"/Users/vlad/programming/roman/autobot/src/gui_auto_bot/serialportdialog.cpp",
-			"MU",
-			null
+			"/home/macubuntu/projects/autobot/src/gui_auto_bot/serialportdialog.cpp",
+			"MU"
 		]
 	],
 	"UIC_OPTIONS" : [],
