@@ -7,7 +7,9 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/roman/ros_packets/auto_bot/devel:$CMAKE_PREFIX_PATH"
-export PWD='/home/roman/ros_packets/auto_bot/build'
-export ROSLISP_PACKAGE_DIRECTORIES='/home/roman/ros_packets/auto_bot/devel/share/common-lisp'
-export ROS_PACKAGE_PATH='/home/roman/ros_packets/auto_bot/src:/opt/ros/noetic/share'
+export CMAKE_PREFIX_PATH="/home/macubuntu/projects/autobot/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/macubuntu/projects/autobot/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/macubuntu/projects/autobot/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD='/home/macubuntu/projects/autobot/build'
+export ROSLISP_PACKAGE_DIRECTORIES='/home/macubuntu/projects/autobot/devel/share/common-lisp'
+export ROS_PACKAGE_PATH='/home/roman/ros_packets/auto_bot/src:/home/macubuntu/projects/autobot/src:/opt/ros/noetic/share'

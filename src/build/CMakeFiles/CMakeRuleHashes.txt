@@ -1,3 +1,5 @@
 # Hashes of file build rules.
-3eea2f62dac527d5c7c97579e9685266 CMakeFiles/auto_bot_gui_autogen
-3b8bfc122d9379b89f8642bd5067d135 auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp
+341c6f1dcdb2e20852f3dd7c6806572e CMakeFiles/clean_test_results
+0e7a2a27c4dd4b851fd61ebd1f48afb4 gui_auto_bot/CMakeFiles/auto_bot_gui_autogen
+8dae0d3c749bc79e17ffcc5327e97f92 gui_auto_bot/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp
+b58151095ea977879c7d0eb67381601f stm_translator/CMakeFiles/stm_translator_autogen

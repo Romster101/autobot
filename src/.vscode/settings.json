@@ -5,7 +5,7 @@
         "qobject": "cpp",
         "qgraphicsitem": "cpp"
     },
-    "cmake.sourceDirectory": "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot",
+    "cmake.sourceDirectory": "/home/macubuntu/projects/autobot/src",
     "cmake.configureOnOpen": true,
     "C_Cpp.errorSquiggles": "disabled"
 }

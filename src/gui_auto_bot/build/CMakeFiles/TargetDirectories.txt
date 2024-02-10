@@ -1,8 +1,0 @@
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/install/strip.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/install/local.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/install.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/list_install_components.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/rebuild_cache.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/edit_cache.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui.dir
-/home/macubuntu/projects/autobot/src/gui_auto_bot/build/CMakeFiles/auto_bot_gui_autogen.dir

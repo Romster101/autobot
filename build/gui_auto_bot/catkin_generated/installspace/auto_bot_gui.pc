@@ -1,0 +1,8 @@
+prefix=/home/macubuntu/projects/autobot/install
+
+Name: auto_bot_gui
+Description: Description of auto_bot_gui
+Version: 0.2.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

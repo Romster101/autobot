@@ -1,0 +1,8 @@
+prefix=/usr/local
+
+Name: stm_translator
+Description: Description of stm_translator
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

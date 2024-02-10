@@ -1,14 +1,18 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
 
-MainWindow::MainWindow(QWidget *parent)
+MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     : QMainWindow(parent), ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
     scene = new ExtendedScene();
     JSON = new JSONmodule();
-    spd = new SerialPortDialog();
 
+    StmController = new ManualRemoteController(nh);
+    ros_timer = new QTimer(this);
+    connect(ros_timer, SIGNAL(timeout()), this, SLOT(spinOnce()));
+    ros_timer->start(25); 
+    
     GraphicsRobItem *item = new GraphicsRobItem(0, 0, 0, false);
     addItem(item);
     ui->gv_builtMap->setScene(scene);
@@ -28,7 +32,8 @@ MainWindow::~MainWindow()
     delete JSON;
     delete scene;
     delete ui;
-    delete spd;
+    delete ros_timer;
+    ros::shutdown();
 }
 
 void MainWindow::dblClicked(QPointF point)
@@ -184,14 +189,22 @@ void MainWindow::setSettingsForItem(QGraphicsItem *item)
     item->update();
 }
 
+void MainWindow::spinOnce()
+{
+    if (ros::ok())
+    {
+        ros::spinOnce();
+    }
+    else
+        QApplication::quit();
+}
+
 void MainWindow::on_a_remote_controller_triggered()
 {
-    ManualRemoteController remoteController;
-    remoteController.setSerialObject(spd->getSerialObject());
-    remoteController.exec();
+    StmController->show();
 }
 
 void MainWindow::on_a_buildGraphic_triggered()
 {
-    spd->show();
+    // spd->show();
 }
