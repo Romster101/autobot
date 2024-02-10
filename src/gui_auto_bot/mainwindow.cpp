@@ -106,6 +106,13 @@ void MainWindow::on_a_createNewFile_triggered()
 
 void MainWindow::on_a_openFile_triggered()
 {
+    QString file_path("/home/roman/projects/json.bor");
+    if (file_path != "")
+    {
+        JSON->setSavePath(file_path);
+        auto obj = JSON->readFromJsonObj(JSON->getSavePath());
+        JSON->loadJsonObjectIntoProgramm(obj,scene);
+    }
 }
 
 void MainWindow::on_a_save_triggered()
@@ -118,10 +125,9 @@ void MainWindow::on_a_save_triggered()
 
 void MainWindow::on_a_save_as_triggered()
 {
-    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
-                                                  QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
-    qDebug() << "save as " << file_path;
-
+    // auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
+    //                                               QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
+    QString file_path("/home/roman/projects/json.bor");
     if (file_path != "")
     {
         JSON->setSavePath(file_path);

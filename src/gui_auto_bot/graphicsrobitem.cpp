@@ -58,11 +58,22 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
     }
     else if (a->text() == "Удалить элемент")
     {
-        for (QGraphicsItem *item: scene()->selectedItems())
-        {
-            if(item!=nullptr){
+            int minNum = scene()->items().size(); // минимальный номер элемента, после которого мы обновляем индексы 
+        if(minNum > 0){
+                foreach (QGraphicsItem *item, scene()->selectedItems())
+            {
+                int num = item->data(NumberField).toInt();
+                if(num < minNum) // если номер текущего элемента меньше минимального,
+                // после которого надо обновлять все следующие номера, то обновим минимальный 
+                    minNum = num;
                 scene()->removeItem(item);
                 delete item;
+            }
+            // теперь начиная с минимального значения номера элемента, будем обновлять все следующие номера
+            auto size = scene()->items().size();
+            auto itemsList = scene()->items(Qt::AscendingOrder);
+            for (int i = minNum-1; i < size; i++) {
+                itemsList[i]->setData(NumberField,i+1);
             }
         }
     }

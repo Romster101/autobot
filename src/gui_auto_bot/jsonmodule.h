@@ -24,14 +24,13 @@ public:
     QJsonObject getJsonObj(ExtendedScene* scene);
     // метод сохранения объекта
     void saveToJsonObj(QJsonObject obj);
+        // метод для выгрузки 
+    QJsonObject readFromJsonObj(QString path);
+        // метод загрузки объекта в программу
+    void loadJsonObjectIntoProgramm(QJsonObject obj,ExtendedScene* scene);
 
 private:
     QString path; // путь сохранения 
-
-    // метод для выгрузки 
-    QJsonObject readFromJsonObj(QString path);
-    // метод загрузки объекта в программу
-    void loadJsonObjectIntoProgramm(QJsonObject obj,ExtendedScene* scene);
 };
 
 
