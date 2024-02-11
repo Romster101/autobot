@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/macubuntu/projects/autobot/src
+CMAKE_SOURCE_DIR = /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/macubuntu/projects/autobot/src/build
+CMAKE_BINARY_DIR = /home/roman/qt_ROS_projects/autobot/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/macubuntu/projects/autobot/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/macubuntu/projects/autobot/src/build/CMakeFiles /home/macubuntu/projects/autobot/src/build/gtest/googletest/CMakeFiles/progress.marks
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/macubuntu/projects/autobot/src/build/CMakeFiles 0
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest/CMakeFiles/progress.marks
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/clean
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/macubuntu/projects/autobot/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 gtest/googletest/CMakeFiles/gtest_main.dir/rule:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/rule
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main.dir/rule
 .PHONY : gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ gtest_main: gtest/googletest/CMakeFiles/gtest_main.dir/rule
 
 # fast build rule for target.
 gtest_main/fast:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 # Convenience name for target.
 gtest/googletest/CMakeFiles/gtest.dir/rule:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/rule
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest.dir/rule
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # Convenience name for target.
@@ -194,8 +194,92 @@ gtest: gtest/googletest/CMakeFiles/gtest.dir/rule
 
 # fast build rule for target.
 gtest/fast:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
+
+# Convenience name for target.
+gtest/googletest/CMakeFiles/gtest_main_autogen.dir/rule:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_main_autogen.dir/rule
+.PHONY : gtest/googletest/CMakeFiles/gtest_main_autogen.dir/rule
+
+# Convenience name for target.
+gtest_main_autogen: gtest/googletest/CMakeFiles/gtest_main_autogen.dir/rule
+
+.PHONY : gtest_main_autogen
+
+# fast build rule for target.
+gtest_main_autogen/fast:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main_autogen.dir/build.make gtest/googletest/CMakeFiles/gtest_main_autogen.dir/build
+.PHONY : gtest_main_autogen/fast
+
+# Convenience name for target.
+gtest/googletest/CMakeFiles/gtest_autogen.dir/rule:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f CMakeFiles/Makefile2 gtest/googletest/CMakeFiles/gtest_autogen.dir/rule
+.PHONY : gtest/googletest/CMakeFiles/gtest_autogen.dir/rule
+
+# Convenience name for target.
+gtest_autogen: gtest/googletest/CMakeFiles/gtest_autogen.dir/rule
+
+.PHONY : gtest_autogen
+
+# fast build rule for target.
+gtest_autogen/fast:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_autogen.dir/build.make gtest/googletest/CMakeFiles/gtest_autogen.dir/build
+.PHONY : gtest_autogen/fast
+
+gtest_autogen/mocs_compilation.o: gtest_autogen/mocs_compilation.cpp.o
+
+.PHONY : gtest_autogen/mocs_compilation.o
+
+# target to build an object file
+gtest_autogen/mocs_compilation.cpp.o:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o
+.PHONY : gtest_autogen/mocs_compilation.cpp.o
+
+gtest_autogen/mocs_compilation.i: gtest_autogen/mocs_compilation.cpp.i
+
+.PHONY : gtest_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+gtest_autogen/mocs_compilation.cpp.i:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.i
+.PHONY : gtest_autogen/mocs_compilation.cpp.i
+
+gtest_autogen/mocs_compilation.s: gtest_autogen/mocs_compilation.cpp.s
+
+.PHONY : gtest_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+gtest_autogen/mocs_compilation.cpp.s:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.s
+.PHONY : gtest_autogen/mocs_compilation.cpp.s
+
+gtest_main_autogen/mocs_compilation.o: gtest_main_autogen/mocs_compilation.cpp.o
+
+.PHONY : gtest_main_autogen/mocs_compilation.o
+
+# target to build an object file
+gtest_main_autogen/mocs_compilation.cpp.o:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.o
+.PHONY : gtest_main_autogen/mocs_compilation.cpp.o
+
+gtest_main_autogen/mocs_compilation.i: gtest_main_autogen/mocs_compilation.cpp.i
+
+.PHONY : gtest_main_autogen/mocs_compilation.i
+
+# target to preprocess a source file
+gtest_main_autogen/mocs_compilation.cpp.i:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.i
+.PHONY : gtest_main_autogen/mocs_compilation.cpp.i
+
+gtest_main_autogen/mocs_compilation.s: gtest_main_autogen/mocs_compilation.cpp.s
+
+.PHONY : gtest_main_autogen/mocs_compilation.s
+
+# target to generate assembly for a file
+gtest_main_autogen/mocs_compilation.cpp.s:
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/gtest_main_autogen/mocs_compilation.cpp.s
+.PHONY : gtest_main_autogen/mocs_compilation.cpp.s
 
 src/gtest-all.o: src/gtest-all.cc.o
 
@@ -203,7 +287,7 @@ src/gtest-all.o: src/gtest-all.cc.o
 
 # target to build an object file
 src/gtest-all.cc.o:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 .PHONY : src/gtest-all.cc.o
 
 src/gtest-all.i: src/gtest-all.cc.i
@@ -212,7 +296,7 @@ src/gtest-all.i: src/gtest-all.cc.i
 
 # target to preprocess a source file
 src/gtest-all.cc.i:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
 .PHONY : src/gtest-all.cc.i
 
 src/gtest-all.s: src/gtest-all.cc.s
@@ -221,7 +305,7 @@ src/gtest-all.s: src/gtest-all.cc.s
 
 # target to generate assembly for a file
 src/gtest-all.cc.s:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest.dir/build.make gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
 .PHONY : src/gtest-all.cc.s
 
 src/gtest_main.o: src/gtest_main.cc.o
@@ -230,7 +314,7 @@ src/gtest_main.o: src/gtest_main.cc.o
 
 # target to build an object file
 src/gtest_main.cc.o:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
 .PHONY : src/gtest_main.cc.o
 
 src/gtest_main.i: src/gtest_main.cc.i
@@ -239,7 +323,7 @@ src/gtest_main.i: src/gtest_main.cc.i
 
 # target to preprocess a source file
 src/gtest_main.cc.i:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
 .PHONY : src/gtest_main.cc.i
 
 src/gtest_main.s: src/gtest_main.cc.s
@@ -248,7 +332,7 @@ src/gtest_main.s: src/gtest_main.cc.s
 
 # target to generate assembly for a file
 src/gtest_main.cc.s:
-	cd /home/macubuntu/projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(MAKE) -f gtest/googletest/CMakeFiles/gtest_main.dir/build.make gtest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
 .PHONY : src/gtest_main.cc.s
 
 # Help Target
@@ -266,6 +350,14 @@ help:
 	@echo "... test"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... gtest_main_autogen"
+	@echo "... gtest_autogen"
+	@echo "... gtest_autogen/mocs_compilation.o"
+	@echo "... gtest_autogen/mocs_compilation.i"
+	@echo "... gtest_autogen/mocs_compilation.s"
+	@echo "... gtest_main_autogen/mocs_compilation.o"
+	@echo "... gtest_main_autogen/mocs_compilation.i"
+	@echo "... gtest_main_autogen/mocs_compilation.s"
 	@echo "... src/gtest-all.o"
 	@echo "... src/gtest-all.i"
 	@echo "... src/gtest-all.s"
@@ -283,6 +375,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/macubuntu/projects/autobot/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -67,8 +67,8 @@ set(auto_bot_gui_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(auto_bot_gui_SOURCE_PREFIX /home/macubuntu/projects/autobot/src/gui_auto_bot)
-  set(auto_bot_gui_DEVEL_PREFIX /home/macubuntu/projects/autobot/src/build/devel)
+  set(auto_bot_gui_SOURCE_PREFIX /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot)
+  set(auto_bot_gui_DEVEL_PREFIX /home/roman/qt_ROS_projects/autobot/src/build/devel)
   set(auto_bot_gui_INSTALL_PREFIX "")
   set(auto_bot_gui_PREFIX ${auto_bot_gui_DEVEL_PREFIX})
 else()
@@ -110,7 +110,7 @@ if(NOT " " STREQUAL " ")
         message(FATAL_ERROR "Project 'auto_bot_gui' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'auto_bot_gui' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/macubuntu/projects/autobot/src/gui_auto_bot/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'auto_bot_gui' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/${idir}'.  ${_report}")
     endif()
     _list_append_unique(auto_bot_gui_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/macubuntu/projects/autobot/src/build/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/roman/qt_ROS_projects/autobot/src/build/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

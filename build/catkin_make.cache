@@ -1,2 +1,0 @@
-diff_drive:gui_auto_bot:stm_translator
--DCATKIN_DEVEL_PREFIX=/home/macubuntu/projects/autobot/devel -DCMAKE_INSTALL_PREFIX=/home/macubuntu/projects/autobot/install -G Unix Makefiles

@@ -1,4 +1,4 @@
-# Install script for directory: /home/macubuntu/projects/autobot/src
+# Install script for directory: /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -56,7 +56,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -68,7 +68,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/usr/local" TYPE PROGRAM FILES "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -81,8 +81,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/setup.bash"
-    "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/local_setup.bash"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/setup.bash"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
@@ -96,8 +96,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/setup.sh"
-    "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/local_setup.sh"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/setup.sh"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
@@ -111,8 +111,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES
-    "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/setup.zsh"
-    "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/local_setup.zsh"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/setup.zsh"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
@@ -125,15 +125,47 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/macubuntu/projects/autobot/src/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/usr/local" TYPE FILE FILES "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/.rosinstall")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/auto_bot_gui.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auto_bot_gui/cmake" TYPE FILE FILES
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/auto_bot_guiConfig.cmake"
+    "/home/roman/qt_ROS_projects/autobot/src/build/catkin_generated/installspace/auto_bot_guiConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auto_bot_gui" TYPE FILE FILES "/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui" TYPE EXECUTABLE FILES "/home/roman/qt_ROS_projects/autobot/src/build/devel/lib/auto_bot_gui/auto_bot_gui")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui"
+         OLD_RPATH "/opt/ros/noetic/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+    endif()
+  endif()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/macubuntu/projects/autobot/src/build/gtest/cmake_install.cmake")
-  include("/home/macubuntu/projects/autobot/src/build/gui_auto_bot/cmake_install.cmake")
-  include("/home/macubuntu/projects/autobot/src/build/stm_translator/cmake_install.cmake")
-  include("/home/macubuntu/projects/autobot/src/build/diff_drive/cmake_install.cmake")
+  include("/home/roman/qt_ROS_projects/autobot/src/build/gtest/cmake_install.cmake")
 
 endif()
 
@@ -145,5 +177,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/macubuntu/projects/autobot/src/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/roman/qt_ROS_projects/autobot/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

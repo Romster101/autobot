@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/macubuntu/projects/autobot/src
+CMAKE_SOURCE_DIR = /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/macubuntu/projects/autobot/src/build
+CMAKE_BINARY_DIR = /home/roman/qt_ROS_projects/autobot/src/build
 
 # Include any dependencies generated for this target.
 include gtest/googletest/CMakeFiles/gtest.dir/depend.make
@@ -57,31 +57,46 @@ include gtest/googletest/CMakeFiles/gtest.dir/progress.make
 # Include the compile flags for this target's objects.
 include gtest/googletest/CMakeFiles/gtest.dir/flags.make
 
+gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o: gtest/googletest/CMakeFiles/gtest.dir/flags.make
+gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o: gtest/googletest/gtest_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o"
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest/gtest_autogen/mocs_compilation.cpp
+
+gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.i"
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest/gtest_autogen/mocs_compilation.cpp > CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.i
+
+gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.s"
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest/gtest_autogen/mocs_compilation.cpp -o CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.s
+
 gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: gtest/googletest/CMakeFiles/gtest.dir/flags.make
 gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o: /usr/src/googletest/googletest/src/gtest-all.cc
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/macubuntu/projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
-	cd /home/macubuntu/projects/autobot/src/build/gtest/googletest && /usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o"
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /usr/src/googletest/googletest/src/gtest-all.cc
 
 gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gtest.dir/src/gtest-all.cc.i"
-	cd /home/macubuntu/projects/autobot/src/build/gtest/googletest && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/googletest/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/googletest/googletest/src/gtest-all.cc > CMakeFiles/gtest.dir/src/gtest-all.cc.i
 
 gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gtest.dir/src/gtest-all.cc.s"
-	cd /home/macubuntu/projects/autobot/src/build/gtest/googletest && /usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/googletest/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/googletest/googletest/src/gtest-all.cc -o CMakeFiles/gtest.dir/src/gtest-all.cc.s
 
 # Object files for target gtest
 gtest_OBJECTS = \
+"CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o" \
 "CMakeFiles/gtest.dir/src/gtest-all.cc.o"
 
 # External object files for target gtest
 gtest_EXTERNAL_OBJECTS =
 
+gtest/lib/libgtestd.so: gtest/googletest/CMakeFiles/gtest.dir/gtest_autogen/mocs_compilation.cpp.o
 gtest/lib/libgtestd.so: gtest/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
 gtest/lib/libgtestd.so: gtest/googletest/CMakeFiles/gtest.dir/build.make
 gtest/lib/libgtestd.so: gtest/googletest/CMakeFiles/gtest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/macubuntu/projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library ../lib/libgtestd.so"
-	cd /home/macubuntu/projects/autobot/src/build/gtest/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX shared library ../lib/libgtestd.so"
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/gtest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 gtest/googletest/CMakeFiles/gtest.dir/build: gtest/lib/libgtestd.so
@@ -89,10 +104,10 @@ gtest/googletest/CMakeFiles/gtest.dir/build: gtest/lib/libgtestd.so
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/build
 
 gtest/googletest/CMakeFiles/gtest.dir/clean:
-	cd /home/macubuntu/projects/autobot/src/build/gtest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest && $(CMAKE_COMMAND) -P CMakeFiles/gtest.dir/cmake_clean.cmake
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/clean
 
 gtest/googletest/CMakeFiles/gtest.dir/depend:
-	cd /home/macubuntu/projects/autobot/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/macubuntu/projects/autobot/src /usr/src/googletest/googletest /home/macubuntu/projects/autobot/src/build /home/macubuntu/projects/autobot/src/build/gtest/googletest /home/macubuntu/projects/autobot/src/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/roman/qt_ROS_projects/autobot/src/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot /usr/src/googletest/googletest /home/roman/qt_ROS_projects/autobot/src/build /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest /home/roman/qt_ROS_projects/autobot/src/build/gtest/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : gtest/googletest/CMakeFiles/gtest.dir/depend
 

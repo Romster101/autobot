@@ -1,1 +1,1 @@
-/usr/bin/clang++ -fPIC -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/macubuntu/projects/autobot/src/build/gtest/lib ../lib/libgtestd.so -lpthread 
+/usr/bin/c++ -fPIC -g  -shared -Wl,-soname,libgmockd.so -o ../lib/libgmockd.so CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o CMakeFiles/gmock.dir/src/gmock-all.cc.o  -Wl,-rpath,/home/roman/qt_ROS_projects/autobot/src/build/gtest/lib ../lib/libgtestd.so -lpthread 

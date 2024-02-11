@@ -1,6 +1,0 @@
-# CMake generated Testfile for 
-# Source directory: /home/macubuntu/projects/autobot/src/gui_auto_bot
-# Build directory: /home/macubuntu/projects/autobot/build/gui_auto_bot
-# 
-# This file includes the relevant testing commands required for 
-# testing this directory and lists subdirectories to be tested as well.

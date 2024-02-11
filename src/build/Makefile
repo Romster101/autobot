@@ -48,25 +48,13 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/macubuntu/projects/autobot/src
+CMAKE_SOURCE_DIR = /home/roman/qt_ROS_projects/autobot/src/gui_auto_bot
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/macubuntu/projects/autobot/src/build
+CMAKE_BINARY_DIR = /home/roman/qt_ROS_projects/autobot/src/build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
@@ -79,28 +67,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -135,11 +101,45 @@ test/fast: test
 
 .PHONY : test/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/macubuntu/projects/autobot/src/build/CMakeFiles /home/macubuntu/projects/autobot/src/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/macubuntu/projects/autobot/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -168,43 +168,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named doxygen
+# Target rules for targets named auto_bot_gui
 
 # Build rule for target.
-doxygen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 doxygen
-.PHONY : doxygen
+auto_bot_gui: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 auto_bot_gui
+.PHONY : auto_bot_gui
 
 # fast build rule for target.
-doxygen/fast:
-	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-.PHONY : doxygen/fast
+auto_bot_gui/fast:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/build
+.PHONY : auto_bot_gui/fast
 
 #=============================================================================
-# Target rules for targets named run_tests
+# Target rules for targets named std_msgs_generate_messages_py
 
 # Build rule for target.
-run_tests: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 run_tests
-.PHONY : run_tests
+std_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
+.PHONY : std_msgs_generate_messages_py
 
 # fast build rule for target.
-run_tests/fast:
-	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
-.PHONY : run_tests/fast
+std_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_py.dir/build.make CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
 
 #=============================================================================
-# Target rules for targets named clean_test_results
+# Target rules for targets named std_msgs_generate_messages_nodejs
 
 # Build rule for target.
-clean_test_results: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
-.PHONY : clean_test_results
+std_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
+.PHONY : std_msgs_generate_messages_nodejs
 
 # fast build rule for target.
-clean_test_results/fast:
-	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
-.PHONY : clean_test_results/fast
+std_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
+.PHONY : std_msgs_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_cpp
+
+# Build rule for target.
+std_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
+.PHONY : rosgraph_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
+.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
 # Target rules for targets named tests
@@ -220,6 +246,45 @@ tests/fast:
 .PHONY : tests/fast
 
 #=============================================================================
+# Target rules for targets named clean_test_results
+
+# Build rule for target.
+clean_test_results: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 clean_test_results
+.PHONY : clean_test_results
+
+# fast build rule for target.
+clean_test_results/fast:
+	$(MAKE) -f CMakeFiles/clean_test_results.dir/build.make CMakeFiles/clean_test_results.dir/build
+.PHONY : clean_test_results/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_lisp
+
+# Build rule for target.
+std_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named run_tests
+
+# Build rule for target.
+run_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 run_tests
+.PHONY : run_tests
+
+# fast build rule for target.
+run_tests/fast:
+	$(MAKE) -f CMakeFiles/run_tests.dir/build.make CMakeFiles/run_tests.dir/build
+.PHONY : run_tests/fast
+
+#=============================================================================
 # Target rules for targets named download_extra_data
 
 # Build rule for target.
@@ -231,6 +296,162 @@ download_extra_data: cmake_check_build_system
 download_extra_data/fast:
 	$(MAKE) -f CMakeFiles/download_extra_data.dir/build.make CMakeFiles/download_extra_data.dir/build
 .PHONY : download_extra_data/fast
+
+#=============================================================================
+# Target rules for targets named doxygen
+
+# Build rule for target.
+doxygen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 doxygen
+.PHONY : doxygen
+
+# fast build rule for target.
+doxygen/fast:
+	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
+.PHONY : doxygen/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_py
+
+# Build rule for target.
+roscpp_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_py.dir/build.make CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_cpp
+
+# Build rule for target.
+roscpp_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_cpp.dir/build.make CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_eus
+
+# Build rule for target.
+roscpp_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
+.PHONY : roscpp_generate_messages_eus
+
+# fast build rule for target.
+roscpp_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_eus.dir/build.make CMakeFiles/roscpp_generate_messages_eus.dir/build
+.PHONY : roscpp_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_py
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_py: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_lisp
+
+# Build rule for target.
+roscpp_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_lisp.dir/build.make CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named std_msgs_generate_messages_eus
+
+# Build rule for target.
+std_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
+.PHONY : std_msgs_generate_messages_eus
+
+# fast build rule for target.
+std_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/std_msgs_generate_messages_eus.dir/build.make CMakeFiles/std_msgs_generate_messages_eus.dir/build
+.PHONY : std_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named roscpp_generate_messages_nodejs
+
+# Build rule for target.
+roscpp_generate_messages_nodejs: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
+.PHONY : roscpp_generate_messages_nodejs
+
+# fast build rule for target.
+roscpp_generate_messages_nodejs/fast:
+	$(MAKE) -f CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make CMakeFiles/roscpp_generate_messages_nodejs.dir/build
+.PHONY : roscpp_generate_messages_nodejs/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_eus
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_eus: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
+.PHONY : rosgraph_msgs_generate_messages_eus
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_eus/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
+.PHONY : rosgraph_msgs_generate_messages_eus/fast
+
+#=============================================================================
+# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+
+# Build rule for target.
+rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	$(MAKE) -f CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+#=============================================================================
+# Target rules for targets named auto_bot_gui_autogen
+
+# Build rule for target.
+auto_bot_gui_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 auto_bot_gui_autogen
+.PHONY : auto_bot_gui_autogen
+
+# fast build rule for target.
+auto_bot_gui_autogen/fast:
+	$(MAKE) -f CMakeFiles/auto_bot_gui_autogen.dir/build.make CMakeFiles/auto_bot_gui_autogen.dir/build
+.PHONY : auto_bot_gui_autogen/fast
 
 #=============================================================================
 # Target rules for targets named gmock_main
@@ -259,6 +480,32 @@ gmock/fast:
 .PHONY : gmock/fast
 
 #=============================================================================
+# Target rules for targets named gmock_main_autogen
+
+# Build rule for target.
+gmock_main_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_main_autogen
+.PHONY : gmock_main_autogen
+
+# fast build rule for target.
+gmock_main_autogen/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_main_autogen.dir/build.make gtest/googlemock/CMakeFiles/gmock_main_autogen.dir/build
+.PHONY : gmock_main_autogen/fast
+
+#=============================================================================
+# Target rules for targets named gmock_autogen
+
+# Build rule for target.
+gmock_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gmock_autogen
+.PHONY : gmock_autogen
+
+# fast build rule for target.
+gmock_autogen/fast:
+	$(MAKE) -f gtest/googlemock/CMakeFiles/gmock_autogen.dir/build.make gtest/googlemock/CMakeFiles/gmock_autogen.dir/build
+.PHONY : gmock_autogen/fast
+
+#=============================================================================
 # Target rules for targets named gtest_main
 
 # Build rule for target.
@@ -285,251 +532,327 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named auto_bot_gui
+# Target rules for targets named gtest_main_autogen
 
 # Build rule for target.
-auto_bot_gui: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 auto_bot_gui
-.PHONY : auto_bot_gui
+gtest_main_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_main_autogen
+.PHONY : gtest_main_autogen
 
 # fast build rule for target.
-auto_bot_gui/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui.dir/build
-.PHONY : auto_bot_gui/fast
+gtest_main_autogen/fast:
+	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_main_autogen.dir/build.make gtest/googletest/CMakeFiles/gtest_main_autogen.dir/build
+.PHONY : gtest_main_autogen/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
+# Target rules for targets named gtest_autogen
 
 # Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
+gtest_autogen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gtest_autogen
+.PHONY : gtest_autogen
 
 # fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/std_msgs_generate_messages_py.dir/build.make gui_auto_bot/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+gtest_autogen/fast:
+	$(MAKE) -f gtest/googletest/CMakeFiles/gtest_autogen.dir/build.make gtest/googletest/CMakeFiles/gtest_autogen.dir/build
+.PHONY : gtest_autogen/fast
 
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_nodejs
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.o: auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
 
-# Build rule for target.
-std_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_nodejs
-.PHONY : std_msgs_generate_messages_nodejs
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.o
 
-# fast build rule for target.
-std_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build.make gui_auto_bot/CMakeFiles/std_msgs_generate_messages_nodejs.dir/build
-.PHONY : std_msgs_generate_messages_nodejs/fast
+# target to build an object file
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.o
 
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_cpp
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.i: auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i
 
-# Build rule for target.
-roscpp_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_cpp
-.PHONY : roscpp_generate_messages_cpp
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.i
 
-# fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make gui_auto_bot/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+# target to preprocess a source file
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.i
 
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_eus
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.s: auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s
 
-# Build rule for target.
-roscpp_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_eus
-.PHONY : roscpp_generate_messages_eus
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.s
 
-# fast build rule for target.
-roscpp_generate_messages_eus/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/roscpp_generate_messages_eus.dir/build.make gui_auto_bot/CMakeFiles/roscpp_generate_messages_eus.dir/build
-.PHONY : roscpp_generate_messages_eus/fast
+# target to generate assembly for a file
+auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s
+.PHONY : auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.cpp.s
 
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_nodejs
+auto_bot_gui_autogen/mocs_compilation.o: auto_bot_gui_autogen/mocs_compilation.cpp.o
 
-# Build rule for target.
-rosgraph_msgs_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_nodejs
-.PHONY : rosgraph_msgs_generate_messages_nodejs
+.PHONY : auto_bot_gui_autogen/mocs_compilation.o
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_nodejs/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build.make gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_nodejs.dir/build
-.PHONY : rosgraph_msgs_generate_messages_nodejs/fast
+# target to build an object file
+auto_bot_gui_autogen/mocs_compilation.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.o
+.PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.o
 
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
+auto_bot_gui_autogen/mocs_compilation.i: auto_bot_gui_autogen/mocs_compilation.cpp.i
 
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
+.PHONY : auto_bot_gui_autogen/mocs_compilation.i
 
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make gui_auto_bot/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+# target to preprocess a source file
+auto_bot_gui_autogen/mocs_compilation.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.i
+.PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.i
 
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_py
+auto_bot_gui_autogen/mocs_compilation.s: auto_bot_gui_autogen/mocs_compilation.cpp.s
 
-# Build rule for target.
-roscpp_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_py
-.PHONY : roscpp_generate_messages_py
+.PHONY : auto_bot_gui_autogen/mocs_compilation.s
 
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/roscpp_generate_messages_py.dir/build.make gui_auto_bot/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+# target to generate assembly for a file
+auto_bot_gui_autogen/mocs_compilation.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/auto_bot_gui_autogen/mocs_compilation.cpp.s
+.PHONY : auto_bot_gui_autogen/mocs_compilation.cpp.s
 
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_eus
+extendedscene.o: extendedscene.cpp.o
 
-# Build rule for target.
-std_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_eus
-.PHONY : std_msgs_generate_messages_eus
+.PHONY : extendedscene.o
 
-# fast build rule for target.
-std_msgs_generate_messages_eus/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/std_msgs_generate_messages_eus.dir/build.make gui_auto_bot/CMakeFiles/std_msgs_generate_messages_eus.dir/build
-.PHONY : std_msgs_generate_messages_eus/fast
+# target to build an object file
+extendedscene.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.o
+.PHONY : extendedscene.cpp.o
 
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_nodejs
+extendedscene.i: extendedscene.cpp.i
 
-# Build rule for target.
-roscpp_generate_messages_nodejs: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_nodejs
-.PHONY : roscpp_generate_messages_nodejs
+.PHONY : extendedscene.i
 
-# fast build rule for target.
-roscpp_generate_messages_nodejs/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build.make gui_auto_bot/CMakeFiles/roscpp_generate_messages_nodejs.dir/build
-.PHONY : roscpp_generate_messages_nodejs/fast
+# target to preprocess a source file
+extendedscene.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.i
+.PHONY : extendedscene.cpp.i
 
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_cpp
+extendedscene.s: extendedscene.cpp.s
 
-# Build rule for target.
-rosgraph_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_cpp
-.PHONY : rosgraph_msgs_generate_messages_cpp
+.PHONY : extendedscene.s
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+# target to generate assembly for a file
+extendedscene.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/extendedscene.cpp.s
+.PHONY : extendedscene.cpp.s
 
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
+graphicsrobitem.o: graphicsrobitem.cpp.o
 
-# Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
+.PHONY : graphicsrobitem.o
 
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make gui_auto_bot/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+# target to build an object file
+graphicsrobitem.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.o
+.PHONY : graphicsrobitem.cpp.o
 
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_eus
+graphicsrobitem.i: graphicsrobitem.cpp.i
 
-# Build rule for target.
-rosgraph_msgs_generate_messages_eus: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_eus
-.PHONY : rosgraph_msgs_generate_messages_eus
+.PHONY : graphicsrobitem.i
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_eus/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build.make gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_eus.dir/build
-.PHONY : rosgraph_msgs_generate_messages_eus/fast
+# target to preprocess a source file
+graphicsrobitem.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.i
+.PHONY : graphicsrobitem.cpp.i
 
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_lisp
+graphicsrobitem.s: graphicsrobitem.cpp.s
 
-# Build rule for target.
-rosgraph_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_lisp
-.PHONY : rosgraph_msgs_generate_messages_lisp
+.PHONY : graphicsrobitem.s
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+# target to generate assembly for a file
+graphicsrobitem.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/graphicsrobitem.cpp.s
+.PHONY : graphicsrobitem.cpp.s
 
-#=============================================================================
-# Target rules for targets named roscpp_generate_messages_lisp
+iteminputinfo.o: iteminputinfo.cpp.o
 
-# Build rule for target.
-roscpp_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 roscpp_generate_messages_lisp
-.PHONY : roscpp_generate_messages_lisp
+.PHONY : iteminputinfo.o
 
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make gui_auto_bot/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
+# target to build an object file
+iteminputinfo.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.o
+.PHONY : iteminputinfo.cpp.o
 
-#=============================================================================
-# Target rules for targets named rosgraph_msgs_generate_messages_py
+iteminputinfo.i: iteminputinfo.cpp.i
 
-# Build rule for target.
-rosgraph_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 rosgraph_msgs_generate_messages_py
-.PHONY : rosgraph_msgs_generate_messages_py
+.PHONY : iteminputinfo.i
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make gui_auto_bot/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+# target to preprocess a source file
+iteminputinfo.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.i
+.PHONY : iteminputinfo.cpp.i
 
-#=============================================================================
-# Target rules for targets named auto_bot_gui_autogen
+iteminputinfo.s: iteminputinfo.cpp.s
 
-# Build rule for target.
-auto_bot_gui_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 auto_bot_gui_autogen
-.PHONY : auto_bot_gui_autogen
+.PHONY : iteminputinfo.s
 
-# fast build rule for target.
-auto_bot_gui_autogen/fast:
-	$(MAKE) -f gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build.make gui_auto_bot/CMakeFiles/auto_bot_gui_autogen.dir/build
-.PHONY : auto_bot_gui_autogen/fast
+# target to generate assembly for a file
+iteminputinfo.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/iteminputinfo.cpp.s
+.PHONY : iteminputinfo.cpp.s
 
-#=============================================================================
-# Target rules for targets named stm_translator
+jsonmodule.o: jsonmodule.cpp.o
 
-# Build rule for target.
-stm_translator: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stm_translator
-.PHONY : stm_translator
+.PHONY : jsonmodule.o
 
-# fast build rule for target.
-stm_translator/fast:
-	$(MAKE) -f stm_translator/CMakeFiles/stm_translator.dir/build.make stm_translator/CMakeFiles/stm_translator.dir/build
-.PHONY : stm_translator/fast
+# target to build an object file
+jsonmodule.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.o
+.PHONY : jsonmodule.cpp.o
 
-#=============================================================================
-# Target rules for targets named stm_translator_autogen
+jsonmodule.i: jsonmodule.cpp.i
 
-# Build rule for target.
-stm_translator_autogen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 stm_translator_autogen
-.PHONY : stm_translator_autogen
+.PHONY : jsonmodule.i
 
-# fast build rule for target.
-stm_translator_autogen/fast:
-	$(MAKE) -f stm_translator/CMakeFiles/stm_translator_autogen.dir/build.make stm_translator/CMakeFiles/stm_translator_autogen.dir/build
-.PHONY : stm_translator_autogen/fast
+# target to preprocess a source file
+jsonmodule.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.i
+.PHONY : jsonmodule.cpp.i
+
+jsonmodule.s: jsonmodule.cpp.s
+
+.PHONY : jsonmodule.s
+
+# target to generate assembly for a file
+jsonmodule.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/jsonmodule.cpp.s
+.PHONY : jsonmodule.cpp.s
+
+main.o: main.cpp.o
+
+.PHONY : main.o
+
+# target to build an object file
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/main.cpp.o
+.PHONY : main.cpp.o
+
+main.i: main.cpp.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/main.cpp.i
+.PHONY : main.cpp.i
+
+main.s: main.cpp.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/main.cpp.s
+.PHONY : main.cpp.s
+
+mainwindow.o: mainwindow.cpp.o
+
+.PHONY : mainwindow.o
+
+# target to build an object file
+mainwindow.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.o
+.PHONY : mainwindow.cpp.o
+
+mainwindow.i: mainwindow.cpp.i
+
+.PHONY : mainwindow.i
+
+# target to preprocess a source file
+mainwindow.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.i
+.PHONY : mainwindow.cpp.i
+
+mainwindow.s: mainwindow.cpp.s
+
+.PHONY : mainwindow.s
+
+# target to generate assembly for a file
+mainwindow.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/mainwindow.cpp.s
+.PHONY : mainwindow.cpp.s
+
+manualremotecontroller.o: manualremotecontroller.cpp.o
+
+.PHONY : manualremotecontroller.o
+
+# target to build an object file
+manualremotecontroller.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.o
+.PHONY : manualremotecontroller.cpp.o
+
+manualremotecontroller.i: manualremotecontroller.cpp.i
+
+.PHONY : manualremotecontroller.i
+
+# target to preprocess a source file
+manualremotecontroller.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.i
+.PHONY : manualremotecontroller.cpp.i
+
+manualremotecontroller.s: manualremotecontroller.cpp.s
+
+.PHONY : manualremotecontroller.s
+
+# target to generate assembly for a file
+manualremotecontroller.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/manualremotecontroller.cpp.s
+.PHONY : manualremotecontroller.cpp.s
+
+qcustomplot.o: qcustomplot.cpp.o
+
+.PHONY : qcustomplot.o
+
+# target to build an object file
+qcustomplot.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.o
+.PHONY : qcustomplot.cpp.o
+
+qcustomplot.i: qcustomplot.cpp.i
+
+.PHONY : qcustomplot.i
+
+# target to preprocess a source file
+qcustomplot.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.i
+.PHONY : qcustomplot.cpp.i
+
+qcustomplot.s: qcustomplot.cpp.s
+
+.PHONY : qcustomplot.s
+
+# target to generate assembly for a file
+qcustomplot.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/qcustomplot.cpp.s
+.PHONY : qcustomplot.cpp.s
+
+serialportdialog.o: serialportdialog.cpp.o
+
+.PHONY : serialportdialog.o
+
+# target to build an object file
+serialportdialog.cpp.o:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.o
+.PHONY : serialportdialog.cpp.o
+
+serialportdialog.i: serialportdialog.cpp.i
+
+.PHONY : serialportdialog.i
+
+# target to preprocess a source file
+serialportdialog.cpp.i:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.i
+.PHONY : serialportdialog.cpp.i
+
+serialportdialog.s: serialportdialog.cpp.s
+
+.PHONY : serialportdialog.s
+
+# target to generate assembly for a file
+serialportdialog.cpp.s:
+	$(MAKE) -f CMakeFiles/auto_bot_gui.dir/build.make CMakeFiles/auto_bot_gui.dir/serialportdialog.cpp.s
+.PHONY : serialportdialog.cpp.s
 
 # Help Target
 help:
@@ -537,41 +860,76 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... install"
-	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
-	@echo "... doxygen"
-	@echo "... run_tests"
-	@echo "... clean_test_results"
-	@echo "... tests"
-	@echo "... download_extra_data"
-	@echo "... gmock_main"
-	@echo "... gmock"
-	@echo "... gtest_main"
-	@echo "... gtest"
 	@echo "... auto_bot_gui"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... std_msgs_generate_messages_nodejs"
+	@echo "... install/strip"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_nodejs"
+	@echo "... tests"
+	@echo "... clean_test_results"
+	@echo "... list_install_components"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... run_tests"
+	@echo "... download_extra_data"
+	@echo "... doxygen"
+	@echo "... roscpp_generate_messages_py"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... rosgraph_msgs_generate_messages_nodejs"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... install"
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_nodejs"
 	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_cpp"
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
 	@echo "... auto_bot_gui_autogen"
-	@echo "... stm_translator"
-	@echo "... stm_translator_autogen"
+	@echo "... gmock_main"
+	@echo "... gmock"
+	@echo "... gmock_main_autogen"
+	@echo "... gmock_autogen"
+	@echo "... gtest_main"
+	@echo "... gtest"
+	@echo "... gtest_main_autogen"
+	@echo "... gtest_autogen"
+	@echo "... auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.o"
+	@echo "... auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.i"
+	@echo "... auto_bot_gui_autogen/PNK5WDWK6L/qrc_images.s"
+	@echo "... auto_bot_gui_autogen/mocs_compilation.o"
+	@echo "... auto_bot_gui_autogen/mocs_compilation.i"
+	@echo "... auto_bot_gui_autogen/mocs_compilation.s"
+	@echo "... extendedscene.o"
+	@echo "... extendedscene.i"
+	@echo "... extendedscene.s"
+	@echo "... graphicsrobitem.o"
+	@echo "... graphicsrobitem.i"
+	@echo "... graphicsrobitem.s"
+	@echo "... iteminputinfo.o"
+	@echo "... iteminputinfo.i"
+	@echo "... iteminputinfo.s"
+	@echo "... jsonmodule.o"
+	@echo "... jsonmodule.i"
+	@echo "... jsonmodule.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... mainwindow.o"
+	@echo "... mainwindow.i"
+	@echo "... mainwindow.s"
+	@echo "... manualremotecontroller.o"
+	@echo "... manualremotecontroller.i"
+	@echo "... manualremotecontroller.s"
+	@echo "... qcustomplot.o"
+	@echo "... qcustomplot.i"
+	@echo "... qcustomplot.s"
+	@echo "... serialportdialog.o"
+	@echo "... serialportdialog.i"
+	@echo "... serialportdialog.s"
 .PHONY : help
 
 

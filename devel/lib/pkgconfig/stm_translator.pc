@@ -1,4 +1,4 @@
-prefix=/home/macubuntu/projects/autobot/devel
+prefix=/home/roman/qt_ROS_projects/autobot/devel
 
 Name: stm_translator
 Description: Description of stm_translator

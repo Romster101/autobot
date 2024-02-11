@@ -44,39 +44,39 @@ void ManualRemoteController::finishCallback(int result)
 
 void ManualRemoteController::on_pb_back_clicked()
 {
-    this->sendSpeed(-0.15, 0);
+    this->sendSpeed(0, 0);
 }
 
 void ManualRemoteController::on_pb_forward_clicked()
 {
-    this->sendSpeed(0.15, 0);
+    this->sendSpeed(0, 0);
 }
 
 void ManualRemoteController::on_pb_rotatePlus_clicked()
 {
-    this->sendSpeed(0, 0.15);
+    this->sendSpeed(0, 0);
 }
 
 void ManualRemoteController::on_pb_rotateMinus_clicked()
 {
-    this->sendSpeed(0, -0.15);
+    this->sendSpeed(0, 0);
 }
 
 void ManualRemoteController::on_pb_back_pressed()
 {
-    this->sendSpeed(0, 0);
+    this->sendSpeed(-0.15, 0);
 }
 void ManualRemoteController::on_pb_forward_pressed()
 {
-    this->sendSpeed(0, 0);
+    this->sendSpeed(0.15, 0);
 }
 
 void ManualRemoteController::on_pb_rotatePlus_pressed()
 {
-    this->sendSpeed(0, 0);
+    this->sendSpeed(0, 0.15);
 }
 
 void ManualRemoteController::on_pb_rotateMinus_pressed()
 {
-    this->sendSpeed(0, 0);
+    this->sendSpeed(0, -0.15);
 }
