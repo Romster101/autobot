@@ -10,9 +10,21 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 find_package(Qt5 CONFIG REQUIRED Core Widgets Gui PrintSupport SerialPort)
+
+find_package(catkin REQUIRED COMPONENTS
+  roscpp
+  rospy
+  std_msgs
+)
 include_directories(${catkin_INCLUDE_DIRS})
 
- 
+
+catkin_package(
+#  INCLUDE_DIRS include
+#  LIBRARIES qt_template
+#  CATKIN_DEPENDS roscpp rospy std_msgs
+#  DEPENDS system_lib
+)
 
 ###########
 ## Build ##

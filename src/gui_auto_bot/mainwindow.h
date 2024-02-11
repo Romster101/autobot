@@ -1,6 +1,8 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "ros/ros.h"
+#include "QTimer"
 #include <QMainWindow>
 #include <QDebug>
 #include <QFileDialog>
@@ -24,7 +26,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    MainWindow(ros::NodeHandle *nh, QWidget *parent = nullptr);
     ~MainWindow();
 
 public slots:
@@ -48,14 +50,19 @@ private slots:
 
     //____________Личные слоты______________
     void newItemSelected();
+    void spinOnce();
 
 private:
     Ui::MainWindow *ui;
     ExtendedScene *scene;
     JSONmodule *JSON;
+     
+    ManualRemoteController *StmController;
+    QTimer *ros_timer;
 
     void addItem(GraphicsRobItem *item);
     void displayParameters(QGraphicsItem *item);
     void setSettingsForItem(QGraphicsItem *item);
+   
 };
 #endif // MAINWINDOW_H

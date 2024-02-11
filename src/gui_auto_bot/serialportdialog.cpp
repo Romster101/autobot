@@ -1,16 +1,14 @@
 #include "serialportdialog.h"
 #include "ui_serialportdialog.h"
 
+
 SerialPortDialog::SerialPortDialog(QWidget *parent)
     : QDialog(parent), ui(new Ui::SerialPortDialog)
 {
     ui->setupUi(this);
-    portsInfoList = QSerialPortInfo::availablePorts();
-    for (QSerialPortInfo &info : portsInfoList)
-    {
-        ui->cb_ports->addItem(info.portName());
-    }
+    
     serial = new QSerialPort();
+
     ui->customPlot->addGraph(0);
     ui->customPlot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom);
     QSharedPointer<QCPAxisTickerDateTime> dateTicker(new QCPAxisTickerDateTime);
@@ -19,6 +17,7 @@ SerialPortDialog::SerialPortDialog(QWidget *parent)
     model = new QStringListModel();
     model->setStringList(outputList);
     ui->lv_output->setModel(model);
+
     connect(serial, &QSerialPort::readyRead, this, &SerialPortDialog::serialReceive);
     connect(serial, &QSerialPort::errorOccurred, this, &SerialPortDialog::serialError);
 }
@@ -38,6 +37,28 @@ void SerialPortDialog::addOutPutMsg(QString msg)
     model->setStringList(outputList);
 }
 
+void SerialPortDialog::updateComPorts()
+{
+    portsInfoList.clear();
+    portsInfoList = QSerialPortInfo::availablePorts();
+    ui->cb_ports->clear();
+    for (QSerialPortInfo &info : portsInfoList)
+    {
+        ui->cb_ports->addItem(info.portName());
+    }
+}
+
+void SerialPortDialog::show()
+{
+    updateComPorts();
+    QWidget::show();
+}
+
+QSerialPort *SerialPortDialog::getSerialObject()
+{
+    return serial;
+}
+
 void SerialPortDialog::on_pb_openPort_clicked()
 {
     if (portsInfoList.isEmpty())
@@ -46,7 +67,7 @@ void SerialPortDialog::on_pb_openPort_clicked()
         return;
     }
     serial->setPort(portsInfoList.at(ui->cb_ports->currentIndex()));
-    serial->open(QIODevice::ReadOnly);
+    serial->open(QIODevice::ReadWrite);
     if (serial->isOpen())
         addOutPutMsg("Порт открыт");
     else
@@ -72,7 +93,7 @@ void SerialPortDialog::serialReceive()
     {
         qDebug() << barray.toDouble();
         ui->customPlot->graph(0)->addData(ti1, barray.toDouble());
-        ui->customPlot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::red, Qt::white, 7));        
+        ui->customPlot->graph(0)->setScatterStyle(QCPScatterStyle(QCPScatterStyle::ssCircle, Qt::red, Qt::white, 7));
         ui->customPlot->replot();
         ui->customPlot->rescaleAxes();
     }

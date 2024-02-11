@@ -1,8 +1,8 @@
-# Install script for directory: /home/roman/ros_packets/auto_bot/src/gui_auto_bot
+# Install script for directory: /home/macubuntu/projects/autobot/src/gui_auto_bot
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/roman/ros_packets/auto_bot/install")
+  set(CMAKE_INSTALL_PREFIX "/home/macubuntu/projects/autobot/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,37 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/roman/ros_packets/auto_bot/build/gui_auto_bot/catkin_generated/installspace/gui_auto_bot.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/macubuntu/projects/autobot/build/gui_auto_bot/catkin_generated/installspace/auto_bot_gui.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gui_auto_bot/cmake" TYPE FILE FILES
-    "/home/roman/ros_packets/auto_bot/build/gui_auto_bot/catkin_generated/installspace/gui_auto_botConfig.cmake"
-    "/home/roman/ros_packets/auto_bot/build/gui_auto_bot/catkin_generated/installspace/gui_auto_botConfig-version.cmake"
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auto_bot_gui/cmake" TYPE FILE FILES
+    "/home/macubuntu/projects/autobot/build/gui_auto_bot/catkin_generated/installspace/auto_bot_guiConfig.cmake"
+    "/home/macubuntu/projects/autobot/build/gui_auto_bot/catkin_generated/installspace/auto_bot_guiConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/gui_auto_bot" TYPE FILE FILES "/home/roman/ros_packets/auto_bot/src/gui_auto_bot/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/auto_bot_gui" TYPE FILE FILES "/home/macubuntu/projects/autobot/src/gui_auto_bot/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui" TYPE EXECUTABLE FILES "/home/macubuntu/projects/autobot/devel/lib/auto_bot_gui/auto_bot_gui")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui"
+         OLD_RPATH "/opt/ros/noetic/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/auto_bot_gui/auto_bot_gui")
+    endif()
+  endif()
 endif()
 
