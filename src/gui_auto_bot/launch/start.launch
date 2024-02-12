@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+<node name="auto_bot" pkg="auto_bot_gui" type="auto_bot_gui"/>
+<node name="twist_to_motors" pkg="diff_drive" type="twist_to_motors.py"/>
+<machine name="autobot" user="autobot" address="rpiIP" default="true" env-loader="/opt/ros/noetic/env.sh"/>
+    <node pkg="stm_transmit" name="stm_transmit" type="stm_transmit.py" machine="autobot"/>
+</launch>

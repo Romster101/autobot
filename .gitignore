@@ -1,1 +1,3 @@
-src/gui_auto_bot/build
+src/build
+/build
+/.vscode
