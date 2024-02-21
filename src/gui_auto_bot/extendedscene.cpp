@@ -11,16 +11,18 @@ void ExtendedScene::addRobItem(GraphicsRobItem *item)
 {
     addItem(item);
     robItemsVector.append(item);
-    item->setElementNumber(robItemsVector.size());
+    auto size = robItemsVector.size();
+    item->setElementNumber(size);
+        // если положений больше 1, то добавляем линию
        if(getRobItemsVector().size() > 1){
         int xEnd = item->pos().x();
         int yEnd = item->pos().y();
         int prevElNum = item->getElementNumber()-2;
         int xBegin = robItemsVector.at(prevElNum)->pos().x();
         int yBegin = robItemsVector.at(prevElNum)->pos().y();
-        qDebug() << xBegin << yBegin << xEnd << yEnd;
         ArrowItem* arrow = new ArrowItem(xBegin,yBegin,xEnd,yEnd);
-        arrow->setData(NumberField,item->getElementNumber());
+        item->setArrowIN(arrow); // входящая стрелка для айтема 
+        robItemsVector.at(prevElNum)->setArrowOUT(arrow); // является выходящей для предыдущего айтема
         addItem(arrow);
     }
 }
@@ -40,8 +42,14 @@ void ExtendedScene::deleteSelectedItems()
                 if (grbItem->getElementNumber() == item->data(NumberField).toInt())
                     {
                         auto it = std::find(std::begin(robItemsVector),std::end(robItemsVector),grbItem);
-                        if (it!= std::end(robItemsVector))
+                        if (it!= std::end(robItemsVector)){
+                            int i = it-std::begin(robItemsVector);
+                            if (i+1 < robItemsVector.size())
+                                robItemsVector[i+1]->setArrowIN(nullptr);
+                            if (i-1 >= 0)
+                                robItemsVector[i-1]->setArrowOUT(nullptr);
                             robItemsVector.remove(it-std::begin(robItemsVector));
+                        }
                     }
             }
             removeItem(item);

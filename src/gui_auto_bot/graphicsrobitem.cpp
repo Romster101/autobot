@@ -4,6 +4,9 @@
 
 GraphicsRobItem::GraphicsRobItem(int x, int y, int theta, bool cargo_out)
 {
+    arrowIN = nullptr;
+    arrowOUT = nullptr;
+    setTransformOriginPoint(35,35); // задаем точку вращения
     setPos(x,-y); // за счет направления оси У 
     setTheta(theta);
     setCargoOut(cargo_out);
@@ -24,6 +27,15 @@ void GraphicsRobItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
 
 void GraphicsRobItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
+    if(arrowIN!=nullptr){
+        arrowIN->setXend(pos().x());
+        arrowIN->setYend(pos().y());
+    }
+
+    if(arrowOUT!=nullptr){
+        arrowOUT->setXbegin(pos().x());
+        arrowOUT->setYbegin(pos().y());
+    }
     QGraphicsItem::mouseMoveEvent(event);
 }
 
@@ -50,7 +62,6 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
             setPos(info.getX(), -info.getY());
             setTheta(info.getAngle());
             setCargoOut(info.getCargo_out());
-            update();
             break;
         }
         case QDialog::Rejected:
@@ -72,7 +83,8 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
                 // после которого надо обновлять все следующие номера, то обновим минимальный 
                     minNum = num;
                 scene()->removeItem(item);
-                delete item;
+                if(item!=nullptr)
+                    delete item;
             }
             // теперь начиная с минимального значения номера элемента, будем обновлять все следующие номера
             auto size = scene()->items().size();
@@ -95,7 +107,7 @@ void GraphicsRobItem::paint(QPainter *painter, const QStyleOptionGraphicsItem *o
    painter->save();
 //__________________Создание повернутой стрелки____________________
     QPixmap pixmap1(":/img/strelka.png");
-    setTransformOriginPoint(35,35); // задаем точку вращения
+    //setTransformOriginPoint(35,35); // задаем точку вращения
     int pxw = pixmap1.width(); 
     int pxh = pixmap1.height();
     QMatrix rm1;

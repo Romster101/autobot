@@ -19,7 +19,13 @@ class GraphicsRobItem : public QGraphicsItem
 {
 public:
     GraphicsRobItem(int x,int y,int theta = 0,bool cargo_out = false);
-    ~GraphicsRobItem(){};
+    ~GraphicsRobItem()
+    {
+        if(arrowIN!=nullptr)
+            delete arrowIN;
+        if(arrowOUT!=nullptr)
+            delete arrowOUT;
+        };
 
     enum ItemDataToSave{
         RotationField,
@@ -36,15 +42,24 @@ public:
     void setCargoOut(bool const &_cargo_out) {setData(CargoOutField,_cargo_out);};
 
     int getElementNumber() const {return data(NumberField).toInt();};
-    void setElementNumber(int const &_number) {setData(NumberField,_number);}; 
+    void setElementNumber(int const &_number) {setData(NumberField,_number);};
+
+
+// НАДО ПОДУМАТЬ КАК ПРАВИЛЬНО СДЕЛАТЬ ГЕТТЕРЫ И СЕТТЕРЫ
+    void setArrowOUT(ArrowItem* _arrowOUT){this->arrowOUT = _arrowOUT;};
+    void setArrowIN(ArrowItem* _arrowIN){this->arrowIN = _arrowIN;};
+
+    ArrowItem* getArrowINptr(){return arrowIN;};
+    ArrowItem* getArrowOUTptr(){return arrowOUT;};
+//---------------------------------------------------------------------------
 
 private:
     void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
 
-    ArrowItem* arrowIN = nullptr;
-    ArrowItem* arrowOUT = nullptr;
+    ArrowItem* arrowIN;
+    ArrowItem* arrowOUT;
 
 protected:
     void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;

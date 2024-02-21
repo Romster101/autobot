@@ -19,8 +19,9 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     scene->setSceneRect(0, 0, 100, 100);
     ui->gv_builtMap->setMouseTracking(true);
     ui->gv_builtMap->setRenderHint(QPainter::Antialiasing);        // Настраиваем рендер
-    ui->gv_builtMap->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
-    ui->gv_builtMap->setViewportUpdateMode(QGraphicsView::BoundingRectViewportUpdate);
+    //ui->gv_builtMap->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
+    ui->gv_builtMap->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
+    ui->gv_builtMap->setDragMode(QGraphicsView::RubberBandDrag);
 
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
