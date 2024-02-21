@@ -7,6 +7,7 @@
 #include <graphicsrobitem.h>
 #include <QKeyEvent>
 #include <QVector>
+#include <QColorDialog>
 
  enum ItemDataToSave{
         RotationField,
@@ -18,9 +19,12 @@ class ExtendedScene: public QGraphicsScene
     Q_OBJECT
 public:
     explicit ExtendedScene(QObject *parent = nullptr);
+    QVector<GraphicsRobItem *> getRobItemsVector() {return robItemsVector;};
+    void addRobItem(GraphicsRobItem* item);
  
 private:
     void deleteSelectedItems();
+    QVector<GraphicsRobItem*> robItemsVector;
     
 signals:
     void targetCoordinate(QPointF point);

@@ -14,6 +14,7 @@
 #include <QPixmap>
 #include <QRectF>
 #include <qmath.h>
+#include "arrow.h"
 class GraphicsRobItem : public QGraphicsItem
 {
 public:
@@ -40,6 +41,10 @@ public:
 private:
     void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
     void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
+
+    ArrowItem* arrowIN = nullptr;
+    ArrowItem* arrowOUT = nullptr;
 
 protected:
     void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;

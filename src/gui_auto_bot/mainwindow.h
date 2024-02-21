@@ -60,7 +60,6 @@ private:
     ManualRemoteController *StmController;
     QTimer *ros_timer;
 
-    void addItem(GraphicsRobItem *item);
     void displayParameters(QGraphicsItem *item);
     void setSettingsForItem(QGraphicsItem *item);
    

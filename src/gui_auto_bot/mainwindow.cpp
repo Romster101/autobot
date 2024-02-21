@@ -14,7 +14,7 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     ros_timer->start(25); 
     
     GraphicsRobItem *item = new GraphicsRobItem(0, 0, 0, false);
-    addItem(item);
+    scene->addRobItem(item);
     ui->gv_builtMap->setScene(scene);
     scene->setSceneRect(0, 0, 100, 100);
     ui->gv_builtMap->setMouseTracking(true);
@@ -46,7 +46,7 @@ void MainWindow::dblClicked(QPointF point)
     case QDialog::Accepted:
     {
         GraphicsRobItem *item = new GraphicsRobItem(info.getX(), info.getY(), info.getAngle(), info.getCargo_out());
-        addItem(item);
+        scene->addRobItem(item);
         break;
     }
     case QDialog::Rejected:
@@ -56,12 +56,6 @@ void MainWindow::dblClicked(QPointF point)
     default:
         break;
     }
-}
-
-void MainWindow::addItem(GraphicsRobItem *item)
-{
-    scene->addItem(item);
-    item->setElementNumber(scene->items().size());
 }
 
 void MainWindow::slotTarget(QPointF point)
@@ -76,7 +70,7 @@ void MainWindow::slotTarget(QPointF point)
 void MainWindow::on_pb_addPoint_clicked()
 {
     GraphicsRobItem *item = new GraphicsRobItem(ui->dsb_X->value(), ui->dsb_Y->value(), ui->dsb_theta->value());
-    addItem(item);
+    scene->addRobItem(item);
     item->setCargoOut(ui->chb_cargo_out->isChecked());
 }
 
@@ -125,10 +119,19 @@ void MainWindow::on_a_openFile_triggered()
 
 void MainWindow::on_a_save_triggered()
 {
-    auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
-                                                  QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
+    // auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
+    //                                               QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
 
-    qDebug() << "save " << file_path;
+    // qDebug() << "save " << file_path;
+    QFileDialog fileDialog(this, "Choose file to save");
+    fileDialog.setDefaultSuffix("json");
+    fileDialog.setOption(QFileDialog::DontUseNativeDialog,true);
+    fileDialog.setNameFilter("json-files (*.json)");
+    fileDialog.exec();
+
+    QFile f(fileDialog.selectedFiles().first());
+    QFileInfo fileInfo(f);
+    QString FILE_NAME(fileInfo.fileName());
 }
 
 void MainWindow::on_a_save_as_triggered()

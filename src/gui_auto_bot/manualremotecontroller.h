@@ -6,6 +6,7 @@
 
 #include "ros/ros.h"
 #include "geometry_msgs/Twist.h"
+#include "std_msgs/String.h" 
 
 namespace Ui
 {
@@ -26,6 +27,7 @@ private:
     Ui::manualRemoteController *ui;
     ros::Subscriber cmd_vel;
     ros::Publisher vel_target;
+    ros::Publisher pub_transporter;
     bool openWindow;
 
     void twistCallback(const geometry_msgs::Twist::ConstPtr &msg);
@@ -38,9 +40,12 @@ private slots:
     void on_pb_forward_clicked();
     void on_pb_rotatePlus_clicked();
     void on_pb_rotateMinus_clicked();
+    void on_pb_unload_clicked();
+
     void on_pb_forward_pressed();
     void on_pb_rotatePlus_pressed();
     void on_pb_rotateMinus_pressed();
+    void on_pb_unload_pressed();
 };
 
 #endif // MANUALREMOTECONTROLLER_H

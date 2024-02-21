@@ -8,6 +8,7 @@ ManualRemoteController::ManualRemoteController(ros::NodeHandle *nh, QWidget *par
 
     cmd_vel = nh->subscribe("/cmd_vel", 1000, &ManualRemoteController::twistCallback, this);
     vel_target = nh->advertise<geometry_msgs::Twist>("/twist", 1000);
+    pub_transporter = nh->advertise<std_msgs::String>("/transporter_topic", 1000);
 
     connect(this, &ManualRemoteController::finished, this, &ManualRemoteController::finishCallback);
 }
@@ -62,6 +63,15 @@ void ManualRemoteController::on_pb_rotateMinus_clicked()
     this->sendSpeed(0, 0);
 }
 
+void ManualRemoteController::on_pb_unload_clicked()
+{
+    std_msgs::String msg;
+    std::stringstream ss;
+    ss << "0";
+    msg.data = ss.str();
+    pub_transporter.publish(msg);
+}
+
 void ManualRemoteController::on_pb_back_pressed()
 {
     this->sendSpeed(-0.15, 0);
@@ -79,4 +89,13 @@ void ManualRemoteController::on_pb_rotatePlus_pressed()
 void ManualRemoteController::on_pb_rotateMinus_pressed()
 {
     this->sendSpeed(0, -0.15);
+}
+
+void ManualRemoteController::on_pb_unload_pressed()
+{
+    std_msgs::String msg;
+    std::stringstream ss;
+    ss << "1";
+    msg.data = ss.str();
+    pub_transporter.publish(msg);
 }
