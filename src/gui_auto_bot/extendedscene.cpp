@@ -55,14 +55,15 @@ void ExtendedScene::deleteSelectedItems()
                             if (i-1 >= 0)
                                 robItemsVector[i-1]->setArrowOUT(nullptr); // чтобы второй указатель не содержал мусор
                             
-                            robItemsVector.remove(it-std::begin(robItemsVector)); // удаляем из вектора 
+                            robItemsVector.remove(it-std::begin(robItemsVector));
                         }
                     }
             }
-            removeItem(item); // удаляем со сцена 
-            delete item; // освобождаем память
+            removeItem(item);
+            delete item;
+            qDebug() << i << oldRobItemsVector.size();
 
-            if(i!=0 && i!=oldRobItemsVector.size()-1){ // если удален не первый и не последний элемент
+            if(i!=0 && i!=oldRobItemsVector.size()-1){
                 int xBegin = oldRobItemsVector[i-1]->pos().x();
                 int yBegin = oldRobItemsVector[i-1]->pos().y();
 
@@ -73,15 +74,16 @@ void ExtendedScene::deleteSelectedItems()
                 oldRobItemsVector[i-1]->setArrowOUT(arrow); 
                 oldRobItemsVector[i+1]->setArrowIN(arrow); 
                 addItem(arrow);
+            
             }
-            oldRobItemsVector = robItemsVector; // обновляем список после удаления одного элемента 
+            oldRobItemsVector = robItemsVector;
             }
         }
         // теперь начиная с минимального значения номера элемента, будем обновлять все следующие номера
         auto size = robItemsVector.size();
         for (int i = minNum-1; i < size; i++) 
             robItemsVector[i]->setData(NumberField,i+1);
-    }
+}
 
 void ExtendedScene::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
