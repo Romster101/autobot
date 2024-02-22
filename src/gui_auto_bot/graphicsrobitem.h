@@ -25,7 +25,7 @@ public:
             delete arrowIN;
         if(arrowOUT!=nullptr)
             delete arrowOUT;
-        };
+    };
 
     enum ItemDataToSave{
         RotationField,

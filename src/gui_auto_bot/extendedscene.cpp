@@ -30,6 +30,9 @@ void ExtendedScene::addRobItem(GraphicsRobItem *item)
 void ExtendedScene::deleteSelectedItems()
 {
     int minNum = robItemsVector.size(); // минимальный номер элемента, после которого мы обновляем индексы 
+    int maxN = 0; // максимальный номер удаленного элемента
+    int minN = robItemsVector.size()-1; // минимальный номер удаленного элемента
+    auto oldRobItemsVector = robItemsVector; // вектор до удаления 
     if(minNum > 0){
             foreach (QGraphicsItem *item, selectedItems())
         {
@@ -37,17 +40,26 @@ void ExtendedScene::deleteSelectedItems()
             if(num < minNum) // если номер текущего элемента меньше минимального,
             // после которого надо обновлять все следующие номера, то обновим минимальный 
             minNum = num;
-            // удаляем этот элемент в векторе (сравнение делаем по вектору)
+            // удаляем этот элемент в векторе (сравнение делаем по номеру)
             for (GraphicsRobItem* grbItem: robItemsVector){
                 if (grbItem->getElementNumber() == item->data(NumberField).toInt())
                     {
                         auto it = std::find(std::begin(robItemsVector),std::end(robItemsVector),grbItem);
                         if (it!= std::end(robItemsVector)){
-                            int i = it-std::begin(robItemsVector);
+                            int i = it-std::begin(robItemsVector); // номер элемента для удаления из вектора 
+                            
+                            if (maxN < i)
+                                maxN = i;
+
+                            if (minN > i)
+                                minN = i;
+
                             if (i+1 < robItemsVector.size())
-                                robItemsVector[i+1]->setArrowIN(nullptr);
+                                robItemsVector[i+1]->setArrowIN(nullptr); // чтобы второй указатель не содержал мусор
+                            
                             if (i-1 >= 0)
-                                robItemsVector[i-1]->setArrowOUT(nullptr);
+                                robItemsVector[i-1]->setArrowOUT(nullptr); // чтобы второй указатель не содержал мусор
+                            
                             robItemsVector.remove(it-std::begin(robItemsVector));
                         }
                     }
@@ -59,6 +71,21 @@ void ExtendedScene::deleteSelectedItems()
         auto size = robItemsVector.size();
         for (int i = minNum-1; i < size; i++) 
             robItemsVector[i]->setData(NumberField,i+1);
+    }
+            qDebug() << minN << maxN;
+
+    if ((minN != 0) && (maxN!=oldRobItemsVector.size()-1) && oldRobItemsVector.size() > 2 && robItemsVector.size() > 1){ 
+        qDebug() << minN << maxN;
+        int xBegin = oldRobItemsVector[minN-1]->pos().x();
+        int yBegin = oldRobItemsVector[minN-1]->pos().y();
+
+        int xEnd = oldRobItemsVector[maxN+1]->pos().x();
+        int yEnd = oldRobItemsVector[maxN+1]->pos().y();
+
+        ArrowItem* arrow = new ArrowItem(xBegin,yBegin,xEnd,yEnd);
+        oldRobItemsVector[minN-1]->setArrowOUT(arrow); 
+        oldRobItemsVector[maxN+1]->setArrowIN(arrow); 
+        addItem(arrow);
     }
 }
 
