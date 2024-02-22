@@ -43,7 +43,6 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
 {
     QMenu menu;
     menu.addAction("Редактор свойств элемента");
-    menu.addAction("Удалить элемент");
     QAction *a = menu.exec(event->screenPos());
     if (a == nullptr) return;
     if (a->text() == "Редактор свойств элемента")
@@ -70,28 +69,6 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
         }
         default:
             break;
-        }
-    }
-    else if (a->text() == "Удалить элемент")
-    {
-            int minNum = scene()->items().size(); // минимальный номер элемента, после которого мы обновляем индексы 
-        if(minNum > 0){
-                foreach (QGraphicsItem *item, scene()->selectedItems())
-            {
-                int num = item->data(NumberField).toInt();
-                if(num < minNum) // если номер текущего элемента меньше минимального,
-                // после которого надо обновлять все следующие номера, то обновим минимальный 
-                    minNum = num;
-                scene()->removeItem(item);
-                if(item!=nullptr)
-                    delete item;
-            }
-            // теперь начиная с минимального значения номера элемента, будем обновлять все следующие номера
-            auto size = scene()->items().size();
-            auto itemsList = scene()->items(Qt::AscendingOrder);
-            for (int i = minNum-1; i < size; i++) {
-                itemsList[i]->setData(NumberField,i+1);
-            }
         }
     }
 }
