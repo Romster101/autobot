@@ -472,11 +472,10 @@ font-color:white;
      <string>Файл</string>
     </property>
     <addaction name="separator"/>
-    <addaction name="a_save"/>
+    <addaction name="a_createNewFile"/>
+    <addaction name="a_openFile"/>
     <addaction name="a_save_as"/>
     <addaction name="separator"/>
-    <addaction name="a_openFile"/>
-    <addaction name="a_createNewFile"/>
    </widget>
    <widget class="QMenu" name="m_manual_guide">
     <property name="title">
@@ -502,7 +501,7 @@ font-color:white;
   </action>
   <action name="a_save_as">
    <property name="text">
-    <string>Сохранить траекторию как ...</string>
+    <string>Сохранить план движения как ...</string>
    </property>
   </action>
   <action name="a_remote_controller">
@@ -517,7 +516,7 @@ font-color:white;
   </action>
   <action name="a_openFile">
    <property name="text">
-    <string>Открыть траекторию</string>
+    <string>Открыть план движения</string>
    </property>
   </action>
   <action name="a_createNewFile">

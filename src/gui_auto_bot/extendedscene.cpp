@@ -61,7 +61,6 @@ void ExtendedScene::deleteSelectedItems()
             }
             removeItem(item);
             delete item;
-            qDebug() << i << oldRobItemsVector.size();
 
             if(i!=0 && i!=oldRobItemsVector.size()-1){
                 int xBegin = oldRobItemsVector[i-1]->pos().x();
@@ -100,4 +99,9 @@ void ExtendedScene::keyPressEvent(QKeyEvent *keyEvent)
 {
     if (keyEvent->key() == Qt::Key_Delete)
         deleteSelectedItems();
+    if (keyEvent->key() == Qt::Key_A && keyEvent->modifiers() == Qt::ControlModifier){
+        for(GraphicsRobItem* item: robItemsVector){
+            item->setSelected(true);
+        }
+    }
 }

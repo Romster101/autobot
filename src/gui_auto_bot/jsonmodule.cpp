@@ -40,7 +40,7 @@ QJsonObject JSONmodule::readFromJsonObj(QString path)
 
 QJsonObject JSONmodule::getJsonObj(ExtendedScene *scene)
 {
-    auto itemsList = scene->items();
+    auto itemsList = scene->getRobItemsVector();
     QJsonArray arr;
     for(QGraphicsItem* item:itemsList){
         QJsonObject obj;
@@ -64,10 +64,10 @@ void JSONmodule::loadJsonObjectIntoProgramm(QJsonObject obj, ExtendedScene *scen
         auto x = obj1.value("x").toInt();
         auto y = obj1.value("y").toInt();
         auto theta = obj1.value("angle").toInt();
-        auto cargo_out = obj1.value("").toBool();
+        auto cargo_out = obj1.value("cargo_out").toBool();
         auto num = obj1.value("num").toInt();
-        GraphicsRobItem* item = new GraphicsRobItem(x,y,theta,cargo_out);
+        GraphicsRobItem* item = new GraphicsRobItem(x,-y,theta,cargo_out);
         item->setElementNumber(num);
-        scene->addItem(item);
+        scene->addRobItem(item);
     }
 }

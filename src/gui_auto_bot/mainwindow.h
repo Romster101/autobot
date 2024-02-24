@@ -45,7 +45,6 @@ private slots:
     //_____________Работа с файлами______________
     void on_a_createNewFile_triggered();
     void on_a_openFile_triggered();
-    void on_a_save_triggered();
     void on_a_save_as_triggered();
 
     //____________Личные слоты______________
@@ -62,6 +61,5 @@ private:
 
     void displayParameters(QGraphicsItem *item);
     void setSettingsForItem(QGraphicsItem *item);
-   
 };
 #endif // MAINWINDOW_H

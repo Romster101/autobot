@@ -22,6 +22,7 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     //ui->gv_builtMap->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
     ui->gv_builtMap->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     ui->gv_builtMap->setDragMode(QGraphicsView::RubberBandDrag);
+    installEventFilter(this);
 
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
@@ -104,45 +105,35 @@ void MainWindow::on_pb_apply_clicked()
 
 void MainWindow::on_a_createNewFile_triggered()
 {
-    qDebug() << "on_a_createNewFile_triggered";
+
 }
 
 void MainWindow::on_a_openFile_triggered()
 {
-    QString file_path("/home/roman/projects/json.bor");
-    if (file_path != "")
-    {
-        JSON->setSavePath(file_path);
-        auto obj = JSON->readFromJsonObj(JSON->getSavePath());
-        JSON->loadJsonObjectIntoProgramm(obj,scene);
-    }
-}
-
-void MainWindow::on_a_save_triggered()
-{
-    // auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
-    //                                               QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
-
-    // qDebug() << "save " << file_path;
-    QFileDialog fileDialog(this, "Choose file to save");
-    fileDialog.setDefaultSuffix("json");
-    fileDialog.setOption(QFileDialog::DontUseNativeDialog,true);
-    fileDialog.setNameFilter("json-files (*.json)");
-    fileDialog.exec();
-
-    QFile f(fileDialog.selectedFiles().first());
-    QFileInfo fileInfo(f);
-    QString FILE_NAME(fileInfo.fileName());
+    QString f("*.MK7");
+    auto filePath = QFileDialog::getOpenFileName(this, tr("Выбрать путь"),
+                                                  QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation),  "*.MK7",
+                                                  &f,QFileDialog::DontUseNativeDialog);
+    JSON->setSavePath(filePath);
+    auto obj = JSON->readFromJsonObj(JSON->getSavePath());
+    JSON->loadJsonObjectIntoProgramm(obj,scene);
 }
 
 void MainWindow::on_a_save_as_triggered()
 {
-    // auto file_path = QFileDialog::getSaveFileName(this, tr("Выбрать путь"),
-    //                                               QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation), "*.bor");
-    QString file_path("/home/roman/projects/json.bor");
-    if (file_path != "")
+    QFileDialog fileDialog(this, "Choose file to save");
+    fileDialog.setDefaultSuffix("MK7");
+    fileDialog.setAcceptMode(QFileDialog::AcceptSave);
+    fileDialog.setDirectory(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
+    fileDialog.setOption(QFileDialog::DontUseNativeDialog,true);
+    fileDialog.setNameFilter("*.MK7");
+    fileDialog.exec();
+    QFile f(fileDialog.selectedFiles().first());
+    QFileInfo fileInfo(f);
+    QString filePath(fileInfo.absoluteFilePath());
+    if (filePath != "")
     {
-        JSON->setSavePath(file_path);
+        JSON->setSavePath(filePath);
         auto objToSave = JSON->getJsonObj(scene);
         JSON->saveToJsonObj(objToSave);
     }
@@ -198,6 +189,8 @@ void MainWindow::setSettingsForItem(QGraphicsItem *item)
     item->setData(CargoOutField, c);
     item->update();
 }
+
+
 
 void MainWindow::spinOnce()
 {
