@@ -5,13 +5,17 @@
 GraphicsRobItem::GraphicsRobItem(int x, int y, int theta, bool cargo_out)
 {
     arrowIN = nullptr;
-    arrowOUT = nullptr;
     setTransformOriginPoint(35,35); // задаем точку вращения
     setPos(x,-y); // за счет направления оси У 
     setTheta(theta);
     setCargoOut(cargo_out);
     setFlags(QGraphicsItem::ItemIsSelectable|ItemIsMovable);
 };
+
+void GraphicsRobItem::setCallbackFunc(std::function<void(int,int,int)> _func)
+{
+    this->callback = _func;
+}
 
 void GraphicsRobItem::mousePressEvent(QGraphicsSceneMouseEvent *event)
 {
@@ -27,15 +31,7 @@ void GraphicsRobItem::mouseReleaseEvent(QGraphicsSceneMouseEvent *event)
 
 void GraphicsRobItem::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
-    if(arrowIN!=nullptr){
-        arrowIN->setXend(pos().x());
-        arrowIN->setYend(pos().y());
-    }
-
-    if(arrowOUT!=nullptr){
-        arrowOUT->setXbegin(pos().x());
-        arrowOUT->setYbegin(pos().y());
-    }
+    callback(getElementNumber(),pos().x(),pos().y());
     QGraphicsItem::mouseMoveEvent(event);
 }
 
@@ -61,6 +57,7 @@ void GraphicsRobItem::contextMenuEvent(QGraphicsSceneContextMenuEvent *event)
             setPos(info.getX(), -info.getY());
             setTheta(info.getAngle());
             setCargoOut(info.getCargo_out());
+            callback(getElementNumber(),info.getX(), -info.getY());
             break;
         }
         case QDialog::Rejected:

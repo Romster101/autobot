@@ -27,6 +27,13 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
     connect(scene, &ExtendedScene::selectionChanged, this, &MainWindow::newItemSelected);
+    connect(scene, &ExtendedScene::propertiesChanged,[this](int x,int y,int angle,bool cargoOut)
+    {
+        ui->dsb_X->setValue(x);
+        ui->dsb_Y->setValue(-y);
+        ui->dsb_theta->setValue(angle);
+        ui->chb_cargo_out->setChecked(cargoOut);
+    });
 }
 
 MainWindow::~MainWindow()
@@ -187,10 +194,8 @@ void MainWindow::setSettingsForItem(QGraphicsItem *item)
     item->setPos(x, -y);
     item->setData(RotationField, t);
     item->setData(CargoOutField, c);
-    item->update();
+    scene->adjustLinesForElement(item->data(NumberField).toInt(),x,-y);
 }
-
-
 
 void MainWindow::spinOnce()
 {

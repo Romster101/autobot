@@ -21,14 +21,16 @@ public:
     explicit ExtendedScene(QObject *parent = nullptr);
     QVector<GraphicsRobItem *> getRobItemsVector() {return robItemsVector;};
     void addRobItem(GraphicsRobItem* item);
- 
+    void adjustLinesForElement(int elNum,int x,int y);
+
 private:
-    void deleteSelectedItems();
     QVector<GraphicsRobItem*> robItemsVector;
+    void deleteSelectedItems();
     
 signals:
     void targetCoordinate(QPointF point);
     void dblClicked(QPointF point);
+    void propertiesChanged(int newX, int newY,int angle,bool cargoOut);
 
 protected:
     void mouseMoveEvent(QGraphicsSceneMouseEvent *event);

@@ -12,7 +12,7 @@ class ArrowItem : public QGraphicsItem
 public:
     ArrowItem(int Xbegin,int Ybegin,int Xend,int Yend);
     QPolygon polygon;
-    ~ArrowItem(){};
+    ~ArrowItem(){qDebug() << "destructor";};
 
     void setXbegin(int const &_Xbegin) {this->Xbegin = _Xbegin;}
     void setYbegin(int const &_Ybegin) {this->Ybegin = _Ybegin;}
