@@ -4,7 +4,6 @@
 ExtendedScene::ExtendedScene(QObject *parent)
     : QGraphicsScene{parent}
 {
- 
 }
 
 void ExtendedScene::addRobItem(GraphicsRobItem *item)
@@ -30,7 +29,6 @@ void ExtendedScene::addRobItem(GraphicsRobItem *item)
         adjustLinesForElement(elNum,x,y);
         emit propertiesChanged(x,y,item->getTheta(),item->getCargoOut()); // сигнал для отображения x,y в окне
     });
-
 }
 
 void ExtendedScene::adjustLinesForElement(int elNum,int x,int y)
@@ -119,8 +117,7 @@ void ExtendedScene::keyPressEvent(QKeyEvent *keyEvent)
     if (keyEvent->key() == Qt::Key_Delete)
         deleteSelectedItems();
     if (keyEvent->key() == Qt::Key_A && keyEvent->modifiers() == Qt::ControlModifier){
-        for(GraphicsRobItem* item: robItemsVector){
+        for(GraphicsRobItem* item: robItemsVector)
             item->setSelected(true);
-        }
     }
 }

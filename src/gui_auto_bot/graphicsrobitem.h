@@ -43,6 +43,8 @@ public:
     void setElementNumber(int const &_number) {setData(NumberField,_number);};
 
     void setCallbackFunc(std::function<void(int,int,int)> _func);
+
+    bool getArrowExists() {return arrowExists;}
     void setArrowExists(bool const &_exists) {this->arrowExists = _exists;};
 
     void setArrowIN(ArrowItem* _arrowIN){this->arrowIN = _arrowIN;};

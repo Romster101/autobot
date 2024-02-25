@@ -112,7 +112,49 @@ void MainWindow::on_pb_apply_clicked()
 
 void MainWindow::on_a_createNewFile_triggered()
 {
+    QFileDialog fileDialog(this, "Choose file to save");
+    fileDialog.setDefaultSuffix("MK7");
+    fileDialog.setAcceptMode(QFileDialog::AcceptSave);
+    fileDialog.setDirectory(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
+    fileDialog.setOption(QFileDialog::DontUseNativeDialog,true);
+    fileDialog.setNameFilter("*.MK7");
+    auto exec = fileDialog.exec();
+    QFile f(fileDialog.selectedFiles().first());
+    QFileInfo fileInfo(f);
+    QString filePath(fileInfo.absoluteFilePath());
+    if (exec == QFileDialog::Accepted)
+    {
+        // если был открыт какой-то файл - его сохраняем
+        autosave();
+        // чистим сцену 
+        clearScene();
+        //добавляем начальное положение робота
+        GraphicsRobItem *item = new GraphicsRobItem(0, 0, 0, false);
+        scene->addRobItem(item);
+        // обновляем данные о новом файле
+        JSON->setSavePath(filePath);
+        ui->lbl_file_name->setText(filePath);
+    }
+}
 
+void MainWindow::autosave()
+{
+    if (JSON->getSavePath() != "")
+    {
+        int res = QMessageBox::warning(this, tr("Внимание"),
+                                tr("Сохранить изменения в ранее открытом файле?"),
+                                QMessageBox::Save|QMessageBox::Cancel);
+        if (res == QMessageBox::Save){
+            auto objToSave = JSON->getJsonObj(scene);
+            JSON->saveToJsonObj(objToSave);
+        }
+    } else {
+        int res = QMessageBox::warning(this, tr("Внимание"),
+                                 tr("Вы не сохранили файл. Сохранить?"),
+                                 QMessageBox::Save|QMessageBox::Cancel);
+        if(res == QMessageBox::Save)
+            on_a_save_as_triggered();
+    }
 }
 
 void MainWindow::on_a_openFile_triggered()
@@ -121,9 +163,36 @@ void MainWindow::on_a_openFile_triggered()
     auto filePath = QFileDialog::getOpenFileName(this, tr("Выбрать путь"),
                                                   QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation),  "*.MK7",
                                                   &f,QFileDialog::DontUseNativeDialog);
+    if (filePath == "") return;
+
+    // сохраняем старый файл
+    autosave();
+    // чистим сцену
+    clearScene();
+
+    // загружаем новый 
     JSON->setSavePath(filePath);
+    ui->lbl_file_name->setText(JSON->getSavePath());
     auto obj = JSON->readFromJsonObj(JSON->getSavePath());
     JSON->loadJsonObjectIntoProgramm(obj,scene);
+}
+
+void MainWindow::clearScene()
+{
+    auto items = scene->getRobItemsVector();
+    for (GraphicsRobItem *item : items)
+    {
+        scene->removeItem(item);
+        if (item->getArrowExists())
+            scene->removeItem(item->getArrowINptr());
+        delete item;
+    }
+    scene->clearItemsVector();
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    autosave();
 }
 
 void MainWindow::on_a_save_as_triggered()
@@ -134,13 +203,14 @@ void MainWindow::on_a_save_as_triggered()
     fileDialog.setDirectory(QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation));
     fileDialog.setOption(QFileDialog::DontUseNativeDialog,true);
     fileDialog.setNameFilter("*.MK7");
-    fileDialog.exec();
+    auto exec = fileDialog.exec();
     QFile f(fileDialog.selectedFiles().first());
     QFileInfo fileInfo(f);
     QString filePath(fileInfo.absoluteFilePath());
-    if (filePath != "")
+    if (exec == QFileDialog::Accepted)
     {
         JSON->setSavePath(filePath);
+        ui->lbl_file_name->setText(filePath);
         auto objToSave = JSON->getJsonObj(scene);
         JSON->saveToJsonObj(objToSave);
     }

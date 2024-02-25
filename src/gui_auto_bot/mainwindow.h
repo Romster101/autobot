@@ -13,6 +13,7 @@
 #include "iteminputinfo.h"
 #include "serialportdialog.h"
 #include "jsonmodule.h"
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -44,6 +45,7 @@ private slots:
 
     //_____________Работа с файлами______________
     void on_a_createNewFile_triggered();
+    void autosave();
     void on_a_openFile_triggered();
     void on_a_save_as_triggered();
 
@@ -61,5 +63,10 @@ private:
 
     void displayParameters(QGraphicsItem *item);
     void setSettingsForItem(QGraphicsItem *item);
+    void clearScene();
+
+protected:
+    void closeEvent(QCloseEvent *event);
+
 };
 #endif // MAINWINDOW_H

@@ -30,7 +30,7 @@ public:
     void loadJsonObjectIntoProgramm(QJsonObject obj,ExtendedScene* scene);
 
 private:
-    QString path; // путь сохранения 
+    QString path = ""; // путь сохранения 
 };
 
 

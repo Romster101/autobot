@@ -20,6 +20,7 @@ class ExtendedScene: public QGraphicsScene
 public:
     explicit ExtendedScene(QObject *parent = nullptr);
     QVector<GraphicsRobItem *> getRobItemsVector() {return robItemsVector;};
+    void clearItemsVector(){robItemsVector.clear();};
     void addRobItem(GraphicsRobItem* item);
     void adjustLinesForElement(int elNum,int x,int y);
 
