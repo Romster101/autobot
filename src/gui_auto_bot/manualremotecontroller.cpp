@@ -65,6 +65,8 @@ void ManualRemoteController::on_pb_rotateMinus_clicked()
 
 void ManualRemoteController::on_pb_unload_clicked()
 {
+    if(ui->chb_automatic->isChecked())
+        return;
     std_msgs::String msg;
     std::stringstream ss;
     ss << "0";
@@ -83,19 +85,23 @@ void ManualRemoteController::on_pb_forward_pressed()
 
 void ManualRemoteController::on_pb_rotatePlus_pressed()
 {
-    this->sendSpeed(0, 0.15);
+    this->sendSpeed(0,1.5);
 }
 
 void ManualRemoteController::on_pb_rotateMinus_pressed()
 {
-    this->sendSpeed(0, -0.15);
+    this->sendSpeed(0, -1.5);
 }
 
 void ManualRemoteController::on_pb_unload_pressed()
 {
     std_msgs::String msg;
     std::stringstream ss;
-    ss << "1";
+    if(ui->chb_automatic->isChecked())
+        ss << "s";
+    else 
+        ss << "2";
+
     msg.data = ss.str();
     pub_transporter.publish(msg);
 }
