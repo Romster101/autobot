@@ -8,6 +8,16 @@
 	"HEADERS" : 
 	[
 		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/arrow.h",
+			"MU",
+			"EWIEGA46WW/moc_arrow.cpp"
+		],
+		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/executorwidget.h",
+			"MU",
+			"EWIEGA46WW/moc_executorwidget.cpp"
+		],
+		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.h",
 			"MU",
 			"EWIEGA46WW/moc_extendedscene.cpp"
@@ -36,6 +46,11 @@
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/manualremotecontroller.h",
 			"MU",
 			"EWIEGA46WW/moc_manualremotecontroller.cpp"
+		],
+		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/messager.h",
+			"MU",
+			"EWIEGA46WW/moc_messager.cpp"
 		],
 		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/qcustomplot.h",
@@ -96,7 +111,7 @@
 	"MOC_PATH_PREFIX" : true,
 	"MOC_PREDEFS_CMD" : 
 	[
-		"/usr/bin/c++",
+		"/usr/bin/g++",
 		"-dM",
 		"-E",
 		"-c",
@@ -114,6 +129,14 @@
 	"SETTINGS_FILE" : "/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles/auto_bot_gui_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
+		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/arrow.cpp",
+			"MU"
+		],
+		[
+			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/executorwidget.cpp",
+			"MU"
+		],
 		[
 			"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/extendedscene.cpp",
 			"MU"

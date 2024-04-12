@@ -60,28 +60,28 @@ include gtest/googlemock/CMakeFiles/gmock.dir/flags.make
 gtest/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o: gtest/googlemock/CMakeFiles/gmock.dir/flags.make
 gtest/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o: gtest/googlemock/gmock_autogen/mocs_compilation.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object gtest/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o"
-	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock/gmock_autogen/mocs_compilation.cpp
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.o -c /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock/gmock_autogen/mocs_compilation.cpp
 
 gtest/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.i"
-	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock/gmock_autogen/mocs_compilation.cpp > CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.i
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock/gmock_autogen/mocs_compilation.cpp > CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.i
 
 gtest/googlemock/CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.s"
-	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock/gmock_autogen/mocs_compilation.cpp -o CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.s
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock/gmock_autogen/mocs_compilation.cpp -o CMakeFiles/gmock.dir/gmock_autogen/mocs_compilation.cpp.s
 
 gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: gtest/googlemock/CMakeFiles/gmock.dir/flags.make
 gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o: /usr/src/googletest/googlemock/src/gmock-all.cc
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o"
-	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /usr/src/googletest/googlemock/src/gmock-all.cc
 
 gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/gmock.dir/src/gmock-all.cc.i"
-	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/googletest/googlemock/src/gmock-all.cc > CMakeFiles/gmock.dir/src/gmock-all.cc.i
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /usr/src/googletest/googlemock/src/gmock-all.cc > CMakeFiles/gmock.dir/src/gmock-all.cc.i
 
 gtest/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/gmock.dir/src/gmock-all.cc.s"
-	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/googletest/googlemock/src/gmock-all.cc -o CMakeFiles/gmock.dir/src/gmock-all.cc.s
+	cd /home/roman/qt_ROS_projects/autobot/src/build/gtest/googlemock && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /usr/src/googletest/googlemock/src/gmock-all.cc -o CMakeFiles/gmock.dir/src/gmock-all.cc.s
 
 # Object files for target gmock
 gmock_OBJECTS = \

@@ -7,5 +7,9 @@
     <file>left_rotate.png</file>
     <file>right_rotate.png</file>
     <file>strelka.png</file>
+    <file>go.png</file>
+    <file>pause.png</file>
+    <file>stop.png</file>
+    <file>stopRed.png</file>
   </qresource>
 </RCC>

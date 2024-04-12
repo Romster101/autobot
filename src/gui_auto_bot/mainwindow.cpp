@@ -19,11 +19,12 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     scene->setSceneRect(0, 0, 100, 100);
     ui->gv_builtMap->setMouseTracking(true);
     ui->gv_builtMap->setRenderHint(QPainter::Antialiasing);        // Настраиваем рендер
-    //ui->gv_builtMap->setCacheMode(QGraphicsView::CacheBackground); // Кэш фона
     ui->gv_builtMap->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
     ui->gv_builtMap->setDragMode(QGraphicsView::RubberBandDrag);
     installEventFilter(this);
 
+    execWidget = new ExecutorWidget(this);
+    ui->hl_executor->addWidget(execWidget);
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
     connect(scene, &ExtendedScene::selectionChanged, this, &MainWindow::newItemSelected);
@@ -34,6 +35,13 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
         ui->dsb_theta->setValue(angle);
         ui->chb_cargo_out->setChecked(cargoOut);
     });
+    infoModel = new QStringListModel();
+    infoModel->setStringList(infoList);
+    ui->listView->setModel(infoModel);
+    
+    connect(Messager::instance(),&Messager::infoMessage,[this](QString msg){
+        addInfo(msg);
+    });
 }
 
 MainWindow::~MainWindow()
@@ -42,7 +50,16 @@ MainWindow::~MainWindow()
     delete scene;
     delete ui;
     delete ros_timer;
+    delete execWidget;
+    delete infoModel;
     ros::shutdown();
+}
+
+void MainWindow::addInfo(QString &str)
+{
+    this->infoList.append(str);
+    infoModel->setStringList(infoList);
+    ui->listView->setModel(infoModel);
 }
 
 void MainWindow::dblClicked(QPointF point)

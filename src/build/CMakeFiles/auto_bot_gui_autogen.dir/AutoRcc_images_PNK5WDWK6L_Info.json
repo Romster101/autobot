@@ -7,13 +7,17 @@
 	"INCLUDE_DIR" : "/home/roman/qt_ROS_projects/autobot/src/build/auto_bot_gui_autogen/include",
 	"INPUTS" : 
 	[
+		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/stop.png",
 		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/strelka.png",
 		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/Forward.png",
+		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/go.png",
 		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/back.png",
+		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/stopRed.png",
 		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/wIcon.png",
 		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/left_rotate.png",
 		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/rolik.png",
-		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/right_rotate.png"
+		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/right_rotate.png",
+		"/home/roman/qt_ROS_projects/autobot/src/gui_auto_bot/res/pause.png"
 	],
 	"LOCK_FILE" : "/home/roman/qt_ROS_projects/autobot/src/build/CMakeFiles/auto_bot_gui_autogen.dir/AutoRcc_images_PNK5WDWK6L_Lock.lock",
 	"MULTI_CONFIG" : false,

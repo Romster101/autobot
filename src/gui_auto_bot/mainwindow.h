@@ -14,6 +14,8 @@
 #include "serialportdialog.h"
 #include "jsonmodule.h"
 #include <QMessageBox>
+#include "executorwidget.h"
+#include "messager.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui
@@ -29,6 +31,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(ros::NodeHandle *nh, QWidget *parent = nullptr);
     ~MainWindow();
+
+    void addInfo(QString &str);
 
 public slots:
     void dblClicked(QPointF point);
@@ -57,6 +61,9 @@ private:
     Ui::MainWindow *ui;
     ExtendedScene *scene;
     JSONmodule *JSON;
+    ExecutorWidget* execWidget;
+    QStringListModel* infoModel;
+    QStringList infoList;
      
     ManualRemoteController *StmController;
     QTimer *ros_timer;
