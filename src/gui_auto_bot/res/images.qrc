@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="img">
+    <file>pausY.png</file>
     <file>wIcon.png</file>
     <file>rolik.png</file>
     <file>back.png</file>

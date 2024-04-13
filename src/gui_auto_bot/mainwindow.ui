@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1491</width>
-    <height>1027</height>
+    <height>1040</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -477,7 +477,14 @@ QGraphicsView{
         </property>
         <layout class="QGridLayout" name="gridLayout_5">
          <item row="0" column="0">
-          <widget class="QListView" name="listView"/>
+          <widget class="QListView" name="listView">
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+          </widget>
          </item>
         </layout>
        </widget>

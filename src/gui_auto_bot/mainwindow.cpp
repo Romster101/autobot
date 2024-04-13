@@ -23,8 +23,9 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     ui->gv_builtMap->setDragMode(QGraphicsView::RubberBandDrag);
     installEventFilter(this);
 
-    execWidget = new ExecutorWidget(this);
+    execWidget = new ExecutorWidget(scene,this);
     ui->hl_executor->addWidget(execWidget);
+
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
     connect(scene, &ExtendedScene::selectionChanged, this, &MainWindow::newItemSelected);

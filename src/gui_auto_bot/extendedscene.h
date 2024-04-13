@@ -24,9 +24,13 @@ public:
     void addRobItem(GraphicsRobItem* item);
     void adjustLinesForElement(int elNum,int x,int y);
 
+    void setActive(const bool _active) {this->active = _active;};
+    const bool isActive() {return active;};
+
 private:
     QVector<GraphicsRobItem*> robItemsVector;
     void deleteSelectedItems();
+    bool active = true;
     
 signals:
     void targetCoordinate(QPointF point);

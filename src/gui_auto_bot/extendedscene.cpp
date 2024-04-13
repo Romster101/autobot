@@ -103,17 +103,23 @@ void ExtendedScene::deleteSelectedItems()
 
 void ExtendedScene::mouseMoveEvent(QGraphicsSceneMouseEvent *event)
 {
+    if(!active)
+        return;
     emit targetCoordinate(event->scenePos());
     QGraphicsScene::mouseMoveEvent(event);
 }
 
 void ExtendedScene::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 {
+    if(!active)
+        return;
     emit dblClicked(event->scenePos());
 }
 
 void ExtendedScene::keyPressEvent(QKeyEvent *keyEvent)
 {
+    if(!active)
+        return;
     if (keyEvent->key() == Qt::Key_Delete)
         deleteSelectedItems();
     if (keyEvent->key() == Qt::Key_A && keyEvent->modifiers() == Qt::ControlModifier){
