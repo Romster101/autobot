@@ -53,7 +53,7 @@ diff_controller.py - controller for a differential drive
 
 import rospy
 import roslib
-roslib.load_manifest('differential_drive')
+#roslib.load_manifest('differential_drive')
 from math import sin, cos, pi
 
 from geometry_msgs.msg import Quaternion
@@ -77,7 +77,7 @@ class DiffTf:
         self.rate = rospy.get_param('~rate',10.0)  # the rate at which to publish the transform
         self.ticks_meter = float(rospy.get_param('ticks_meter', 50))  # The number of wheel encoder ticks per meter of travel
         self.base_width = float(rospy.get_param('~base_width', 0.245)) # The wheel base width in meters
-        
+
         self.base_frame_id = rospy.get_param('~base_frame_id','base_link') # the name of the base frame of the robot
         self.odom_frame_id = rospy.get_param('~odom_frame_id', 'odom') # the name of the odometry reference frame
         
@@ -106,8 +106,8 @@ class DiffTf:
         self.then = rospy.Time.now()
         
         # subscriptions
-        rospy.Subscriber("lwheel", Int16, self.lwheelCallback)
-        rospy.Subscriber("rwheel", Int16, self.rwheelCallback)
+        rospy.Subscriber("lencoder", Int16, self.lwheelCallback)
+        rospy.Subscriber("rencoder", Int16, self.rwheelCallback)
         self.odomPub = rospy.Publisher("odom", Odometry, queue_size=10)
         self.odomBroadcaster = TransformBroadcaster()
         

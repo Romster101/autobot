@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<launch>
+
+    <node name="twist_to_motors" pkg="diff_drive" type="twist_to_motors.py">
+        <param name="~base_width" type="double" value="10"/>
+        <param name="~rate" type="int" value="40"/>
+        <param name="~timeout_ticks" type="int" value="2"/>
+    </node>
+
+    <node name="transform_tf" pkg="diff_drive" type="diff_tf.py">
+
+        <param name="~base_frame_id" type="string" value="base_link"/>
+        <param name="~odom_frame_id" type="string" value="odom"/>
+        <param name="~rate" type="double" value="10"/>
+        <param name="ticks_meter" type="int" value="3300"/>
+        <param name="~base_width" type="double" value="10"/>
+        <param name="encoder_min" type="int" value="-32768"/>
+        <param name="encoder_max" type="int" value="32768"/>
+    </node>
+
+</launch>

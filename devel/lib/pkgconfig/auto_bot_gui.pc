@@ -1,4 +1,4 @@
-prefix=/home/roman/qt_ROS_projects/autobot/devel
+prefix=/home/macubuntu/projects/autobot/devel
 
 Name: auto_bot_gui
 Description: Description of auto_bot_gui

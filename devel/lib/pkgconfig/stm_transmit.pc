@@ -1,4 +1,4 @@
-prefix=/home/roman/qt_ROS_projects/autobot/devel
+prefix=/home/macubuntu/projects/autobot/devel
 
 Name: stm_transmit
 Description: Description of stm_transmit
