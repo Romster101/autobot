@@ -1,8 +1,0 @@
-prefix=/home/roman/ros_packets/auto_bot/devel
-
-Name: gui_auto_bot
-Description: Description of gui_auto_bot
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

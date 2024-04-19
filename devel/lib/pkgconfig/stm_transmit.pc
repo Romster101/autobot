@@ -1,8 +1,0 @@
-prefix=/home/roman/qt_ROS_projects/autobot/devel
-
-Name: stm_transmit
-Description: Description of stm_transmit
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -76,21 +76,21 @@ void ManualRemoteController::on_pb_unload_clicked()
 
 void ManualRemoteController::on_pb_back_pressed()
 {
-    this->sendSpeed(-0.15, 0);
+    this->sendSpeed(-0.1, 0);
 }
 void ManualRemoteController::on_pb_forward_pressed()
 {
-    this->sendSpeed(0.15, 0);
+    this->sendSpeed(0.1, 0);
 }
 
 void ManualRemoteController::on_pb_rotatePlus_pressed()
 {
-    this->sendSpeed(0,1.5);
+    this->sendSpeed(0, 1);
 }
 
 void ManualRemoteController::on_pb_rotateMinus_pressed()
 {
-    this->sendSpeed(0, -1.5);
+    this->sendSpeed(0, -1);
 }
 
 void ManualRemoteController::on_pb_unload_pressed()
