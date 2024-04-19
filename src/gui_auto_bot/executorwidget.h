@@ -43,8 +43,11 @@ private:
 private slots:
     void on_pb_execute_clicked();
     void on_pb_stop_clicked();
-
     void blindTargetLine();
+
+signals:
+    void beginMoving();
+    void endMoving();
 };
 
 #endif // EXECUTORWIDGET_H
