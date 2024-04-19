@@ -29,6 +29,15 @@ MainWindow::MainWindow(ros::NodeHandle *nh, QWidget *parent)
     connect(scene, &ExtendedScene::targetCoordinate, this, &MainWindow::slotTarget);
     connect(scene, &ExtendedScene::dblClicked, this, &MainWindow::dblClicked);
     connect(scene, &ExtendedScene::selectionChanged, this, &MainWindow::newItemSelected);
+
+    connect(execWidget,&ExecutorWidget::beginMoving,[this](){
+        ui->menubar->setEnabled(false);
+    });
+
+        connect(execWidget,&ExecutorWidget::endMoving,[this](){
+        ui->menubar->setEnabled(true);
+    });
+
     connect(scene, &ExtendedScene::propertiesChanged,[this](int x,int y,int angle,bool cargoOut)
     {
         ui->dsb_X->setValue(x);

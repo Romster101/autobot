@@ -23,6 +23,7 @@ void ExecutorWidget::setCurState(const State _s)
         {
         case Processing:
         {
+            emit beginMoving();
             scene->setActive(false);
             timer->start(500);
             break;
@@ -30,6 +31,7 @@ void ExecutorWidget::setCurState(const State _s)
 
         case Paused:
         {
+            emit endMoving();
             timer->stop();
             showCurrentArrow();
             scene->setActive(true);
@@ -38,6 +40,7 @@ void ExecutorWidget::setCurState(const State _s)
 
         case Stopped:
         {
+            emit endMoving();
             timer->stop();
             showCurrentArrow();
             scene->setActive(true);

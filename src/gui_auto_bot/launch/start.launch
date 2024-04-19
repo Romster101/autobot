@@ -2,6 +2,8 @@
 <launch>
 <node name="auto_bot" pkg="auto_bot_gui" type="auto_bot_gui"/>
 <node name="twist_to_motors" pkg="diff_drive" type="twist_to_motors.py"/>
+<node pkg="tf" type="static_transform_publisher" name="base_link_to_laser"
+args="0.2245 0.0 0.2 1.57 0.0 0.0 /base_link /laser_frame 10" />
 </launch>
 
 <!-- <machine name="ubuntu" user="ubuntu" password="parol5656" address="192.168.0.12" timeout="30"/>
