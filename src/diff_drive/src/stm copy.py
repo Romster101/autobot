@@ -4,9 +4,6 @@ import re, sys
 import rospy
 import roslib
 from PyQt5.QtSerialPort import QSerialPort, QSerialPortInfo
-from PyQt5.QtWidgets import *
-from PyQt5 import *
-from PyQt5.QtGui import *
 from PyQt5.QtCore import *
 from std_msgs.msg import String, Int16
 
