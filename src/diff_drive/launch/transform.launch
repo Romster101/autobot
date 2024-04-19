@@ -4,7 +4,7 @@
     <node name="twist_to_motors" pkg="diff_drive" type="twist_to_motors.py">
         <param name="~base_width" type="double" value="0.25"/>
         <param name="~rate" type="int" value="40"/>
-        <param name="~timeout_ticks" type="int" value="2"/>
+        <param name="~timeout_ticks" type="int" value="1"/>
     </node>
 
      <node name="rviz" pkg="rviz" type="rviz"
@@ -21,6 +21,12 @@
     </node>
 
     <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser"
-    args="0.2245 0.0 0.2 0.0 0.0 0.0 /base_link /laser_frame 40"/>
+    args="0.2245 0.0 0.2 -1.57 0.0 0.0 /base_link /laser_frame 40"/>
   
+  <!---->
+    <include file="$(find chaffe_navigation)/launch/gmapping.launch"/>
+    <include file="$(find chaffe_navigation)/launch/move_base.launch"/>
+
+
+
 </launch>

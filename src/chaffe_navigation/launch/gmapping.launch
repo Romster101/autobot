@@ -2,8 +2,8 @@
   
 <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
 
-    <remap from="scan" to="scan" />
-    <param name="odom_frame" value="odom_combined" />
+    <remap from="scan" to="scan_raw" />
+    <param name="odom_frame" value="odom" />
     <param name="base_frame" value="base_link" />
     
     <param name="inverted_laser" value="true"/>
