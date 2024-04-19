@@ -1,0 +1,18 @@
+<package>
+  <description brief="chaffe_navigation">
+
+     chaffe_navigation
+
+  </description>
+  <author>vlad</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/chaffe_navigation</url>
+  <depend package="rospy"/>
+  <depend package="amcl"/>
+  <depend package="gmapping"/>
+  <depend package="map_server"/> 
+  <depend package="move_base"/> 
+  <depend package="roslaunch"/> 
+
+</package>
